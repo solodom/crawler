@@ -1,0 +1,784 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>126篇殿堂级深度学习论文分类整理 从入门到应用 | 干货 | 雷锋网</title>
+    <meta itemprop="image" content="https://www.leiphone.com/resWeb/images/common/metaLogo.jpg" />
+            <link rel="dns-prefetch" href="https://www.leiphone.com">
+        <link rel="dns-prefetch" href="https://home.leiphone.com">
+        <link rel="dns-prefetch" href="https://m.leiphone.com">
+        <link rel="dns-prefetch" href="https://leiphone.com">
+        <meta name="baidu-site-verification" content="qBnDqyynv4" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-03-02T18:40:43+08:00"/>
+    <meta property="article:author" content="程三川"/>
+    <meta property="article:published_first" content="雷锋网, https://www.leiphone.com/news/201702/FWkJ2AdpyQRft3vW.html" />
+    	<meta name="google-site-verification" content="4c2S0LRoSpcyGiNmASqakMSa7yVC9C8Jnu-IRNyq5oU" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=1">
+    <meta property="qc:admins" content="10002525706451007656375" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="https://m.leiphone.com" />
+            	<meta name="keywords" content="深度学习 论文" />
+	<meta name="description" content="迄今为止最全盘点！深度学习论文研读路线图。" />
+    <meta name="sogou_site_verification" content="ilkqV8FehD"/>
+    <meta name="renderer" content="webkit">
+	<link rel="cannoical" href="https://www.leiphone.com/news/201702/FWkJ2AdpyQRft3vW.html">    <link rel="stylesheet"  type="text/css" href="https://www.leiphone.com/resWeb/css/common/common.css?20180504" media="all" />
+    <script type="text/javascript">
+        window.mobilecheck = function() {
+            
+            // var ua=window.navigator.userAgent;
+            // if(ua.indexOf('iPhone')>=0||ua.indexOf('iPod')>=0||ua.indexOf('ndroid')>=0){
+            //     return true;
+            // }
+
+            var check = false;
+            (function(a,b){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+            return check;
+        }
+        var check = mobilecheck();
+        if(check && (window.location.host == 'www.leiphone.com')){
+            window.location.href="//m.leiphone.com" + window.location.pathname + window.location.search;
+        }else if(!check && (window.location.host == 'm.leiphone.com')){
+            window.location.href="//www.leiphone.com" + window.location.pathname + window.location.search;
+        }
+    </script>
+    <!--  
+	<script type='text/javascript'>window.BWEUM||(BWEUM={});BWEUM.info = {"stand":true,"agentType":"browser","agent":"bi-collector.oneapm.com/static/js/bw-send-411.4.5.js","beaconUrl":"bi-collector.oneapm.com/beacon","licenseKey":"fqiyF~7R36YyFnEB","applicationID":2284957};</script><script type="text/javascript" src="//bi-collector.oneapm.com/static/js/bw-loader-411.4.5.js"></script>
+	-->
+    <script>
+                    //百度统计开始
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?0f7e8686c8fcc36f05ce11b84012d5ee";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+            //百度统计结束
+        
+        var SCRIPT_URL 	= "https://www.leiphone.com/";
+		var BASE_URL 	= "https://www.leiphone.com/";
+		var HOME_URL 	= "https://home.leiphone.com/";
+		var IS_LOGIN 	= "1";
+        var LEIPHONE_HOME_URL = USER_CENTER  = "https://home.leiphone.com/";
+        var HAITAO_URL  = "https://haitao.leiphone.com";
+        var TRYOUT_URL  = "https://tryout.igao7.com/";
+        var PRODUCT_URL = "https://product.igao7.com/";
+	</script>
+
+	<!--[if IE]>
+    <script>
+       (function(){var e="abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');var i=e.length;while(i--){document.createElement(e[i])}})()
+    </script>
+    <![endif]-->
+
+    <!--<script src="/resWeb/js/libs/sea.js"></script>-->
+    <script src="https://www.leiphone.com/resWeb/js/libs/jquery-sea.js"></script>
+    <script src="https://www.leiphone.com/resCommon/js/yp_tipBoxes/tips.js"></script>
+    <script>
+        seajs.config({
+            map:[
+                ['.js','.js?20181128']
+            ]
+        });
+        seajs.use('https://www.leiphone.com/resWeb/js/common/global',function(){
+                    });
+        document.domain = "leiphone.com";
+         // 英鹏账号登录回调
+        function yingpengIslogin_callback(){
+            seajs.use('https://www.leiphone.com/resWeb/js/common/com_login',function(user) {
+              user.init();
+            });
+        }
+    </script>
+
+</head>
+<body>
+<!-- 顶栏广告位 -->
+<div class="top-banner">
+    <a href="https://www.leiphone.com/banner/updateClickNum/id/1408" target="_blank" title="智慧城市">
+        <img src="https://static.leiphone.com/uploads/new/banner/5c173d040036c.jpg" alt="智慧城市">
+    </a>
+    <em class="closeBanner"></em>
+</div>
+
+<div class="explorer" id="low-explorer">
+    <div class="inner">
+        <em class="warn ico"></em>
+        <span>您正在使用IE低版浏览器，为了您的雷锋网账号安全和更好的产品体验，强烈建议使用更快更安全的浏览器</span>
+        <span class="ico exp-ico1"></span>
+        <span class="ico exp-ico2"></span>
+        <span class="ico exp-ico3"></span>
+        <span class="ico exp-ico4"></span>
+        <span class="ico exp-ico5"></span>
+    </div>
+</div>
+<!--[if lte IE 8]>
+    <script>
+       (function(){var e=['abbr', 'article', 'aside', 'audio', 'canvas', 'datalist', 'details', 'dialog', 'eventsource', 'figure', 'footer', 'header', 'hgroup', 'mark', 'menu', 'meter', 'nav', 'output', 'progress', 'section', 'time', 'video'];for(var i = e.length; i--;) document.createElement(e[i])})()
+
+       //低版本浏览器
+        document.getElementById("low-explorer").style.display = 'block';
+
+    </script>
+<![endif]-->
+
+
+
+<!-- header start-->
+<header class="yp-header">
+    <div class="yp-header-top clr">
+        <a class="yp-header-logo" href="https://www.leiphone.com">
+            <img src="https://www.leiphone.com/resWeb/images/common/lph-headerlogo.png"  alt="雷锋网">
+                        <span>读懂<em>智能</em>&未来</span>
+        </a>
+        <!-- navi -->
+
+        <div class="yp-header-menu">
+            <ul>
+                <li class="first">
+                    <a href="https://www.leiphone.com" class="sub_a">首页</a>
+                </li>
+                <li>
+                    <a href="http://ai.yanxishe.com"  target="_blank" class="sub_a">AI研习社<em class="newIcon"></em></a>
+                </li>
+                <li>
+                    <a href="https://www.leiphone.com/AiWeights"  target="_blank" class="sub_a">AI影响因子</a>
+                </li>
+                <li>
+                    <a href="https://www.leiphone.com/events"  class="sub_a">活动</a>
+                </li>
+                <li>
+                    <a href="https://www.leiphone.com/specials"  class="sub_a">专题</a>
+                </li>
+                <li>
+                    <a href="https://www.leiphone.com/specialEdition/list"  target="_blank" class="sub_a">精选</a>
+                </li>
+                <li class="borleft aiB">
+                <div class="line"></div>
+                    <!-- <a href="http://www.mooc.ai/?f=leiphone"  target="_blank" class="sub_a">AI慕课学院</a> -->
+                </li>
+                <li class="ej borleft ig">
+                    <a href="http://www.igao7.com" target="_blank" class="sub_a">爱搞机</a>
+                                    </li>
+                <!-- <li  class="ej borleft ig">
+                    <a href="https://haitao.leiphone.com" class="sub_a">极客购</a>
+                </li> -->
+            </ul>
+            <a href="javascript:;" class="contribute"><em></em>申请专栏作者</a>
+        </div>
+        <!-- 用户登录 -->
+        <div class="yp-header-user-box">
+            <div class="yp-header-user">
+                <!-- <input type="hidden" id="is_login_tag_status" value="1"> -->
+                <div class="user-main user-haslg">
+                    <div class="avatar"><img width="36" height="36" src="https://www.leiphone.com/resWeb/home/images/member/noLogin.jpg" alt=""></div>
+                </div>
+                <div class="user-link">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 用户消息 -->
+        <div class="yp-header-message">
+            <a href="https://home.leiphone.com/notices" class="bell">
+                 <i class="ico"></i>
+                 <em class="count"></em>   
+            </a>
+        </div>
+        <div class="yp-header-search">
+           <form method="GET" name="allSearchForm" action="https://www.leiphone.com/search" style="height: 100%;">
+                <input type="hidden" name="site" value="">
+                <input class="text" type="text" name="s" autocomplete="off" value="">
+                <input class="submit" type="submit" value="">
+                <input class="submit2" type="submit" value="">
+            </form>
+        </div>
+        <a href="https://www.leiphone.com/search" class="miniSearch"></a>
+        
+    </div>
+</header>   
+<!-- header end-->
+<nav class="yp-secNav">
+    <div class="wrapper">
+        <a href="https://www.leiphone.com/category/sponsor"  class=" ">业界</a>
+        <a href="https://www.leiphone.com/category/ai"  class=" ">人工智能</a>
+        <a href="https://www.leiphone.com/category/transportation"  class=" ">智能驾驶</a>
+        <a href="https://www.leiphone.com/category/aijuejinzhi"  class=" ">AI+</a>
+        <a href="https://www.leiphone.com/category/fintech"  class=" "> Fintech&区块链</a>
+        <a href="https://www.leiphone.com/category/aihealth"  class=" ">未来医疗</a>
+        <a href="https://www.leiphone.com/category/letshome"  class=" ">网络安全</a>
+        <a href="https://www.leiphone.com/category/arvr"  class=" ">AR/VR</a>
+        <a href="https://www.leiphone.com/category/robot"  class=" ">机器人</a>
+        <a href="https://www.leiphone.com/category/yanxishe"  class=" ">开发者</a>
+        <a href="https://www.leiphone.com/category/weiwu"  class=" ">智能硬件</a>
+        <a href="https://www.leiphone.com/category/iot"  class=" ">物联网</a>
+        <a href="https://gair.leiphone.com?from=leifengwang2018" target="_blank" class="">GAIR</a>
+    </div>
+</nav>
+
+<link rel="stylesheet" type="text/css" href="https://www.leiphone.com/resCommon/css/artCont_web_admin.css">
+<link rel="stylesheet" type="text/css" href="https://www.leiphone.com/resWeb/css/detail/main.css?20180515" media="all" />
+<script type="text/javascript">
+    var ARTICLE_CATEGORY = '137';
+    var ADMIN_URL = 'https://yingpeng.leiphone.com/';
+</script>
+
+<div class="wrapper">
+    <div class="lph-Nowsite clr">
+        <a href='https://www.leiphone.com'><em class='ico'></em></a>
+        <em class='arro'></em>
+        <a href="https://www.leiphone.com/category/yanxishe">AI开发</a>
+        <em class='arro'></em>
+        <a href="#">正文</a>
+    </div>
+</div>
+
+<!-- 发送私信 -->
+<div class="sendMsg-pop">
+    <a href="javascript:;" class="closePop"><em></em></a>
+    <div class="title">发私信给<span>三川</span></div>
+    <div class="main">
+        <textarea placeholder='私信内容'></textarea>
+    </div>
+    <div class="btns">
+        <a href="javascript:;" class="send-button">发送</a>
+    </div>
+</div>
+<!-- 评论数 -->
+<a href="#lph-comment-162070" class="cmtNums" >
+    <em></em>
+    <p>1</p>
+</a>
+<div class="lph-overlay"></div>
+<!-- 当载入markdown的时候加载 -->
+<script type="text/javascript">
+    var link = "FWkJ2AdpyQRft3vW";
+</script>
+<!-- 文章详情页 -->
+<div class="lphArticle-detail" data-article_url="https://www.leiphone.com/news/201702/FWkJ2AdpyQRft3vW.html"
+data-article_id="162070" data-article_unique="FWkJ2AdpyQRft3vW"
+data-article_seo_title="126篇殿堂级深度学习论文分类整理 从入门到应用 | 干货 | 雷锋网" data-article_seo_keywords="深度学习 论文"
+data-article_seo_description="迄今为止最全盘点！深度学习论文研读路线图。" data-comment_type="2"
+data-collect_type="2" data-author_id="23732"
+data-author_name="三川" data-article_cmtNum="1">
+    <div class="article-template">
+        <div class="article-title">
+            <div class="inner">
+                <h1 class="headTit">
+                    126篇殿堂级深度学习论文分类整理 从入门到应用 | 干货                </h1>
+                <div class="msg">
+                    <table>
+                        <tr>
+                            <td class="aut">
+                                本文作者：<a href="https://www.leiphone.com/author/sanchuan441" target="_blank" rel="nofollow">三川</a>
+                            </td>
+                                                        <td class="time">
+                                2017-03-02 18:40                            </td>
+                                                                                    <!-- <td class="tags">
+                                <em></em> -->
+                                                                                                                            <!-- </td> -->
+                                                      <!--   <td class='cmtNum'>
+                                <a href="https://www.leiphone.com/news/201702/FWkJ2AdpyQRft3vW.html#lph-comment-162070">1条评论</a>
+                            </td> -->
+                        </tr>
+                    </table>
+                </div>
+                <div class="article-lead">
+                    <em></em>导语：迄今为止最全盘点！深度学习论文研读路线图。                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="wrapper clr">
+                <div class="article-left">
+                     <div class="lph-article-comView">
+                                                 
+                         <!-- AI影响因子 -->
+                        <!-- xhBPeYDbNuuRZkwy -->
+                                                <!-- AI影响因子 -->
+                        <!-- 正文内容 -->
+                        <p style="text-align: center;"><img alt="126篇殿堂级深度学习论文分类整理 从入门到应用 | 干货"     href="//static.leiphone.com/uploads/new/article/740_740/201703/58b69559a3d89.jpg"  src="https://static.leiphone.com/uploads/new/article/740_740/201703/58b69559a3d89.jpg?imageMogr2/format/jpg/quality/90"/></p><p>如果你有非常大的决心从事深度学习，又不想在这一行打酱油，那么研读大牛论文将是不可避免的一步。而作为新人，你的第一个问题或许是：“<strong>论文那么多，从哪一篇读起？”</strong><br/></p><p>本文将试图解决这个问题——文章标题本来是：“从入门到绝望，无止境的深度学习论文”。请诸位备好道具，开启头悬梁锥刺股的学霸姿势。</p><p>开个玩笑。</p><p>但对非科班出身的开发者而言，读论文的确可以成为一件很痛苦的事。但好消息来了——为避免初学者陷入迷途苦海，昵称为 songrotek 的学霸在 GitHub 发布了他整理的深度学习路线图，<strong>分门别类梳理了新入门者最需要学习的 DL 论文，又按重要程度给每篇论文打上星星。</strong></p><p>截至目前，这份 DL 论文路线图已在 GitHub 收获了近万颗星星好评，人气极高。雷锋网<span style="color:#FD5D3C;">(公众号：雷锋网)</span>感到非常有必要对大家进行介绍。<br/></p><p>闲话少说，该路线图根据以下四项原则而组织：<br/></p><blockquote><ul class=" list-paddingleft-2" style="list-style-type: disc;"><li><p>从大纲到细节</p></li><li><p>从经典到前沿</p></li><li><p>从一般到具体领域</p></li><li><p>关注最新研究突破</p></li></ul></blockquote><p>作者注：有许多论文很新但非常值得一读。</p><h2>1 深度学习历史和基础</h2><h3 style="white-space: normal;"><span style="color: rgb(227, 108, 9);">1.0 书籍</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[0]&nbsp;Bengio, Yoshua, Ian J. Goodfellow, and Aaron Courville. <strong>&quot;Deep learning</strong>.&quot; An MIT Press book. (2015).&nbsp;[pdf]&nbsp;(Ian Goodfellow 等大牛所著的教科书，乃深度学习圣经。你可以同时研习这本书以及以下论文)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：<a href="https://github.com/HFTrader/DeepLearningBook/raw/master/DeepLearningBook.pdf" target="_blank" rel=nofollow>https://github.com/HFTrader/DeepLearningBook/raw/master/DeepLearningBook.pdf</a>&nbsp;</p><h3 style="white-space: normal;"><span style="color: rgb(227, 108, 9);">1.1 调查</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;LeCun, Yann, Yoshua Bengio, and Geoffrey Hinton. &quot;<strong>Deep learning</strong>.&quot; Nature 521.7553 (2015): 436-444.&nbsp;[pdf]&nbsp;(三巨头做的调查)&nbsp;&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf</p><h3 style="white-space: normal;"><span style="color: rgb(227, 108, 9);">1.2 深度置信网络 (DBN，深度学习前夜的里程碑)</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;Hinton, Geoffrey E., Simon Osindero, and Yee-Whye Teh. &quot;<strong>A fast learning algorithm for deep belief nets</strong>.&quot; Neural computation 18.7 (2006): 1527-1554.&nbsp;[pdf] (深度学习前夜)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;Hinton, Geoffrey E., and Ruslan R. Salakhutdinov. &quot;<strong>Reducing the dimensionality of data with neural networks.</strong>&quot; Science 313.5786 (2006): 504-507.&nbsp;[pdf]&nbsp;(里程碑，展示了深度学习的前景)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://www.cs.toronto.edu/~hinton/science.pdf</p><h3><span style="color: rgb(227, 108, 9);">1.3 ImageNet 的进化（深度学习从此萌发）</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[4]&nbsp;Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. &quot;<strong>Imagenet classification with deep convolutional neural networks.</strong>&quot; Advances in neural information processing systems. 2012.&nbsp;[pdf]&nbsp;(AlexNet, 深度学习突破)&nbsp;<span style="color: rgb(255, 192, 0);">&nbsp;★★★★★</span></p><p>地址：http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Simonyan, Karen, and Andrew Zisserman. &quot;<strong>Very deep convolutional networks for large-scale image recognition.</strong>&quot; arXiv preprint arXiv:1409.1556 (2014).&nbsp;[pdf]&nbsp;(VGGNet，神经网络变得很深层)<span style="color: rgb(255, 192, 0);">&nbsp;★★★</span></p><p>地址：https://arxiv.org/pdf/1409.1556.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[6]&nbsp;Szegedy, Christian, et al. &quot;<strong>Going deeper with convolutions.</strong>&quot; Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015.&nbsp;[pdf]&nbsp;(GoogLeNet)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[7]&nbsp;He, Kaiming, et al. &quot;<strong>Deep residual learning for image recognition.</strong>&quot; arXiv preprint arXiv:1512.03385 (2015).&nbsp;[pdf](ResNet，特别深的神经网络, CVPR 最佳论文)&nbsp;&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://arxiv.org/pdf/1512.03385.pdf</p><h3><span style="color: rgb(227, 108, 9);">1.4 语音识别的进化</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[8]&nbsp;Hinton, Geoffrey, et al. &quot;<strong>Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups.</strong>&quot; IEEE Signal Processing Magazine 29.6 (2012): 82-97.&nbsp;[pdf]&nbsp;(语音识别的突破) <span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://cs224d.stanford.edu/papers/maas_paper.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[9]&nbsp;Graves, Alex, Abdel-rahman Mohamed, and Geoffrey Hinton. &quot;<strong>Speech recognition with deep recurrent neural networks.</strong>&quot; 2013 IEEE international conference on acoustics, speech and signal processing. IEEE, 2013.&nbsp;[pdf]&nbsp;(RNN) <span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://arxiv.org/pdf/1303.5778.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[10]&nbsp;Graves, Alex, and Navdeep Jaitly. &quot;<strong>Towards End-To-End Speech Recognition with Recurrent Neural Networks.</strong>&quot; ICML. Vol. 14. 2014.&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://www.jmlr.org/proceedings/papers/v32/graves14.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[11]&nbsp;Sak, Haşim, et al. &quot;<strong>Fast and accurate recurrent neural network acoustic models for speech recognition.</strong>&quot; arXiv preprint arXiv:1507.06947 (2015).&nbsp;[pdf]&nbsp;(谷歌语音识别系统)<span style="color: rgb(255, 192, 0);">&nbsp;★★★</span></p><p>地址：http://arxiv.org/pdf/1507.06947</p><p><span style="color: rgb(227, 108, 9);">█</span>[12]&nbsp;Amodei, Dario, et al. &quot;<strong>Deep speech 2: End-to-end speech recognition in english and mandarin</strong>.&quot; arXiv preprint arXiv:1512.02595 (2015).&nbsp;[pdf]&nbsp;(百度语音识别系统)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1512.02595.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[13]&nbsp;W. Xiong, J. Droppo, X. Huang, F. Seide, M. Seltzer, A. Stolcke, D. Yu, G. Zweig &quot;<strong>Achieving Human Parity in Conversational Speech Recognition.</strong>&quot; arXiv preprint arXiv:1610.05256 (2016).&nbsp;[pdf]&nbsp;(最前沿的语音识别, 微软)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1610.05256v1</p><p>研读以上论文之后，你将对深度学习历史、模型的基本架构（包括 CNN, RNN, LSTM）有一个基础的了解，并理解深度学习如何应用于图像和语音识别问题。接下来的论文，将带你深入探索深度学习方法、在不同领域的应用和前沿尖端技术。我建议，你可以根据兴趣和工作/研究方向进行选择性的阅读。</p><h2>2 深度学习方法</h2><h3><span style="color: rgb(227, 108, 9);">2.1 模型</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[14]&nbsp;Hinton, Geoffrey E., et al. &quot;<strong>Improving neural networks by preventing co-adaptation of feature detectors.</strong>&quot; arXiv preprint arXiv:1207.0580 (2012).&nbsp;[pdf]&nbsp;(Dropout)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/pdf/1207.0580.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[15]&nbsp;Srivastava, Nitish, et al. &quot;<strong>Dropout: a simple way to prevent neural networks from overfitting.</strong>&quot; Journal of Machine Learning Research 15.1 (2014): 1929-1958.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://www.jmlr.org/papers/volume15/srivastava14a.old/source/srivastava14a.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[16]&nbsp;Ioffe, Sergey, and Christian Szegedy. &quot;<strong>Batch normalization: Accelerating deep network training by reducing internal covariate shift.</strong>&quot; arXiv preprint arXiv:1502.03167 (2015).&nbsp;[pdf]&nbsp;(2015 年的杰出研究)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1502.03167</p><p><span style="color: rgb(227, 108, 9);">█</span>[17]&nbsp;Ba, Jimmy Lei, Jamie Ryan Kiros, and Geoffrey E. Hinton. &quot;<strong>Layer normalization.</strong>&quot; arXiv preprint arXiv:1607.06450 (2016).&nbsp;[pdf]&nbsp;(Batch Normalization 的更新)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1607.06450.pdf?utm_source=sciontist.com&amp;utm_medium=refer&amp;utm_campaign=promote</p><p><span style="color: rgb(227, 108, 9);">█</span>[18]&nbsp;Courbariaux, Matthieu, et al. &quot;<strong>Binarized Neural Networks: Training Neural Networks with Weights and Activations Constrained to+ 1 or−1.</strong>&quot;&nbsp;[pdf]&nbsp;(新模型，快)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://pdfs.semanticscholar.org/f832/b16cb367802609d91d400085eb87d630212a.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[19]&nbsp;Jaderberg, Max, et al. &quot;<strong>Decoupled neural interfaces using synthetic gradients.</strong>&quot; arXiv preprint arXiv:1608.05343 (2016).&nbsp;[pdf]&nbsp;(训练方法的创新，研究相当不错)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://arxiv.org/pdf/1608.05343</p><p><span style="color: rgb(227, 108, 9);">█</span>[20]&nbsp;Chen, Tianqi, Ian Goodfellow, and Jonathon Shlens. &quot;<strong>Net2net: Accelerating learning via knowledge transfer.</strong>&quot; arXiv preprint arXiv:1511.05641 (2015).&nbsp;[pdf]&nbsp;(改进此前的训练网络，来缩短训练周期)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/abs/1511.05641</p><p><span style="color: rgb(227, 108, 9);">█</span>[21]&nbsp;Wei, Tao, et al. &quot;<strong>Network Morphism.</strong>&quot; arXiv preprint arXiv:1603.01670 (2016).&nbsp;[pdf]&nbsp;(改进此前的训练网络，来缩短训练周期)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/abs/1603.01670</p><h3><span style="color: rgb(227, 108, 9);">2.2 优化 Optimization</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[22]&nbsp;Sutskever, Ilya, et al. &quot;<strong>On the importance of initialization and momentum in deep learning.</strong>&quot; ICML (3) 28 (2013): 1139-1147.&nbsp;[pdf]&nbsp;(Momentum optimizer)&nbsp;<span style="color: rgb(255, 192, 0);">★★</span></p><p>地址：http://www.jmlr.org/proceedings/papers/v28/sutskever13.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[23]&nbsp;Kingma, Diederik, and Jimmy Ba. &quot;<strong>Adam: A method for stochastic optimization.</strong>&quot; arXiv preprint arXiv:1412.6980 (2014).&nbsp;[pdf]&nbsp;(Maybe used most often currently)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://arxiv.org/pdf/1412.6980</p><p><span style="color: rgb(227, 108, 9);">█</span>[24]&nbsp;Andrychowicz, Marcin, et al. &quot;<strong>Learning to learn by gradient descent by gradient descent.&quot;</strong> arXiv preprint arXiv:1606.04474 (2016).&nbsp;[pdf]&nbsp;(Neural Optimizer,Amazing Work)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://arxiv.org/pdf/1606.04474</p><p><span style="color: rgb(227, 108, 9);">█</span>[25]&nbsp;Han, Song, Huizi Mao, and William J. Dally. <strong>&quot;Deep compression: Compressing deep neural network with pruning, trained quantization and huffman coding.</strong>&quot; CoRR, abs/1510.00149 2 (2015).&nbsp;[pdf]&nbsp;(ICLR best paper, new direction to make NN running fast,DeePhi Tech Startup)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://pdfs.semanticscholar.org/5b6c/9dda1d88095fa4aac1507348e498a1f2e863.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[26]&nbsp;Iandola, Forrest N., et al. &quot;<strong>SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and&lt; 1MB model size.</strong>&quot; arXiv preprint arXiv:1602.07360 (2016).&nbsp;[pdf]&nbsp;(Also a new direction to optimize NN,DeePhi Tech Startup)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1602.07360</p><h3><span style="color: rgb(227, 108, 9);">2.3 无监督学习/深度生成模型</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[27]&nbsp;Le, Quoc V. &quot;<strong>Building high-level features using large scale unsupervised learning.</strong>&quot; 2013 IEEE international conference on acoustics, speech and signal processing. IEEE, 2013.&nbsp;[pdf]&nbsp;(里程碑, 吴恩达, 谷歌大脑, Cat)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1112.6209.pdf&amp;embed</p><p><span style="color: rgb(227, 108, 9);">█</span>[28]&nbsp;Kingma, Diederik P., and Max Welling. &quot;<strong>Auto-encoding variational bayes.</strong>&quot; arXiv preprint arXiv:1312.6114 (2013).&nbsp;[pdf](VAE)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1312.6114</p><p><span style="color: rgb(227, 108, 9);">█</span>[29]&nbsp;Goodfellow, Ian, et al. &quot;<strong>Generative adversarial nets.</strong>&quot; Advances in Neural Information Processing Systems. 2014.&nbsp;[pdf](GAN，很酷的想法)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[30]&nbsp;Radford, Alec, Luke Metz, and Soumith Chintala. &quot;<strong>Unsupervised representation learning with deep convolutional generative adversarial networks.</strong>&quot; arXiv preprint arXiv:1511.06434 (2015).&nbsp;[pdf]&nbsp;(DCGAN)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1511.06434</p><p><span style="color: rgb(227, 108, 9);">█</span>[31]&nbsp;Gregor, Karol, et al. &quot;<strong>DRAW: A recurrent neural network for image generation.</strong>&quot; arXiv preprint arXiv:1502.04623 (2015).&nbsp;[pdf]&nbsp;(VAE with attention, 很出色的研究)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：http://jmlr.org/proceedings/papers/v37/gregor15.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[32]&nbsp;Oord, Aaron van den, Nal Kalchbrenner, and Koray Kavukcuoglu. &quot;<strong>Pixel recurrent neural networks.</strong>&quot; arXiv preprint arXiv:1601.06759 (2016).&nbsp;[pdf]&nbsp;(PixelRNN)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1601.06759</p><p><span style="color: rgb(227, 108, 9);">█</span>[33]&nbsp;Oord, Aaron van den, et al. <strong>&quot;Conditional image generation with PixelCNN decoders.</strong>&quot; arXiv preprint arXiv:1606.05328 (2016).&nbsp;[pdf]&nbsp;(PixelCNN)<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：https://arxiv.org/pdf/1606.05328</p><h3><span style="color: rgb(227, 108, 9);">2.4 递归神经网络（RNN） / Sequence-to-Sequence Model</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[34]&nbsp;Graves, Alex. &quot;<strong>Generating sequences with recurrent neural networks.</strong>&quot; arXiv preprint arXiv:1308.0850 (2013).&nbsp;[pdf]&nbsp;(LSTM, 效果很好，展示了 RNN 的性能)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1308.0850</p><p><span style="color: rgb(227, 108, 9);">█</span>[35]&nbsp;Cho, Kyunghyun, et al. &quot;<strong>Learning phrase representations using RNN encoder-decoder for statistical machine translation.</strong>&quot; arXiv preprint arXiv:1406.1078 (2014).&nbsp;[pdf]&nbsp;(第一篇 Sequence-to-Sequence 的论文)<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://arxiv.org/pdf/1406.1078</p><p><span style="color: rgb(227, 108, 9);">█</span>[36]&nbsp;Sutskever, Ilya, Oriol Vinyals, and Quoc V. Le. &quot;<strong>Sequence to sequence learning with neural networks.</strong>&quot; Advances in neural information processing systems. 2014.&nbsp;[pdf]&nbsp;(杰出研究)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：http://papers.nips.cc/paper/5346-information-based-learning-by-agents-in-unbounded-state-spaces.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[37]&nbsp;Bahdanau, Dzmitry, KyungHyun Cho, and Yoshua Bengio. &quot;<strong>Neural Machine Translation by Jointly Learning to Align and Translate.</strong>&quot; arXiv preprint arXiv:1409.0473 (2014).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1409.0473v7.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[38]&nbsp;Vinyals, Oriol, and Quoc Le. &quot;<strong>A neural conversational model.</strong>&quot; arXiv preprint arXiv:1506.05869 (2015).&nbsp;[pdf]&nbsp;(Seq-to-Seq 聊天机器人)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://arxiv.org/pdf/1506.05869.pdf%20(http://arxiv.org/pdf/1506.05869.pdf)</p><h3><span style="color: rgb(227, 108, 9);">2.5 神经网络图灵机</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[39]&nbsp;Graves, Alex, Greg Wayne, and Ivo Danihelka. &quot;<strong>Neural turing machines.</strong>&quot; arXiv preprint arXiv:1410.5401 (2014).&nbsp;[pdf] (未来计算机的基础原型机)<span style="color: rgb(255, 192, 0);">&nbsp;★★★★★</span></p><p>地址：http://arxiv.org/pdf/1410.5401.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[40]&nbsp;Zaremba, Wojciech, and Ilya Sutskever. &quot;<strong>Reinforcement learning neural Turing machines.</strong>&quot; arXiv preprint arXiv:1505.00521 362 (2015).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://pdfs.semanticscholar.org/f10e/071292d593fef939e6ef4a59baf0bb3a6c2b.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[41]&nbsp;Weston, Jason, Sumit Chopra, and Antoine Bordes. &quot;<strong>Memory networks.</strong>&quot; arXiv preprint arXiv:1410.3916 (2014).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://arxiv.org/pdf/1410.3916</p><p><span style="color: rgb(227, 108, 9);">█</span>[42]&nbsp;Sukhbaatar, Sainbayar, Jason Weston, and Rob Fergus. &quot;<strong>End-to-end memory networks.</strong>&quot; Advances in neural information processing systems. 2015.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://papers.nips.cc/paper/5846-end-to-end-memory-networks.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[43]&nbsp;Vinyals, Oriol, Meire Fortunato, and Navdeep Jaitly. &quot;<strong>Pointer networks.</strong>&quot; Advances in Neural Information Processing Systems. 2015.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://papers.nips.cc/paper/5866-pointer-networks.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[44]&nbsp;Graves, Alex, et al. &quot;<strong>Hybrid computing using a neural network with dynamic external memory.</strong>&quot; Nature (2016).&nbsp;[pdf] (里程碑，把以上论文的想法整合了起来)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://www.dropbox.com/s/0a40xi702grx3dq/2016-graves.pdf</p><h3><span style="color: rgb(227, 108, 9);">2.6 深度强化学习</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[45]&nbsp;Mnih, Volodymyr, et al. &quot;<strong>Playing atari with deep reinforcement learning</strong>.&quot; arXiv preprint arXiv:1312.5602 (2013).&nbsp;[pdf])&nbsp;(第一个以深度强化学习为题的论文)&nbsp;&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1312.5602.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[46]&nbsp;Mnih, Volodymyr, et al. &quot;<strong>Human-level control through deep reinforcement learning</strong>.&quot; Nature 518.7540 (2015): 529-533.&nbsp;[pdf]&nbsp;(里程碑)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[47]&nbsp;Wang, Ziyu, Nando de Freitas, and Marc Lanctot. &quot;<strong>Dueling network architectures for deep reinforcement learning.</strong>&quot; arXiv preprint arXiv:1511.06581 (2015).&nbsp;[pdf]&nbsp;(ICLR 最佳论文，很棒的想法)&nbsp;<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://arxiv.org/pdf/1511.06581</p><p><span style="color: rgb(227, 108, 9);">█</span>[48]&nbsp;Mnih, Volodymyr, et al. &quot;<strong>Asynchronous methods for deep reinforcement learning.</strong>&quot; arXiv preprint arXiv:1602.01783 (2016).&nbsp;[pdf]&nbsp;(前沿方法)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：http://arxiv.org/pdf/1602.01783</p><p><span style="color: rgb(227, 108, 9);">█</span>[49]&nbsp;Lillicrap, Timothy P., et al. &quot;<strong>Continuous control with deep reinforcement learning.</strong>&quot; arXiv preprint arXiv:1509.02971 (2015).&nbsp;[pdf]&nbsp;(DDPG)&nbsp;<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://arxiv.org/pdf/1509.02971</p><p><span style="color: rgb(227, 108, 9);">█</span>[50]&nbsp;Gu, Shixiang, et al. &quot;<strong>Continuous Deep Q-Learning with Model-based Acceleration.</strong>&quot; arXiv preprint arXiv:1603.00748 (2016).&nbsp;[pdf]&nbsp;(NAF)&nbsp;<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://arxiv.org/pdf/1603.00748</p><p><span style="color: rgb(227, 108, 9);">█</span>[51]&nbsp;Schulman, John, et al. &quot;<strong>Trust region policy optimization.</strong>&quot; CoRR, abs/1502.05477 (2015).&nbsp;[pdf]&nbsp;(TRPO)&nbsp;<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://www.jmlr.org/proceedings/papers/v37/schulman15.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[52]&nbsp;Silver, David, et al. &quot;<strong>Mastering the game of Go with deep neural networks and tree search.</strong>&quot; Nature 529.7587 (2016): 484-489.&nbsp;[pdf]&nbsp;(AlphaGo)<span style="color: rgb(255, 192, 0);">&nbsp;★★★★★</span></p><p>地址：http://willamette.edu/~levenick/cs448/goNature.pdf</p><h3><span style="color: rgb(227, 108, 9);">2.7 深度迁移学习 /终生学习 / 强化学习</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[53]&nbsp;Bengio, Yoshua. &quot;<strong>Deep Learning of Representations for Unsupervised and Transfer Learning</strong>.&quot; ICML Unsupervised and Transfer Learning 27 (2012): 17-36.&nbsp;[pdf]&nbsp;(这是一个教程)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://www.jmlr.org/proceedings/papers/v27/bengio12a/bengio12a.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[54]&nbsp;Silver, Daniel L., Qiang Yang, and Lianghao Li. &quot;<strong>Lifelong Machine Learning Systems: Beyond Learning Algorithms.</strong>&quot; AAAI Spring Symposium: Lifelong Machine Learning. 2013.&nbsp;[pdf]&nbsp;(对终生学习的简单讨论)<span style="color: rgb(255, 192, 0);">&nbsp;★★★</span></p><p>地址：http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.696.7800&amp;rep=rep1&amp;type=pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[55]&nbsp;Hinton, Geoffrey, Oriol Vinyals, and Jeff Dean. &quot;<strong>Distilling the knowledge in a neural network.</strong>&quot; arXiv preprint arXiv:1503.02531 (2015).&nbsp;[pdf]&nbsp;(大神们的研究)&nbsp;<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://arxiv.org/pdf/1503.02531</p><p><span style="color: rgb(227, 108, 9);">█</span>[56]&nbsp;Rusu, Andrei A., et al. &quot;<strong>Policy distillation.</strong>&quot; arXiv preprint arXiv:1511.06295 (2015).&nbsp;[pdf]&nbsp;(RL 领域)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://arxiv.org/pdf/1511.06295</p><p><span style="color: rgb(227, 108, 9);">█</span>[57]&nbsp;Parisotto, Emilio, Jimmy Lei Ba, and Ruslan Salakhu★★★tdinov. &quot;<strong>Actor-mimic: Deep multitask and transfer reinforcement learning.</strong>&quot; arXiv preprint arXiv:1511.06342 (2015).&nbsp;[pdf]&nbsp;(RL 领域)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://arxiv.org/pdf/1511.06342</p><p><span style="color: rgb(227, 108, 9);">█</span>[58]&nbsp;Rusu, Andrei A., et al. &quot;<strong>Progressive neural networks.</strong>&quot; arXiv preprint arXiv:1606.04671 (2016).&nbsp;[pdf]&nbsp;(杰出研究, 很新奇的想法)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://arxiv.org/pdf/1606.04671</p><h3><span style="color: rgb(227, 108, 9);">2.8 One Shot 深度学习</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[59]&nbsp;Lake, Brenden M., Ruslan Salakhutdinov, and Joshua B. Tenenbaum. &quot;<strong>Human-level concept learning through probabilistic program induction.</strong>&quot; Science 350.6266 (2015): 1332-1338.&nbsp;[pdf]&nbsp;(不含深度学习但值得一读)<span style="color: rgb(255, 192, 0);">&nbsp;★★★★★</span></p><p>地址：http://clm.utexas.edu/compjclub/wp-content/uploads/2016/02/lake2015.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[60]&nbsp;Koch, Gregory, Richard Zemel, and Ruslan Salakhutdinov. &quot;<strong>Siamese Neural Networks for One-shot Image Recognition.</strong>&quot;(2015)&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://www.cs.utoronto.ca/~gkoch/files/msc-thesis.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[61]&nbsp;Santoro, Adam, et al. &quot;<strong>One-shot Learning with Memory-Augmented Neural Networks.</strong>&quot; arXiv preprint arXiv:1605.06065 (2016).&nbsp;[pdf]&nbsp;(one shot 学习的基础一步)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1605.06065</p><p><span style="color: rgb(227, 108, 9);">█</span>[62]&nbsp;Vinyals, Oriol, et al. &quot;<strong>Matching Networks for One Shot Learning.</strong>&quot; arXiv preprint arXiv:1606.04080 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/pdf/1606.04080</p><p><span style="color: rgb(227, 108, 9);">█</span>[63]&nbsp;Hariharan, Bharath, and Ross Girshick. &quot;<strong>Low-shot visual object recognition.</strong>&quot; arXiv preprint arXiv:1606.02819 (2016).&nbsp;[pdf] (通向更大规模数据的一步)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1606.02819</p><h2>3 应用</h2><h3><span style="color: rgb(227, 108, 9);">3.1 自然语言处理 (NLP)</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;Antoine Bordes, et al. &quot;<strong>Joint Learning of Words and Meaning Representations for Open-Text Semantic Parsing.</strong>&quot; AISTATS(2012)&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://www.hds.utc.fr/~bordesan/dokuwiki/lib/exe/fetch.php?id=en%3Apubli&amp;cache=cache&amp;media=en:bordes12aistats.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;Mikolov, et al. &quot;<strong>Distributed representations of words and phrases and their compositionality.</strong>&quot; ANIPS(2013): 3111-3119&nbsp;[pdf]&nbsp;(word2vec)<span style="color: rgb(255, 192, 0);">&nbsp;★★★</span></p><p>地址：http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;Sutskever, et al. &quot;“<strong>Sequence to sequence learning with neural networks.</strong>&quot; ANIPS(2014)&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★&nbsp;</span></p><p>地址：http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[4]&nbsp;Ankit Kumar, et al. &quot;“<strong>Ask Me Anything: Dynamic Memory Networks for Natural Language Processing.</strong>&quot; arXiv preprint arXiv:1506.07285(2015)&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/abs/1506.07285</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Yoon Kim, et al. &quot;<strong>Character-Aware Neural Language Models.</strong>&quot; NIPS(2015) arXiv preprint arXiv:1508.06615(2015)&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/abs/1508.06615</p><p><span style="color: rgb(227, 108, 9);">█</span>[6]&nbsp;Jason Weston, et al. &quot;<strong>Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks.</strong>&quot; arXiv preprint arXiv:1502.05698(2015)&nbsp;[pdf]&nbsp;(bAbI tasks)<span style="color: rgb(255, 192, 0);">&nbsp;★★★</span></p><p>地址：https://arxiv.org/abs/1502.05698</p><p><span style="color: rgb(227, 108, 9);">█</span>[7]&nbsp;Karl Moritz Hermann, et al. &quot;<strong>Teaching Machines to Read and Comprehend.</strong>&quot; arXiv preprint arXiv:1506.03340(2015)&nbsp;[pdf](CNN/每日邮报完形填空风格的问题)&nbsp;<span style="color: rgb(255, 192, 0);">★★</span></p><p>地址：https://arxiv.org/abs/1506.03340</p><p><span style="color: rgb(227, 108, 9);">█</span>[8]&nbsp;Alexis Conneau, et al. &quot;<strong>Very Deep Convolutional Networks for Natural Language Processing.</strong>&quot; arXiv preprint arXiv:1606.01781(2016)&nbsp;[pdf]&nbsp;(文本分类的前沿技术)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/abs/1606.01781</p><p><span style="color: rgb(227, 108, 9);">█</span>[9]&nbsp;Armand Joulin, et al. &quot;<strong>Bag of Tricks for Efficient Text Classification.</strong>&quot; arXiv preprint arXiv:1607.01759(2016)&nbsp;[pdf]&nbsp;(比前沿技术稍落后, 但快很多)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/abs/1607.01759</p><h3><span style="color: rgb(227, 108, 9);">3.2 物体检测</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;Szegedy, Christian, Alexander Toshev, and Dumitru Erhan. &quot;<strong>Deep neural networks for object detection</strong>.&quot; Advances in Neural Information Processing Systems. 2013.&nbsp;[pdf]<span style="color: rgb(255, 192, 0);">&nbsp;★★★</span></p><p>地址：http://papers.nips.cc/paper/5207-deep-neural-networks-for-object-detection.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;Girshick, Ross, et al. &quot;<strong>Rich feature hierarchies for accurate object detection and semantic segmentation.</strong>&quot; Proceedings of the IEEE conference on computer vision and pattern recognition. 2014.&nbsp;[pdf]&nbsp;(RCNN)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;He, Kaiming, et al. &quot;<strong>Spatial pyramid pooling in deep convolutional networks for visual recognition.</strong>&quot; European Conference on Computer Vision. Springer International Publishing, 2014.&nbsp;[pdf]&nbsp;(SPPNet)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1406.4729</p><p><span style="color: rgb(227, 108, 9);">█</span>[4]&nbsp;Girshick, Ross. &quot;<strong>Fast r-cnn.</strong>&quot; Proceedings of the IEEE International Conference on Computer Vision. 2015.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://pdfs.semanticscholar.org/8f67/64a59f0d17081f2a2a9d06f4ed1cdea1a0ad.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Ren, Shaoqing, et al. &quot;<strong>Faster R-CNN: Towards real-time object detection with region proposal networks.</strong>&quot; Advances in neural information processing systems. 2015.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://papers.nips.cc/paper/5638-analysis-of-variational-bayesian-latent-dirichlet-allocation-weaker-sparsity-than-map.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[6]&nbsp;Redmon, Joseph, et al. &quot;<strong>You only look once: Unified, real-time object detection.</strong>&quot; arXiv preprint arXiv:1506.02640 (2015).&nbsp;[pdf]&nbsp;(YOLO，杰出研究，非常具有使用价值）<span style="color: rgb(255, 192, 0);">&nbsp;★★★★★</span></p><p>地址：http://homes.cs.washington.edu/~ali/papers/YOLO.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[7]&nbsp;Liu, Wei, et al. &quot;<strong>SSD: Single Shot MultiBox Detector.</strong>&quot; arXiv preprint arXiv:1512.02325 (2015).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://arxiv.org/pdf/1512.02325</p><p><span style="color: rgb(227, 108, 9);">█</span>[8]&nbsp;Dai, Jifeng, et al. &quot;<strong>R-FCN: Object Detection via Region-based Fully Convolutional Networks.</strong>&quot; arXiv preprint arXiv:1605.06409 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/abs/1605.06409</p><h3><span style="color: rgb(227, 108, 9);">3.3 视觉追踪</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;Wang, Naiyan, and Dit-Yan Yeung. &quot;<strong>Learning a deep compact image representation for visual tracking.</strong>&quot; Advances in neural information processing systems. 2013.&nbsp;[pdf]&nbsp;(第一篇使用深度学习做视觉追踪的论文，DLT Tracker)&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://papers.nips.cc/paper/5192-learning-a-deep-compact-image-representation-for-visual-tracking.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;Wang, Naiyan, et al. &quot;<strong>Transferring rich feature hierarchies for robust visual tracking.</strong>&quot; arXiv preprint arXiv:1501.04587 (2015).&nbsp;[pdf]&nbsp;(SO-DLT)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1501.04587</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;Wang, Lijun, et al. &quot;<strong>Visual tracking with fully convolutional networks.</strong>&quot; Proceedings of the IEEE International Conference on Computer Vision. 2015.&nbsp;[pdf]&nbsp;(FCNT)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Wang_Visual_Tracking_With_ICCV_2015_paper.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[4]&nbsp;Held, David, Sebastian Thrun, and Silvio Savarese. &quot;<strong>Learning to Track at 100 FPS with Deep Regression Networks.</strong>&quot; arXiv preprint arXiv:1604.01802 (2016).&nbsp;[pdf]&nbsp;(GOTURN，在深度学习方法里算是非常快的，但仍比非深度学习方法慢很多)<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://arxiv.org/pdf/1604.01802</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Bertinetto, Luca, et al. &quot;<strong>Fully-Convolutional Siamese Networks for Object Tracking.</strong>&quot; arXiv preprint arXiv:1606.09549 (2016).&nbsp;[pdf]&nbsp;(SiameseFC，实时物体追踪领域的最新前沿技术)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1606.09549</p><p><span style="color: rgb(227, 108, 9);">█</span>[6]&nbsp;Martin Danelljan, Andreas Robinson, Fahad Khan, Michael Felsberg. &quot;<strong>Beyond Correlation Filters: Learning Continuous Convolution Operators for Visual Tracking.</strong>&quot; ECCV (2016)&nbsp;[pdf]&nbsp;(C-COT)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://www.cvl.isy.liu.se/research/objrec/visualtracking/conttrack/C-COT_ECCV16.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[7]&nbsp;Nam, Hyeonseob, Mooyeol Baek, and Bohyung Han. &quot;<strong>Modeling and Propagating CNNs in a Tree Structure for Visual Tracking.</strong>&quot; arXiv preprint arXiv:1608.07242 (2016).&nbsp;[pdf]&nbsp;(VOT2016 获奖论文,TCNN)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1608.07242</p><h3><span style="color: rgb(227, 108, 9);">3.4 图像标注</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;Farhadi,Ali,etal. &quot;<strong>Every picture tells a story: Generating sentences from images</strong>&quot;. In Computer VisionECCV 2010. Springer Berlin Heidelberg:15-29, 2010.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://www.cs.cmu.edu/~afarhadi/papers/sentence.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;Kulkarni, Girish, et al. &quot;<strong>Baby talk: Understanding and generating image descriptions</strong>&quot;. In Proceedings of the 24th CVPR, 2011.&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://tamaraberg.com/papers/generation_cvpr11.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;Vinyals, Oriol, et al. &quot;<strong>Show and tell: A neural image caption generator</strong>&quot;. In arXiv preprint arXiv:1411.4555, 2014.&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/pdf/1411.4555.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[4]&nbsp;Donahue, Jeff, et al. &quot;<strong>Long-term recurrent convolutional networks for visual recognition and description</strong>&quot;. In arXiv preprint arXiv:1411.4389 ,2014.&nbsp;[pdf]&nbsp;</p><p>地址：https://arxiv.org/pdf/1411.4389.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Karpathy, Andrej, and Li Fei-Fei. &quot;<strong>Deep visual-semantic alignments for generating image descriptions</strong>&quot;. In arXiv preprint arXiv:1412.2306, 2014.&nbsp;[pdf]<span style="color: rgb(255, 192, 0);"> ★★★★★</span></p><p>地址：https://cs.stanford.edu/people/karpathy/cvpr2015.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[6]&nbsp;Karpathy, Andrej, Armand Joulin, and Fei Fei F. Li. &quot;<strong>D</strong><strong>eep fragment embeddings for bidirectional image sentence mapping</strong>&quot;. In Advances in neural information processing systems, 2014.&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1406.5679v1.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[7]&nbsp;Fang, Hao, et al. &quot;<strong>From captions to visual concepts and back</strong>&quot;. In arXiv preprint arXiv:1411.4952, 2014.&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://arxiv.org/pdf/1411.4952v3.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[8]&nbsp;Chen, Xinlei, and C. Lawrence Zitnick. &quot;<strong>Learning a recurrent visual representation for image caption generation</strong>&quot;. In arXiv preprint arXiv:1411.5654, 2014.&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1411.5654v1.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[9]&nbsp;Mao, Junhua, et al. &quot;<strong>Deep captioning with multimodal recurrent neural networks (m-rnn)</strong>&quot;. In arXiv preprint arXiv:1412.6632, 2014.&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/pdf/1412.6632v5.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[10]&nbsp;Xu, Kelvin, et al. &quot;<strong>Show, attend and tell: Neural image caption generation with visual attention</strong>&quot;. In arXiv preprint arXiv:1502.03044, 2015.&nbsp;[pdf]<span style="color: rgb(255, 192, 0);"> ★★★★★</span></p><p>地址：https://arxiv.org/pdf/1502.03044v3.pdf</p><h3><span style="color: rgb(227, 108, 9);">3.5 机器翻译</span></h3><p>部分里程碑研究被列入 RNN / Seq-to-Seq 版块。</p><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;Luong, Minh-Thang, et al. &quot;<strong>Addressing the rare word problem in neural machine translation.</strong>&quot; arXiv preprint arXiv:1410.8206 (2014).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1410.8206</p><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;Sennrich, et al. <strong>&quot;Neural Machine Translation of Rare Words with Subword Units</strong>&quot;. In arXiv preprint arXiv:1508.07909, 2015.&nbsp;[pdf] <span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/pdf/1508.07909.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;Luong, Minh-Thang, Hieu Pham, and Christopher D. Manning. &quot;<strong>Effective approaches to attention-based neural machine translation</strong>.&quot; arXiv preprint arXiv:1508.04025 (2015).&nbsp;[pdf]<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://arxiv.org/pdf/1508.04025</p><p><span style="color: rgb(227, 108, 9);"><strong>█</strong></span>[4]&nbsp;Chung, et al. &quot;<strong>A Character-Level Decoder without Explicit Segmentation for Neural Machine Translation</strong>&quot;. In arXiv preprint arXiv:1603.06147, 2016.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★</span></p><p>地址：https://arxiv.org/pdf/1603.06147.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Lee, et al. &quot;<strong>Fully Character-Level Neural Machine Translation without Explicit Segmentation</strong>&quot;. In arXiv preprint arXiv:1610.03017, 2016.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://arxiv.org/pdf/1610.03017.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[6]&nbsp;Wu, Schuster, Chen, Le, et al. &quot;<strong>Google&#39;s Neural Machine Translation System: Bridging the Gap between Human and Machine Translation</strong>&quot;. In arXiv preprint arXiv:1609.08144v2, 2016.&nbsp;[pdf]&nbsp;(Milestone)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1609.08144v2.pdf</p><h3><span style="color: rgb(227, 108, 9);">3.6 机器人</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;Koutník, Jan, et al. &quot;<strong>Evolving large-scale neural networks for vision-based reinforcement learning.</strong>&quot; Proceedings of the 15th annual conference on Genetic and evolutionary computation. ACM, 2013.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://repository.supsi.ch/4550/1/koutnik2013gecco.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;Levine, Sergey, et al. &quot;<strong>End-to-end training of deep visuomotor policies.</strong>&quot; Journal of Machine Learning Research 17.39 (2016): 1-40.&nbsp;[pdf]<span style="color: rgb(255, 192, 0);">&nbsp;★★★★★</span></p><p>地址：http://www.jmlr.org/papers/volume17/15-522/15-522.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;Pinto, Lerrel, and Abhinav Gupta. &quot;<strong>Supersizing self-supervision: Learning to grasp from 50k tries and 700 robot hours.</strong>&quot; arXiv preprint arXiv:1509.06825 (2015).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：http://arxiv.org/pdf/1509.06825</p><p><span style="color: rgb(227, 108, 9);">█</span>[4]&nbsp;Levine, Sergey, et al. &quot;<strong>Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection</strong>.&quot; arXiv preprint arXiv:1603.02199 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1603.02199</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Zhu, Yuke, et al. &quot;<strong>Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning.</strong>&quot; arXiv preprint arXiv:1609.05143 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1609.05143</p><p><span style="color: rgb(227, 108, 9);">█</span>[6]&nbsp;Yahya, Ali, et al. &quot;<strong>Collective Robot Reinforcement Learning with Distributed Asynchronous Guided Policy Search.</strong>&quot; arXiv preprint arXiv:1610.00673 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1610.00673</p><p><span style="color: rgb(227, 108, 9);">█</span>[7]&nbsp;Gu, Shixiang, et al. &quot;<strong>Deep Reinforcement Learning for Robotic Manipulation.</strong>&quot; arXiv preprint arXiv:1610.00633 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1610.00633</p><p><span style="color: rgb(227, 108, 9);">█</span>[8]&nbsp;A Rusu, M Vecerik, Thomas Rothörl, N Heess, R Pascanu, R Hadsell.&quot;<strong>Sim-to-Real Robot Learning from Pixels with Progressive Nets.</strong>&quot; arXiv preprint arXiv:1610.04286 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1610.04286.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[9]&nbsp;Mirowski, Piotr, et al. &quot;<strong>Learning to navigate in complex environments.</strong>&quot; arXiv preprint arXiv:1611.03673 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1611.03673</p><h3><span style="color: rgb(227, 108, 9);">3.7 艺术</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;Mordvintsev, Alexander; Olah, Christopher; Tyka, Mike (2015). &quot;<strong>Inceptionism: Going Deeper into Neural Networks</strong>&quot;. Google Research.&nbsp;[html]&nbsp;(Deep Dream)<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html</p><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;Gatys, Leon A., Alexander S. Ecker, and Matthias Bethge. &quot;<strong>A neural algorithm of artistic style.</strong>&quot; arXiv preprint arXiv:1508.06576 (2015).&nbsp;[pdf]&nbsp;(杰出研究，迄今最成功的方法)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：http://arxiv.org/pdf/1508.06576</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;Zhu, Jun-Yan, et al. &quot;<strong>Generative Visual Manipulation on the Natural Image Manifold.</strong>&quot; European Conference on Computer Vision. Springer International Publishing, 2016.&nbsp;[pdf]&nbsp;(iGAN)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1609.03552</p><p><span style="color: rgb(227, 108, 9);">█</span>[4]&nbsp;Champandard, Alex J. &quot;<strong>Semantic Style Transfer and Turning Two-Bit Doodles into Fine Artworks.</strong>&quot; arXiv preprint arXiv:1603.01768 (2016).&nbsp;[pdf]&nbsp;(Neural Doodle)<span style="color: rgb(255, 192, 0);">&nbsp;★★★★</span></p><p>地址：http://arxiv.org/pdf/1603.01768</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Zhang, Richard, Phillip Isola, and Alexei A. Efros. &quot;<strong>Colorful Image Colorization</strong>.&quot; arXiv preprint arXiv:1603.08511 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：http://arxiv.org/pdf/1603.08511</p><p><span style="color: rgb(227, 108, 9);">█</span>[6]&nbsp;Johnson, Justin, Alexandre Alahi, and Li Fei-Fei. &quot;<strong>Perceptual losses for real-time style transfer and super-resolution</strong>.&quot; arXiv preprint arXiv:1603.08155 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1603.08155.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[7]&nbsp;Vincent Dumoulin, Jonathon Shlens and Manjunath Kudlur. &quot;<strong>A learned representation for artistic style.</strong>&quot; arXiv preprint arXiv:1610.07629 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1610.00633</p><p><span style="color: rgb(227, 108, 9);">█</span>[8]&nbsp;Gatys, Leon and Ecker, et al.&quot;<strong>Controlling Perceptual Factors in Neural Style Transfer.</strong>&quot; arXiv preprint arXiv:1611.07865 (2016).&nbsp;[pdf]&nbsp;(control style transfer over spatial location,colour information and across spatial scale) <span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1610.04286.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[9]&nbsp;Ulyanov, Dmitry and Lebedev, Vadim, et al. &quot;<strong>Texture Networks: Feed-forward Synthesis of Textures and Stylized Images.</strong>&quot; arXiv preprint arXiv:1603.03417(2016).&nbsp;[pdf]&nbsp;(纹理生成和风格变化)&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1611.03673</p><h3><span style="color: rgb(227, 108, 9);">3.8 目标分割 Object Segmentation</span></h3><p><span style="color: rgb(227, 108, 9);">█</span>[1]&nbsp;J. Long, E. Shelhamer, and T. Darrell, “<strong>Fully convolutional networks for semantic segmentation.</strong>” in CVPR, 2015.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://arxiv.org/pdf/1411.4038v2.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[2]&nbsp;L.-C. Chen, G. Papandreou, I. Kokkinos, K. Murphy, and A. L. Yuille. &quot;<strong>Semantic image segmentation with deep convolutional nets and fully connected crfs.</strong>&quot; In ICLR, 2015.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★★</span></p><p>地址：https://arxiv.org/pdf/1606.00915v1.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[3]&nbsp;Pinheiro, P.O., Collobert, R., Dollar, P. &quot;<strong>Learning to segment object candidates.</strong>&quot; In: NIPS. 2015.&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★★</span></p><p>地址：https://arxiv.org/pdf/1506.06204v2.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[4]&nbsp;Dai, J., He, K., Sun, J. <strong>&quot;Instance-aware semantic segmentation via multi-task network cascades.</strong>&quot; in CVPR. 2016&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/pdf/1512.04412v1.pdf</p><p><span style="color: rgb(227, 108, 9);">█</span>[5]&nbsp;Dai, J., He, K., Sun, J. &quot;<strong>Instance-sensitive Fully Convolutional Networks.</strong>&quot; arXiv preprint arXiv:1603.08678 (2016).&nbsp;[pdf]&nbsp;<span style="color: rgb(255, 192, 0);">★★★</span></p><p>地址：https://arxiv.org/pdf/1603.08678v1.pdf</p><p>原文地址：<a href="https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap" target="_blank" rel=nofollow>https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap</a>&nbsp;<span style="color: rgb(255, 255, 255);">雷锋网获授权雷锋网获授权</span></p><p>相关文章：</p><p><a href="https://www.leiphone.com/news/201702/tm0oUsOzK8zuVo8K.html" target="_self">深度学习盛会ICLR2017最佳论文都是啥？，雷锋网带你5min过重点（附论文链接）</a><br></p><p><a href="https://www.leiphone.com/news/201702/NcdoDmmOn1RgeCIL.html" target="_self">深度学习全网最全学习资料汇总之模型介绍篇</a><br></p><p><a href="https://www.leiphone.com/news/201702/lEzldG25aOk6mEcf.html" target="_self">深度学习全网最全学习资料汇总之入门篇</a><br></p><p><a href="https://www.leiphone.com/news/201701/LqwiP7VUJO9DgBPi.html" target="_self">深度学习零基础进阶第四弹​｜干货分享</a><br></p>
+                                                <p>雷锋网版权文章，未经授权禁止转载。详情见<a href="http://dwz.cn/4ErMxZ" rel="nofollow" target="_blank">转载须知</a>。</p>
+                                               
+                                                <!-- 正文内容结束 -->
+                    </div>
+
+                    <!-- 分享 -->
+                    <div class="pageActive clr">
+                        <div class="mark-like-btn ">
+                            <a class="collect collect-no" href="javascript:;"><i></i><span>24</span>人收藏</a>
+                        </div>
+                        <!-- Baidu Button BEGIN -->
+                        <div  class="bdsharebuttonbox"  data-tag="share_162070">
+                            <span class="s-txt">分享：</span>
+                            <a href="javascript:void()" onclick="openYNote('https://www.leiphone.com/news/201702/FWkJ2AdpyQRft3vW.html','126篇殿堂级深度学习论文分类整理 从入门到应用 | 干货', 'https://static.leiphone.com/uploads/new/article/pic/201703/58b7f087eedb3.jpg','leiphone','126篇殿堂级深度学习论文分类整理 从入门到应用 | 干货')" class="youdao " title="收藏此篇文章到有道云笔记"><i></i></a>
+                            <a class="bds_tsina weibo-btn  " data-cmd="tsina"  title="分享到新浪微博"></a>
+                            <a class="weixin-btn bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                            <a class="bds_more more-btn" data-cmd="more"></a>
+                        </div>
+                        <script type="text/javascript">
+                            //在这里定义bds_config
+                            // var bds_config = {'snsKey':{'tsina':'2475906690'}};
+                            // var qcode = {
+                            //     api : "http://qr.liantu.com/api.php?text=",
+                            //     url :  window.location.href,
+                            //     exist : false,
+                            //     create : function(){
+                            //         if(!this.exist){
+                            //             var image = document.createElement('img');
+                            //             image.src = this.api + this.url;
+                            //             image.width = 120;
+                            //             this.exist = true;
+                            //             return image;
+                            //         }
+                            //     }
+                            // };
+                        </script>
+
+                    </div>
+                    <!-- 相关文章 -->
+                    <!-- 相关文章 start -->
+<div class="realted-article clr">
+    <div class="title clr">
+        <span class='fl'>相关文章</span>
+    </div>
+    <div class="related-link clr">
+                         <a href="https://www.leiphone.com/tag/深度学习 论文" target="_blank" title="深度学习 论文">深度学习 论文</a>
+                     </div>
+    <div class="list">
+        <ul>
+                        <li  class="first" >
+                <a href="https://www.leiphone.com/news/201703/9AZo0SqvN7q06jfP.html" target="_blank" class="pic">
+                    <img src="https://static.leiphone.com/uploads/new/article/pic/201703/58d891f6644c8.png?imageMogr2/thumbnail/!170x100r/gravity/Center/crop/170x100/quality/90" alt=""  width="170" height="100" />
+                </a>
+                <div class="txt">
+                    <a href="https://www.leiphone.com/news/201703/9AZo0SqvN7q06jfP.html" target="_blank">引用次数最多的深度学习论文出自谁手？（最优化/训练 ...</a>
+                </div>
+            </li>
+                        <li >
+                <a href="https://www.leiphone.com/news/201703/95FMjEk58w86LoZZ.html" target="_blank" class="pic">
+                    <img src="https://static.leiphone.com/uploads/new/article/pic/201704/58df64fddc6ba.png?imageMogr2/thumbnail/!170x100r/gravity/Center/crop/170x100/quality/90" alt=""  width="170" height="100" />
+                </a>
+                <div class="txt">
+                    <a href="https://www.leiphone.com/news/201703/95FMjEk58w86LoZZ.html" target="_blank">引用次数最多的深度学习论文出自谁手？（无监督学习 ...</a>
+                </div>
+            </li>
+                        <li >
+                <a href="https://www.leiphone.com/news/201703/7dlbW1hI01UL5AJY.html" target="_blank" class="pic">
+                    <img src="https://static.leiphone.com/uploads/new/article/pic/201703/58ca622c6d691.png?imageMogr2/thumbnail/!170x100r/gravity/Center/crop/170x100/quality/90" alt=""  width="170" height="100" />
+                </a>
+                <div class="txt">
+                    <a href="https://www.leiphone.com/news/201703/7dlbW1hI01UL5AJY.html" target="_blank">引用次数最多的七篇深度学习论文出自谁手？Hinton、 ...</a>
+                </div>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+<!-- 相关文章 end -->
+
+
+                    <!-- 推荐文章 -->
+                    <div class="realted-article clr recmdArticle" data-article_id="162070">
+                        <div class="list">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 广告 -->
+                    
+                    <!-- 文章 评论  -->
+                    <!-- 评论 -->
+<div class="article-comment lp-comment" id="lph-comment-162070">
+    <div class="useComJs" >
+        <!-- <input id="lp_item_id" type="hidden" name="item_id" value="162070">
+        <input id="lp_item_type" type="hidden" name="type" value="2"> -->
+
+        <div class="h2 clr">
+            <h2>文章点评：</h2>
+            <!-- <strong class="h2-tip">
+                （您需要<a class="c-log" href="javascript:openPop('#lp-login-pop');">登录</a>后才能评论 <a href="https://home.leiphone.com/main/register" class="c-reg">没有账号</a> ？）</strong>
+            -->        
+        </div>
+        <div class="submit clr commentForm" id="">
+            <div class="text">
+                <textarea name="Comment[content]" placeholder="我有话要说……" ></textarea>
+            </div>
+            <div class="sub clr publishtosina">
+                <span class="emotionc emotion0" data-emotion="0">表情</span>
+                <label><input id="" type="checkbox" name="pushForWeibo"> 同步到新浪微博</label>
+                <div class="qqFace" style="position:absolute; display:none; z-index:10"></div>
+                <button type="submit" title="提交">提交</button>
+            </div>
+        </div>
+        <!-- <div class="jcWords">
+            <h3><strong>精彩评论</strong></h3>
+            <ul class="comment-say">
+                
+            </ul>
+        </div>
+        <div class="words">
+            <h3><strong>最新评论</strong><span></span>条评论<i></i></h3>
+            <ul class="comment-say">
+                
+            </ul>
+            <div id="comment-say-more" class="comment-say-more">
+
+                <span>加载更多</span>
+                <em>没有更多了</em>
+
+            </div>
+        </div> -->
+    </div>
+</div>
+<!-- 评论 -->
+
+
+
+                </div>
+
+                <script>
+    var codeAuthor_id   = "sanchuan441";
+    var author_id       = "23732";
+</script>
+<div class="article-right">
+        <div class="aboutAur-main">
+        <div class="aboutAur-msg">
+            <a href="https://www.leiphone.com/author/sanchuan441" class="avater" target="_blank" rel="nofollow">
+                <img src="https://www.leiphone.com/uploads/new/avatar/author_avatar/583916c1736ec_100_100.png" alt=""  width="80" height="80" />
+            </a>
+            <div class="name">
+                <a href="https://www.leiphone.com/author/sanchuan441" target="_blank" rel="nofollow"><span>三川</span><em class='gold'></em></a>
+            </div>
+            <p class='profession'>  </p>
+            <div class="saying">
+                <em class='l-quote'></em>
+                <span>用爱救世界</span>
+                <em class='r-quote'></em>
+            </div>
+            <div class="operate-btn">
+                <table>
+                    <tr>
+                                                                        <td>
+                            <a href="mailto:chengsanchuan@leiphone.com" class="eml sub_a" rel="nofollow"><em></em></a>
+                        </td>
+                                                                    </tr>
+                </table>
+            </div>
+            <div class="btns">
+                <a href="javascript:;">发私信</a>
+            </div>
+        </div>
+
+
+        <!-- 作者的文章 -->
+        
+<div class="mouthHot-article">
+    <div class="title">当月热门文章</div>
+        <div class="list">
+            <ul>
+                    </ul>
+    </div>
+</div>
+       <!-- 作者文章结束 -->
+    </div>
+
+            <div class="weekly-choice hotNew-article">
+        <div class="rComTitle">
+            最新文章
+        </div>
+        <div class="list">
+            <ul class="justTxt">
+                                    <li>
+                        <a href="https://www.leiphone.com/news/201811/z85QdV0C3bhvShZD.html" target="_blank">
+                            <em></em>CIKM AnalytiCup 2018冠军方案出炉，看他们构造模型的诀窍 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/news/201811/Aq44kvDlQuc8jENm.html" target="_blank">
+                            <em></em>干货 | BERT fine-tune 终极实践教程 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/news/201809/FZM8dsm5CcQpmnNT.html" target="_blank">
+                            <em></em>清华大学韩旭：神经关系抽取模型 | AI研习社71期大讲堂 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/news/201809/zVI1pdC3oL3S6oXK.html" target="_blank">
+                            <em></em>吸引 7198 支队伍参赛，看 Kaggle 信用预估比赛冠军方案 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/news/201809/6T23aH3sevzHbeJR.html" target="_blank">
+                            <em></em>百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读 |  ECCV 2018 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/news/201809/QxOKclpJ6buroqrn.html" target="_blank">
+                            <em></em>清华大学王延森：如何利用提问增强开放领域对话系统互动性 | AI研习社66期大讲堂 </a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+        <div class="serKesy-list">
+    <div class="rComTitle">
+        热门搜索
+    </div>
+    <div class="list clr">
+                <a href="https://www.leiphone.com/tag/华为" target="_blank">华为</a>
+                <a href="https://www.leiphone.com/tag/智能手表" target="_blank">智能手表</a>
+                <a href="https://www.leiphone.com/tag/漏洞" target="_blank">漏洞</a>
+                <a href="https://www.leiphone.com/tag/NLP" target="_blank">NLP</a>
+                <a href="https://www.leiphone.com/tag/LinkedIn" target="_blank">LinkedIn</a>
+                <a href="https://www.leiphone.com/tag/ARM" target="_blank">ARM</a>
+                <a href="https://www.leiphone.com/tag/设计" target="_blank">设计</a>
+                <a href="https://www.leiphone.com/tag/Google play" target="_blank">Google play</a>
+                <a href="https://www.leiphone.com/tag/Apps" target="_blank">Apps</a>
+                <a href="https://www.leiphone.com/tag/Nexus 7" target="_blank">Nexus 7</a>
+                <a href="https://www.leiphone.com/tag/Whatsapp" target="_blank">Whatsapp</a>
+            </div>
+</div>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="lineBg"></div>
+    <!-- 百度分享 -->
+    <script>
+
+        window._bd_share_config = {
+            common:{
+                bdMiniList:['tsina','weixin','more']
+            },
+            share : [
+                {
+                    bdText : '126篇殿堂级深度学习论文分类整理 从入门到应用 | 干货',
+                    bdDesc : '126篇殿堂级深度学习论文分类整理 从入门到应用 | 干货',
+                    bdUrl : 'https://www.leiphone.com/news/201702/FWkJ2AdpyQRft3vW.html',
+                    bdPic : 'https://static.leiphone.com/uploads/new/article/pic/201703/58b7f087eedb3.jpg',
+                    "tag" : "share_162070",
+                    "bdSize" : 24
+                },
+            ],
+        }
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://www.leiphone.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+
+    </script>
+</div>
+
+
+
+<script>
+    function openYNote(url, title, pic, vendor, summary) {
+        var target = 'http://note.youdao.com/memory/?url=' + encodeURIComponent(url) +
+            '&title=' + encodeURIComponent(title) + '&pic=' + encodeURIComponent(pic) +
+            '&product=' + encodeURIComponent('网页收藏') +
+            '&summary=' + encodeURIComponent(summary) + '&vendor=' + encodeURIComponent(vendor);
+        window.open(target);
+    }
+  seajs.use(['https://www.leiphone.com/resWeb/js/article' , 'https://www.leiphone.com/resWeb/js/load_articles']);
+
+
+
+   // document.getElementById('weixin-qt').insertBefore(qcode.create(),document.getElementById('weixin-qt-msg'));
+</script>
+
+<footer class='yp-footer'>
+    <!-- 友情链接，热门关键字 -->
+    <div class="yp-footer-link">
+        <div class="wrapper">
+            <div class="tab_tit clr">
+                                <a href="javascript:;">热门关键字</a>
+            </div>
+            <div class="tab_con">
+                <ul>
+                                        
+                                        <li class="cur">
+                                        
+                                                                                            <a href="http://www.leiphone.com/tags" target="_blank">热门标签</a>                                                                    <a href="http://www.leiphone.com/tag/人工智能 " target="_blank">人工智能 </a>                                                                    <a href="https://www.leiphone.com/tag/机器人" target="_blank">机器人</a>                                                                    <a href="https://www.leiphone.com/tag/机器学习" target="_blank">机器学习</a>                                                                    <a href="https://www.leiphone.com/tag/深度学习" target="_blank">深度学习</a>                                                                    <a href="https://www.leiphone.com/tag/金融科技" target="_blank">金融科技</a>                                                                    <a href="https://www.leiphone.com/tag/未来医疗" target="_blank">未来医疗</a>                                                                    <a href="https://www.leiphone.com/tag/智能驾驶" target="_blank">智能驾驶</a>                                                                    <a href="https://www.leiphone.com/tag/自动驾驶" target="_blank">自动驾驶</a>                                                                    <a href="https://www.leiphone.com/tag/计算机视觉" target="_blank">计算机视觉</a>                                                                    <a href="https://www.leiphone.com/tag/激光雷达" target="_blank">激光雷达</a>                                                                    <a href="https://www.leiphone.com/tag/图像识别" target="_blank">图像识别</a>                                                                    <a href="https://www.leiphone.com/tag/智能音箱" target="_blank">智能音箱</a>                                                                    <a href="https://www.leiphone.com/tag/区块链" target="_blank">区块链</a>                                                                    <a href="https://www.leiphone.com/tag/智能投顾" target="_blank">智能投顾</a>                                                                    <a href="https://www.leiphone.com/tag/医学影像" target="_blank">医学影像</a>                                                                    <a href="https://www.leiphone.com/tag/物联网" target="_blank">物联网</a>                                                                    <a href="https://www.leiphone.com/tag/IoT" target="_blank">IoT</a>                                                                    <a href="https://www.leiphone.com/tag/CV" target="_blank">CV</a>                                                                    <a href="http://www.leiphone.com/special/235/201609/57e4fe78a71ea.html" target="_blank">微信小程序平台</a>                                                                    <a href="http://www.leiphone.com/news/201701/ri7dDB7Fq0mMj1qh.html" target="_blank">微信小程序在哪</a>                                                                    <a href="http://www.leiphone.com/tag/CES 2017" target="_blank">CES 2017</a>                                                                    <a href="http://www.leiphone.com/tag/CES" target="_blank">CES</a>                                                                    <a href="http://www.leiphone.com/tag/2016年最值得购买的智能硬件" target="_blank">2016年最值得购买的智能硬件</a>                                                                    <a href="http://www.leiphone.com/news/201612/sI2n04bJ5aVzS5Pr.html" target="_blank">2016 互联网</a>                                                                    <a href="http://www.leiphone.com/tag/小程序" target="_blank">小程序</a>                                                                    <a href="http://www.leiphone.com/tag/微信朋友圈" target="_blank">微信朋友圈</a>                                                                    <a href="http://www.leiphone.com/news/201612/J8qZLCwViDpwygen.html" target="_blank">抢票软件</a>                                                                    <a href="http://www.leiphone.com/tag/智能手机" target="_blank">智能手机</a>                                                                    <a href="http://www.leiphone.com/tag/智能家居" target="_blank">智能家居</a>                                                                    <a href="http://www.leiphone.com/tag/智能手环" target="_blank">智能手环</a>                                                                    <a href="http://www.leiphone.com/tag/智能机器人" target="_blank">智能机器人</a>                                                                    <a href="http://www.leiphone.com/tag/智能电视" target="_blank">智能电视</a>                                                                    <a href="http://www.leiphone.com/tag/360智能硬件" target="_blank">360智能硬件</a>                                                                    <a href="http://www.leiphone.com/tag/智能摄像机" target="_blank">智能摄像机</a>                                                                    <a href="http://www.leiphone.com/news/201601/mQ8TFsppN7ROxYmS.html" target="_blank">智能硬件产品</a>                                                                    <a href="http://www.leiphone.com/tag/智能硬件发展" target="_blank">智能硬件发展</a>                                                                    <a href="http://www.leiphone.com/tag/智能硬件创业" target="_blank">智能硬件创业</a>                                                                    <a href="http://www.leiphone.com/tag/黑客" target="_blank">黑客</a>                                                                    <a href="http://www.leiphone.com/tag/白帽子" target="_blank">白帽子</a>                                                                    <a href="http://www.leiphone.com/tag/大数据" target="_blank">大数据</a>                                                                    <a href="http://www.leiphone.com/tag/云计算" target="_blank">云计算</a>                                                                    <a href="http://www.leiphone.com/tag/新能源汽车" target="_blank">新能源汽车</a>                                                                    <a href="http://www.leiphone.com/tag/无人驾驶" target="_blank">无人驾驶</a>                                                                    <a href="http://www.leiphone.com/tag/无人机" target="_blank">无人机</a>                                                                    <a href="http://www.leiphone.com/tag/大疆" target="_blank">大疆</a>                                                                    <a href="http://www.leiphone.com/tag/小米无人机" target="_blank">小米无人机</a>                                                                    <a href="http://www.leiphone.com/tag/特斯拉" target="_blank">特斯拉</a>                                                                    <a href="http://www.leiphone.com/tag/VR游戏" target="_blank">VR游戏</a>                                                                    <a href="http://www.leiphone.com/tag/VR电影" target="_blank">VR电影</a>                                                                    <a href="http://www.leiphone.com/tag/VR视频" target="_blank">VR视频</a>                                                                    <a href="http://www.leiphone.com/tag/VR眼镜" target="_blank">VR眼镜</a>                                                                    <a href="http://www.leiphone.com/tag/VR购物" target="_blank">VR购物</a>                                                                    <a href="http://www.leiphone.com/tag/AR" target="_blank">AR</a>                                                                    <a href="http://www.leiphone.com/tag/直播" target="_blank">直播</a>                                                                    <a href="http://www.leiphone.com/tag/扫地机器人" target="_blank">扫地机器人</a>                                                                    <a href="http://www.leiphone.com/tag/医疗机器人" target="_blank">医疗机器人</a>                                                                    <a href="http://www.leiphone.com/tag/工业机器人" target="_blank">工业机器人</a>                                                                    <a href="http://www.leiphone.com/tag/类人机器人" target="_blank">类人机器人</a>                                                                    <a href="http://www.leiphone.com/tag/聊天机器人" target="_blank">聊天机器人</a>                                                                    <a href="http://www.leiphone.com/news/201606/kyKJpmCelZrWE7K4.html" target="_blank">微信机器人</a>                                                                    <a href="http://www.leiphone.com/tag/微信小程序" target="_blank">微信小程序</a>                                                                    <a href="http://www.leiphone.com/tag/移动支付" target="_blank">移动支付</a>                                                                    <a href="http://www.leiphone.com/tag/支付宝" target="_blank">支付宝</a>                                                                    <a href="http://www.leiphone.com/tag/P2P" target="_blank">P2P</a>                                                                    <a href="http://www.leiphone.com/tag/区块链" target="_blank">区块链</a>                                                                    <a href="http://www.leiphone.com/tag/比特币" target="_blank">比特币</a>                                                                    <a href="http://www.leiphone.com/tag/风控" target="_blank">风控</a>                                                                    <a href="http://www.leiphone.com/tag/高盛" target="_blank">高盛</a>                                                                    <a href="http://www.leiphone.com/tag/人脸识别" target="_blank">人脸识别</a>                                                                    <a href="http://www.leiphone.com/tag/指纹识别" target="_blank">指纹识别</a>                                                                    <a href="http://www.leiphone.com/tag/黑科技" target="_blank">黑科技</a>                                                                    <a href="http://www.leiphone.com/news/201502/S5yH58slS9gpBrm4.html" target="_blank">谷歌地图</a>                                                                    <a href="http://www.leiphone.com/tag/谷歌" target="_blank">谷歌</a>                                                                    <a href="http://www.leiphone.com/tag/IBM" target="_blank">IBM</a>                                                                    <a href="http://www.leiphone.com/tag/微软" target="_blank">微软</a>                                                                    <a href="http://www.leiphone.com/tag/乐视" target="_blank">乐视</a>                                                                    <a href="http://www.leiphone.com/tag/百度" target="_blank">百度</a>                                                                    <a href="http://www.leiphone.com/tag/三星s8
+" target="_blank">三星s8</a>                                                                    <a href="http://www.leiphone.com/tag/腾讯" target="_blank">腾讯</a>                                                                    <a href="http://www.leiphone.com/list/三星Note8" target="_blank">三星Note8 </a>                                                                    <a href="http://www.leiphone.com/news/201610/oUUuMZtyi7H6xMGA.html" target="_blank">小米MIX</a>                                                                    <a href="http://www.leiphone.com/tag/小米Note" target="_blank">小米Note</a>                                                                    <a href="http://www.leiphone.com/tag/华为" target="_blank">华为</a>                                                                    <a href="http://www.leiphone.com/tag/小米" target="_blank">小米</a>                                                                    <a href="http://www.leiphone.com/tag/阿里巴巴" target="_blank">阿里巴巴</a>                                                                    <a href="http://www.leiphone.com/tag/苹果" target="_blank">苹果</a>                                                                    <a href="http://www.leiphone.com/tag/MacBook Pro" target="_blank">MacBook Pro</a>                                                                    <a href="http://www.leiphone.com/tag/iPhone" target="_blank">iPhone</a>                                                                    <a href="http://www.leiphone.com/tag/Facebook" target="_blank">Facebook</a>                                                                    <a href="http://www.leiphone.com/tag/GAIR" target="_blank">GAIR</a>                                                                    <a href="http://www.leiphone.com/tag/IROS" target="_blank">IROS</a>                                                                    <a href="http://www.leiphone.com/tag/双创周" target="_blank">双创周</a>                                                                    <a href="http://www.leiphone.com/tag/云栖大会" target="_blank">云栖大会</a>                                                                    <a href="https://www.iuplus.com" target="_blank">优葩</a>                                                                    <a href="http://www.leiphone.com/news/201610/qN5pHyh1kQUQEGtw.html" target="_blank">智能硬件公司</a>                                                                    <a href="http://www.leiphone.com/category/weiwu" target="_blank">智能硬件</a>                                                                    <a href="http://www.leiphone.com/news/201701/RnURKJ8H5PaG9g7y.html" target="_blank">QQ红包</a>                                                                    <a href="http://www.leiphone.com/news/201701/RnURKJ8H5PaG9g7y.html" target="_blank">支付宝红包</a>                                                                    <a href="http://www.leiphone.com/news/201701/cdANtd69SJLFwdXs.html" target="_blank">敬业福</a>                                                                                    
+                        <a href="https://www.leiphone.com/list/定位器" target="_blank">定位器</a><a href="https://www.leiphone.com/list/基因检测" target="_blank">基因检测</a><a href="https://www.leiphone.com/list/亮风台" target="_blank">亮风台</a><a href="https://www.leiphone.com/list/网络" target="_blank">网络</a><a href="https://www.leiphone.com/list/家庭影院" target="_blank">家庭影院</a><a href="https://www.leiphone.com/list/数字货币" target="_blank">数字货币</a><a href="https://www.leiphone.com/list/周志华" target="_blank">周志华</a><a href="https://www.leiphone.com/list/eatsa" target="_blank">eatsa</a><a href="https://www.leiphone.com/list/小斯坦尼康" target="_blank">小斯坦尼康</a><a href="https://www.leiphone.com/list/仓库机器人" target="_blank">仓库机器人</a><a href="https://www.leiphone.com/list/5g短码" target="_blank">5g短码</a><a href="https://www.leiphone.com/list/氢燃料汽车" target="_blank">氢燃料汽车</a><a href="https://www.leiphone.com/list/小米智能灯泡" target="_blank">小米智能灯泡</a><a href="https://www.leiphone.com/list/ios 10 解锁设置" target="_blank">ios 10 解锁设置</a><a href="https://www.leiphone.com/list/智能影院" target="_blank">智能影院</a>                        <a href="https://www.leiphone.com/list/" target="_blank">更多</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="yp-footer-msg">
+        <div class="wrapper clr">
+            <!-- links -->
+            <div class="links">
+                <a rel="nofollow" href="https://www.leiphone.com/us/contact">联系我们</a>
+                <a rel="nofollow" href="https://www.leiphone.com/us/index">关于我们</a>
+                <a rel="nofollow" href="https://www.leiphone.com/news/201611/0nOqnvNoxI6vX4L9.html">加入我们</a>
+                <a rel="nofollow" href="https://www.leiphone.com/us/feedback">意见反馈</a>
+                <a rel="nofollow" href="https://www.leiphone.com/contribute/index">投稿</a>
+            </div>
+            <!-- 下载app -->
+            <div class="downLoad-app">
+                <div class="qrcode">
+                    <!-- /site/download -->
+                    <img src="/resWeb/images/common/downCode.jpg" width="96" height="96" alt="" />
+                </div>
+                <div class="txt">
+                    <p>下载雷锋网客户端</p>
+                    <a rel="nofollow" href="https://itunes.apple.com/cn/app/lei-feng-wang-yi-dong-hu-lian/id579529120?mt=8" target="_blank" class='iPhone'><em></em>iPhone</a>
+                    <a rel="nofollow" href="https://android.myapp.com/myapp/detail.htm?apkName=com.leiphone.app" target="_blank" class='Android'><em></em>Android</a>
+                </div>
+            </div>
+            <!-- 关注-->
+            <div class="contact">
+                <a rel="nofollow" href="mailto:web@leiphone.com " class='eml sub_a'><em></em></a>
+                <a rel="nofollow" href="https://www.weibo.com/p/1006062118746300" target="_blank" class='sina sub_a'><em></em></a>
+            </div>
+        </div>
+    </div>
+    <!-- copyRight -->
+    <div class="yp-copyright">
+        <div class="wrapper">
+            <p>Copyright © 2011-2018 www.leiphone.com 雷锋网-移动互联网智能终端第一媒体 All Rights Reserved <a target="_blank" style="color:#9baab6;" href="https://www.miitbeian.gov.cn">粤ICP备11095991号-1</a>
+<!--                 <a  key ="54914497efbfb06e545f711c"  logo_size="83x30"  logo_type="realname"  href="https://www.anquan.org" ><script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script></a> -->
+                &nbsp;&nbsp;
+                <a href="http://szcert.ebs.org.cn/0ee69ac3-f114-4bd9-9ea1-a5a04f7cd44b" rel="nofollow" target="_blank"><img src="https://www.leiphone.com/resWeb/images/common/govIcon.gif" width="29" height="40"></a>
+<!--                <script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=0ee69ac3-f114-4bd9-9ea1-a5a04f7cd44b&width=29&height=40&type=1" type="text/javascript" charset="utf-8"></script>                &nbsp;&nbsp;-->
+                <a rel="nofollow" href="https://www.leiphone.com/resWeb/images/ICP.jpg" target="_blank" style="color:#9baab6">ICP证粤B2-20150332</a>
+                <a rel="nofollow" href="http://www.qiniu.com/" target="_blank" rel="nofollow" style="float:right">
+                    <img src="https://www.leiphone.com/resWeb/images/common/hzs4.png">
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+<div id="lph-footer-gotoBar">
+    <div class="gotoTop">   
+        <a href="javascript:;" class="top" data-goto="0" data-start="100"><em></em></a>
+    </div>
+</div>
+
+<!-- 遮罩层 -->
+<div class="lph-overlay"></div>
+    <!-- 右上角持续提示，邮箱未绑定的时候输出 -->
+    <div class="yzEmail_tip yzEmail_tip1" id="bandEmailTip">
+        <em></em>
+        <span>为了您的账户安全，请<a class="bbtn" href="javascript:;">验证邮箱</a></span>
+        <i class="close"></i>
+    </div>
+
+    <!-- 右上角持续提示，邮箱发送但未验证的时候输出 -->
+    <div class="yzEmail_tip yzEmail_tip2" id="sendEmailTip">
+        <span style="text-align: center;">您的邮箱还未验证,完成可获20积分哟！</span>
+        <p class="links"><a class="rbtn" href="javascript:;">重发邮箱</a><a class="sbtn" href="javascript:;">修改邮箱</a></p>
+        <i class="close"></i>
+    </div>
+
+    <!-- 记cookie弹窗，邮箱未绑定的时候弹出 -->
+    <div class="yzEmail_box yzEmail_box1 lph-pops" id="sendEmailBox">
+        <div class="head">请验证您的邮箱</div>
+        <div class="box">
+            <span class="tipp"><!-- *邮箱 --></span>
+            <input class="inp" id="sendEmail_input" placeholder="输入您的邮箱" value="" >
+            <!-- <strong>验证邮件已发送，请您查收</strong> -->
+            <a class="btn" href="javascript:;" target="_blank" id="sendEmail_btn"><i></i><em>立即验证</em></a>
+            <div class="error"></div>
+        </div>
+        <!-- <div class="boxOk">
+            <strong>验证邮件已发送，请您查收</strong>
+        </div> -->
+        <i class="close"></i>
+    </div>
+
+    <!-- 记cookie弹窗，已发送邮件但未验证 -->
+    <div class="yzEmail_box yzEmail_box2 lph-pops" id="setPwBox">
+        <div class="head">完善账号信息</div>
+        <div class="top">
+            <span>您的账号已经绑定，现在您可以<a href="javascript:;">设置密码</a>以方便用邮箱登录</span>
+        </div>
+        <div class="btm">
+            <input class="inp" type="password" id="" placeholder="输入您的密码" value="" >
+            <a class="btn" href="javascript:;" target="_blank" id=""><i></i><em>立即设置</em></a>
+            <a class="clo" href="javascript:;">以后再说</a>
+            <div class="error"></div>
+        </div>
+        <i class="close"></i>
+    </div>
+
+<!-- 申请专栏作者 -->
+<div id="applyAutor" >
+    <div class="applyAutor-pop">   
+        <i class="close"></i> 
+        <div class="title">请填写申请人资料</div>
+        <div class="main">
+            <div class="rows clr">
+               <span class="name">姓名</span>
+               <input type="text" id="name" name="MemberAuthorType[name]" value="">
+               <span class="error"></span>
+            </div>
+            <div class="rows clr">
+               <span class="name">电话</span>
+               <input type="text" id="phone" name="MemberAuthorType[phone]" value="">
+               <span class="error"></span>
+            </div>
+            <div class="rows clr">
+               <span class="name">邮箱</span>
+               <input type="text" id="eml" name="MemberAuthorType[email]" value="">
+               <span class="error"></span>
+            </div>
+            <div class="rows clr">
+               <span class="name">微信号</span>
+               <input type="text" id="weixin" name="MemberAuthorType[wechat]" value="">
+               <span class="error"></span>
+            </div>
+            <div class="rows clr">
+               <span class="name">作品链接</span>
+               <input type="text" id="job" name="MemberAuthorType[link]" value="">
+            </div>
+            <div class="rows clr">
+               <span class="name">个人简介</span>
+               <textarea id="description" name="MemberAuthorType[description]"></textarea>
+            </div>
+            <div class="rows clr rows-last">
+                <input type="submit" value="提 交" id="subBtn">
+                <input type="button" value="取 消" id="clsBtn">
+            </div>
+        </div>
+    </div>  
+</d>
+<!--<!-- 公告 -->
+<!--<div class="server-mask"></div>-->
+<!--<div class="server-pop">-->
+<!--    <em id='serCls'></em>-->
+<!--    <div class="tit">关于网站服务器维护的公告</div>-->
+<!--    <div class="main">-->
+<!--        <p>尊敬的雷锋网用户：</p>-->
+<!--        <p>&nbsp;&nbsp;&nbsp;&nbsp;由于网站服务器维护升级，雷锋网将在7月14日22:00-24:00 暂时关闭网站。由此给您带来的不便，我们深表歉意。特此公告!</p>-->
+<!--        <p class="txtR mt10">雷锋网</p>-->
+<!--        <p class="txtR">2017年7月13日</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<script>
+    // 四站登录
+   // with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src=BASE_URL+'/resWeb/home/js/login/yp_login.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<!-- 优路跟踪代码 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HDG4H');</script>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else{
+            bp.src = 'https://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+             
+    })();
+</script>
+</body>
+</html>

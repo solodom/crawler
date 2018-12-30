@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="referrer" content="origin" />
+<title>Recurrent Neural Network系列1--RNN（循环神经网络）概述 - 老顽童2007 - 博客园</title>
+<meta property="og:description" content="作者：zhbzz2007 出处：http://www.cnblogs.com/zhbzz2007 欢迎转载，也请保留这段声明。谢谢！ 本文翻译自 "RECURRENT NEURAL NETWORKS " />
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=-duj5vpGTntb85GJoM3iRI972XwWcI-j8zmqDzyfu2w1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/arrow/bundle-arrow.css?v=7udjyb45sR1rmUk1-w0eGKvTZmHt4_k2JE4qv0IYIX81"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/204083.css?v=wEcwvWqrwrq3gPxzOqogWfmtg5I%3d"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/arrow/bundle-arrow-mobile.css?v=aUq2vNJYPjgk159-LIpMOFotEnKRgRA9fyBtsES8owY1"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/zhbzz2007/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/zhbzz2007/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/zhbzz2007/wlwmanifest.xml"/>
+<script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">var currentBlogApp = 'zhbzz2007', cb_enable_mathjax=true;var isLogined=false;</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: { 
+            equationNumbers: { autoNumber: ['AMS'], useLabelIds: true }, extensions: ['extpfeil.js'] 
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script><script src="//mathjax.cnblogs.com/2_7_2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="/bundles/blog-common.js?v=_U8OpbfIPk4K3Mxrx3oPrbJt2JRnf47OVRruaRlQuEc1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<div id="page_begin_html"></div><script>load_page_begin_html();</script>
+
+<!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/zhbzz2007/">老顽童2007</a><br>
+		广度是深度的副产品
+	</div>
+</div>
+
+</div>
+<div id="mylinks">
+<!--done-->
+<a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a>&nbsp;&nbsp;&nbsp;
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/zhbzz2007/">首页</a>&nbsp;&nbsp;&nbsp;
+<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a>&nbsp;&nbsp;&nbsp;
+<a id="blog_nav_contact" accesskey="9" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E8%80%81%E9%A1%BD%E7%AB%A52007">联系</a>&nbsp;&nbsp;&nbsp;
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/zhbzz2007/rss">订阅</a><a id="blog_nav_rss_image" href="https://www.cnblogs.com/zhbzz2007/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>&nbsp;&nbsp;&nbsp;
+<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>
+</div>
+<div id="mytopmenu">
+	
+		<div id="blog_stats">
+<div class="blogStats">随笔 - 65&nbsp;
+文章 - 0&nbsp;评论 - 59&nbsp;trackbacks - 0
+</div></div>
+	
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script><br>
+			
+<!--done-->
+<div class="newsItem">
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script></DIV>		
+	
+</div>
+<div id="centercontent">
+	
+<div id="post_detail">
+<!--done-->
+<div class = "post">
+	<div class = "postTitle">
+		<h1><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/zhbzz2007/p/6257247.html">Recurrent Neural Network系列1--RNN（循环神经网络）概述</a></h1>
+	</div>
+	<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown"><p>作者：zhbzz2007 出处：<a href="http://www.cnblogs.com/zhbzz2007" class="uri">http://www.cnblogs.com/zhbzz2007</a> 欢迎转载，也请保留这段声明。谢谢！</p>
+<p>本文翻译自 <a href="http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/">RECURRENT NEURAL NETWORKS TUTORIAL, PART 1 – INTRODUCTION TO RNNS</a> 。</p>
+<p>Recurrent Neural Networks（RNNS） ，循环神经网络，是一个流行的模型，已经在许多NLP任务上显示出巨大的潜力。尽管它最近很流行，但是我发现能够解释RNN如何工作，以及如何实现RNN的资料很少。这个系列将会涵盖如下几个主题，</p>
+<ul>
+<li><a href="http://www.cnblogs.com/zhbzz2007/p/6257247.html">RNN概述</a></li>
+<li><a href="http://www.cnblogs.com/zhbzz2007/p/6291652.html">利用Python，Theano实现RNN</a></li>
+<li><a href="http://www.cnblogs.com/zhbzz2007/p/6339346.html">理解RNN的BPTT算法和梯度消失</a></li>
+<li>利用Python，Theano实现GRU或LSTM</li>
+</ul>
+<p>我们将会实现一个 <a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf">基于语言模型的循环神经网络</a> 。语言模型有两个应用。第一，基于句子在真实世界中出现的可能性，语言模型可以让我们对任意的句子进行打分。这个就给予我们一种度量语法和语义正确性的方式。语言模型通常应用在机器翻译系统中。第二，语言模型允许我们生成新的文本（我认为这是一个更酷的应用）。在莎士比亚的作品上训练一个语言模型，允许我们生成莎士比亚风格的文本。Andrej Karpathy所写的 <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">blog</a> 显示了基于RNN的字符级的语言模型的能力。</p>
+<p>我假设你已经在一定程度上熟悉基本的神经网络。如果你对基本的神经网络还不熟悉，你可以先看这篇blog <a href="http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/">IMPLEMENTING A NEURAL NETWORK FROM SCRATCH IN PYTHON – AN INTRODUCTION</a> , 它将会让你理解非循环网络背后的思想和具体实现。</p>
+<h1 id="什么是循环神经网络">1 什么是循环神经网络？</h1>
+<p>循环神经网络背后的思想就是使用序列信息。在传统的神经网络中，我们认为所有的输入（和输出）彼此之间是互相独立的。但是对于很多任务而言，这个观点并不合适。如果你想预测句子中的下一个词，你最好需要知道它之前的词。循环神经网络之所以称之为循环，就是因为它们对于序列中每个元素都执行相同的任务，输出依赖于之前的计算。另一种思考循环神经网络的方法是，它们有一个记忆，记忆可以捕获迄今为止已经计算过的信息。理论上，循环神经网络可以利用任意长度序列的信息，但是，在实际中，它们仅能利用有限长步（具体原因会在后续解释）。下面就是一个典型的循环神经网络。</p>
+<p><img src="https://images2015.cnblogs.com/blog/668850/201701/668850-20170105195352456-1826001717.jpg" /></p>
+<p>上图展示了一个循环神经网络展开为全网络。通过展开，我们简单的认为我们写出了全部的序列。例如，如果我们关心的序列是一个有5个词的句子，那么这个网络就会展开为5层的神经网络，一层对应一个词。循环神经网络中管理计算的公式如下所示，</p>
+<ul>
+<li><span class="math inline">\(x_{t}\)</span> 是时刻t的输入。例如， <span class="math inline">\(x_{1}\)</span> 可以是一个one-hot向量，对应句子中第二个词；</li>
+<li><span class="math inline">\(s_{t}\)</span> 是时刻t的隐层状态。它是网络的记忆。<span class="math inline">\(s_{t}\)</span> 基于前一时刻的隐层状态和当前时刻的输入进行计算， <span class="math inline">\(s_{t} = f(U x_{t} + W s_{t-1})\)</span> 。函数f通常是非线性的，如tanh或者ReLU。<span class="math inline">\(s_{-1}\)</span> 被要求为计算第一个隐藏状态，通常被初始化为全0；</li>
+<li><span class="math inline">\(o_{t}\)</span> 是时刻t的输出。例如，如果我们想预测句子a的下一个词，它将会是一个词汇表中的概率向量，<span class="math inline">\(o_{t} = softmax(Vs_{t})\)</span> ；</li>
+</ul>
+<p>这里有一些注意事项，如下：</p>
+<ul>
+<li>你可以将隐层状态<span class="math inline">\(s_{t}\)</span> 认为是网络的记忆。<span class="math inline">\(s_{t}\)</span> 可以捕获之前所有时刻发生的信息。输出 <span class="math inline">\(o_{t}\)</span> 的计算仅仅依赖于时刻t的记忆。上面已经简略提到，实际中这个过程有些复杂，因为 <span class="math inline">\(s_{t}\)</span> 通常不能获取之前过长时刻的信息；</li>
+<li>不像传统的深度神经网络，在不同的层使用不同的参数，循环神经网络在所有步骤中共享参数（U、V、W）。这个反映一个事实，我们在每一步上执行相同的任务，仅仅是输入不同。这个机制极大减少了我们需要学习的参数的数量；</li>
+<li>上图在每一步都有输出，但是根据任务的不同，这个并不是必须的。例如，当预测一个句子的情感时，我们可能仅仅关注最后的输出，而不是每个词的情感。相似地，我们在每一步中可能也不需要输入。循环神经网络最大的特点就是隐层状态，它可以捕获一个序列的一些信息；</li>
+</ul>
+<h1 id="循环神经网络可以做什么">2 循环神经网络可以做什么？</h1>
+<p>循环神经网络在很多NLP任务中显示出巨大的成功。在这里，我需要提醒一下，大部分循环神经网络是 <a href="https://en.wikipedia.org/wiki/Long_short_term_memory">LSTM</a> ，它比普通的循环神经网络可以更好的捕获长期依赖。不用担心，LSTM本质上依然是循环神经网络，它仅仅是在计算隐层状态时采用一种不同的方式，我们将会在后续的文章中详细介绍它。下面是一些循环神经网络应用到NLP的例子。</p>
+<h2 id="语言模型和文本生成">2.1 语言模型和文本生成</h2>
+<p>给定一个词序列，我们想要预测每个词在给定前面的词的条件概率。语言模型允许我们度量一个句子的可能性，这是机器翻译的重要输入（高概率的句子通常是正确的）。预测下一个词的副产品就是我们可以得到一个生成模型，这允许我们通过在输出概率中采样来生成下一个文本。依赖于我们的训练数据，我们可以生成 <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">各种类型的文本</a> 。在语言模型中，我们的输入通常是一个词序列（例如，编码为one-hot向量），输出就是待预测的词序列。当训练网络时，我们设置 <span class="math inline">\(o_{t} = x_{t+1}\)</span> ，因为，我们想要时刻t的输出为正确的下一个词。</p>
+<p>下面是一些关于语言模型和文本生成的文献，</p>
+<p><a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf">Recurrent neural network based language model</a></p>
+<p><a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2011/mikolov_icassp2011_5528.pdf">Extensions of Recurrent neural network based language model</a></p>
+<p><a href="http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2011Sutskever_524.pdf">Generating Text with Recurrent Neural Networks</a></p>
+<h2 id="机器翻译">2.2 机器翻译</h2>
+<p>机器翻译类似于语言模型，输入是一个源语言的词序列（例如，德语）。我们想输出一个目标语言的词序列（例如，英语）。关键的区别就是我们的输出只能在我们已经看见整个输入之后开始，因为，我们翻译句子的第一个词可能需要从整个输入句子获取信息。</p>
+<p><img src="https://images2015.cnblogs.com/blog/668850/201701/668850-20170105232141316-510206958.png" /></p>
+<p>下面是一些关于机器翻译的文献，</p>
+<p><a href="http://www.aclweb.org/anthology/P14-1140.pdf">A Recursive Recurrent Neural Network for Statistical Machine Translation</a></p>
+<p><a href="http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf">Sequence to Sequence Learning with Neural Networks</a></p>
+<p><a href="http://research.microsoft.com/en-us/um/people/gzweig/Pubs/EMNLP2013RNNMT.pdf">Joint Language and Translation Modeling with Recurrent Neural Networks</a></p>
+<h2 id="语音识别">2.3 语音识别</h2>
+<p>给定一个声学信号的输入序列，我们可以预测语音段序列以及它们的概率。</p>
+<p>下面是一些关于语音识别的文献，</p>
+<p><a href="http://www.jmlr.org/proceedings/papers/v32/graves14.pdf">Towards End-to-End Speech Recognition with Recurrent Neural Networks</a></p>
+<h2 id="生成图像描述">2.4 生成图像描述</h2>
+<p>结合卷积神经网络，循环神经网络也作为模型的一部分，用于对无标注图像 <a href="http://cs.stanford.edu/people/karpathy/deepimagesent/">生成描述</a>。让人惊讶的是它是如何工作的。组合模型甚至可以将生成的文字与图像上的特征进行对齐。</p>
+<p><img src="https://images2015.cnblogs.com/blog/668850/201701/668850-20170105233850237-1414132193.png" /><br />
+针对生成图像描述的深度图像-语义对齐，来源：<a href="http://cs.stanford.edu/people/karpathy/deepimagesent/" class="uri">http://cs.stanford.edu/people/karpathy/deepimagesent/</a></p>
+<h1 id="循环神经网络的训练">3 循环神经网络的训练</h1>
+<p>循环神经网络的训练类似于传统神经网络的训练。我们也使用反向传播算法，但是有所变化。因为循环神经网络在所有时刻的参数是共享的，但是每个输出的梯度不仅依赖当前时刻的计算，还依赖之前时刻的计算。例如，为了计算时刻 t = 4 的梯度，我们还需要反向传播3步，然后将梯度相加。这个被称为Backpropagation Through Time（BPTT）。如果你不能完全理解这个，不要担心，我们会在后面的文章详细地介绍它。现在，我们仅仅需要了解到利用BPTT算法训练出来的普通循环神经网络很难学习长期依赖（例如，距离很远的两步之间的依赖），原因就在于梯度消失/发散问题。目前已经有一些机制来解决这些问题，特定类型的循环神经网络（如LSTM）专门用于规避这些问题。</p>
+<h1 id="循环神经网络的扩展">4 循环神经网络的扩展</h1>
+<p>近年来，研究者已经提出了更加复杂的循环神经网络，用以解决普通循环神经网络的缺陷。我们将会在后续的文章中详细介绍，但是，我想在这部分大致介绍一些，以便你们可以熟悉这些模型。</p>
+<h2 id="双向循环神经网络">4.1 双向循环神经网络</h2>
+<p>Bidirectional RNNs（双向循环神经网络）基于这样一种思想，时刻t的输出不仅依赖序列中之前的元素，也依赖于后续的元素。例如，要预测序列中缺失的词，你会看一下左边和右边的上下文。双向循环神经网络非常简单。它们仅仅是两个循环神经网络堆在一起。输出是基于两个循环神经网络的隐层状态进行计算的。</p>
+<p>双向循环神经网络的结构如下所示。</p>
+<p><img src="https://images2015.cnblogs.com/blog/668850/201701/668850-20170105234350112-655529571.png" /></p>
+<h2 id="深度双向循环神经网络">4.2 深度（双向）循环神经网络</h2>
+<p>Deep (Bidirectional) RNNs（深度（双向）循环神经网络）非常类似于双向循环神经网络，区别在于，每一时刻，网络有多层。实际上，这个可以让网络具备更强的学习能力（当然，也需要更多的训练数据）。</p>
+<p>深度循环神经网络的结构如下所示。</p>
+<p><img src="https://images2015.cnblogs.com/blog/668850/201701/668850-20170105234355191-550561018.png" /></p>
+<h2 id="lstm">4.3 LSTM</h2>
+<p>最近，LSTM网络非常流行，我们之前已经简单提到。LSTM在架构上与循环神经网络并没有本质的不同，但是它们计算隐层状态的函数会有所不同。LSTM中的记忆称为cell，你可以将它视为以之前的状态 <span class="math inline">\(h_{t-1}\)</span> 和当前的输入 <span class="math inline">\(x_{t}\)</span> 作为输入的一个黑盒。在内部，cell决定记忆中哪些保留（哪些删除）。然后，之前的状态，当前的记忆和输入进行组合。这类单元在捕获长期依赖上被证明是非常有效的。刚开始，LSTM会令人感到困惑，但是，如果你感兴趣，你可以看这篇博客 <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a> 。</p>
+<h1 id="结论">5 结论</h1>
+<p>到目前为止，我希望你已经对什么是循环神经网络以及它们能够做什么有一个基本的了解。在下一篇文章中，我们将会使用Python和Theano实现循环神经网络语言模型的第一个版本。</p>
+<h1 id="reference">6 Reference</h1>
+<p><a href="http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/">RECURRENT NEURAL NETWORKS TUTORIAL, PART 1 – INTRODUCTION TO RNNS</a></p>
+<p><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a></p>
+</div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+	<div class = "postDesc">posted on <span id="post-date">2017-01-06 17:51</span> <a href='https://www.cnblogs.com/zhbzz2007/'>老顽童2007</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=6257247" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(6257247);return false;">收藏</a></div>
+</div>
+<script src="//common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script><script>markdown_highlight();</script><script type="text/javascript">var allowComments=true,cb_blogId=204083,cb_entryId=6257247,cb_blogApp=currentBlogApp,cb_blogUserGuid='77390cda-b831-e411-b908-9dcfd8948a71',cb_entryCreatedDate='2017/1/6 17:51:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='cnblogs_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'>
+    <script>
+    if (new Date() >= new Date(2018, 9, 13)) {
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539008685004-0'); });
+    }
+    </script>
+    </div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	
+<!--done-->
+<div class="footer">
+	
+	Copyright &copy;2018 老顽童2007 Powered by: <a href="http://www.cnblogs.com" class=footerlink>博客园</a> 模板提供：<a href="http://blog.hjenglish.com" class=footerlink>沪江博客</a><br>
+</div>
+</div>
+
+
+
+</body>
+</html>
