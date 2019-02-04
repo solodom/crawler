@@ -1,0 +1,4139 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://blog.csdn.net/hubaoquanu/article/details/66973149"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="referrer" content="always">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
+        <meta name="csdn-baidu-search"  content='{"autorun":true,"install":true,"keyword":"Python抓取HTML网页并以PDF保存 - 欢迎访问胡宝全的博客"}'>
+    
+    <link href="https://csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON">
+    <title>Python抓取HTML网页并以PDF保存 - 欢迎访问胡宝全的博客 - CSDN博客</title>
+
+        
+                    <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/detail-2f29b5a559.min.css">
+            
+        
+          <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/themes/skin3-template/skin3-template-9b39979775.min.css">
+        <script type="text/javascript">
+        var username = "hubaoquanu";
+        var blog_address = "https://blog.csdn.net/hubaoquanu";
+        var static_host = "https://csdnimg.cn/release/phoenix/";
+        var currentUserName = "";
+        var isShowAds = true;
+        var isOwner = false;
+        var loginUrl = "http://passport.csdn.net/account/login?from=https://blog.csdn.net/hubaoquanu/article/details/66973149"
+        var blogUrl = "https://blog.csdn.net/";
+        //页面皮肤样式
+        var curSkin = "skin3-template";
+        // 第四范式所需数据
+        var articleTitles = "Python抓取HTML网页并以PDF保存 - 欢迎访问胡宝全的博客";
+        var articleID = "66973149";
+
+        var nickName = "Limerence";
+        var isCorporate = false;
+        var subDomainBlogUrl = "https://blog.csdn.net/"
+    </script>
+    <script type="text/javascript">
+        // Traffic Stats of the entire Web site By baidu
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        // Traffic Stats of the entire Web site By baidu end
+    </script>
+    <script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js"></script>
+    <script src="//g.csdnimg.cn/fixed-sidebar/1.1.3/fixed-sidebar.js" type="text/javascript"></script>
+    <!-- 新版上报 -->
+    <script src="//g.csdnimg.cn/track/1.2.4/track.js" type="text/javascript"></script>
+    <!-- 新版上报end -->
+            <link rel="stylesheet" href="https://csdnimg.cn/public/sandalstrap/1.4/css/sandalstrap.min.css">
+    <style>
+        .MathJax, .MathJax_Message, .MathJax_Preview{
+            display: none
+        }
+    </style>
+</head>
+<!-- nodata 第三栏接口无数据时样式不变 -->
+<body class="nodata " > 
+    <link rel="stylesheet" href="https://csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
+    <script id="toolbar-tpl-scriptId" src="https://csdnimg.cn/public/common/toolbar/js/content_toolbar.js" type="text/javascript" domain="https://blog.csdn.net/"></script>
+<link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/blog_code-c3a0c33d5c.css">
+<link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/vendor/pagination/paging.css">
+<script type="text/javascript">
+	// 容错处理
+	var NEWS_FEED = function(){}
+</script>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script type="text/javascript" src="//g.csdnimg.cn/copyright/1.0.3/copyright.js"></script>
+<div style="display:none;">
+	
+</div>
+<link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/chart-3456820cac.css" />
+<script src="https://dup.baidustatic.com/js/ds.js"></script>
+<div class="container clearfix" id="mainBox">
+			<div class="recommend-right">
+  <ul class="recommend-fixed-box">
+    
+  </ul>
+</div>	
+    <main>
+        <div class="blog-content-box">
+	<div class="article-header-box">
+		<div class="article-header">
+			<div class="article-title-box">
+				<span class="article-type type-1 float-left">原</span>				<h1 class="title-article">Python抓取HTML网页并以PDF保存</h1>
+			</div>
+			<div class="article-info-box">
+				<div class="article-bar-top">
+																				<span class="time">2017年03月27日 16:36:33</span>
+					<a class="follow-nickName" href="https://me.csdn.net/hubaoquanu" target="_blank">Limerence</a>
+						<span class="read-count">阅读数：6729</span>
+						
+																															</div>
+				<div class="operating">
+														</div>
+			</div>
+		</div>
+	</div>
+	<article class="baidu_pl">
+		<div id="article_content" class="article_content clearfix csdn-tracking-statistics" data-pid="blog"  data-mod=popu_307  data-dsm = "post" >
+								<div class="article-copyright">
+                  					
+					版权声明：本文为博主原创文章，转载请注明出处http://blog.csdn.net/hubaoquanu/					https://blog.csdn.net/hubaoquanu/article/details/66973149				</div>
+								            <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/ck_htmledit_views-db05db230f.css" />
+						<div class="htmledit_views" id="content_views">
+                <p style="text-indent:30px;"> </p>
+
+<h1 style="margin-left:0px;">一、前言</h1>
+
+<p> </p>
+
+<p style="text-indent:30px;">今天介绍将HTML网页抓取下来，然后以PDF保存，废话不多说直接进入教程。</p>
+
+<p style="text-indent:30px;">今天的例子以廖雪峰老师的Python教程网站为例：<a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" rel="nofollow">http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000</a></p>
+
+<h1 style="margin-left:0px;">二、准备工作</h1>
+
+<ol style="margin-left:30px;"><li>
+	<h3 id="articleHeader3" style="margin-left:0px;">PyPDF2的安装使用（用来合并PDF）：</h3>
+
+	<p>PyPDF2版本：1.25.1</p>
+
+	<p><a href="https://pypi.python.org/pypi/PyPDF2/1.25.1" rel="nofollow">https://pypi.python.org/pypi/PyPDF2/1.25.1</a></p>
+
+	<p>或</p>
+
+	<p><a href="https://github.com/mstamy2/PyPDF2" rel="nofollow">https://github.com/mstamy2/PyPDF2</a></p>
+
+	<p>安装：</p>
+
+	<p>pip install PyPDF2</p>
+
+	<p>使用示例：</p>
+	</li>
+</ol><pre class="has">
+<code class="language-python">from PyPDF2 import PdfFileMerger
+merger = PdfFileMerger()
+input1 = open("hql_1_20.pdf", "rb")
+input2 = open("hql_21_40.pdf", "rb")
+merger.append(input1)
+merger.append(input2)
+# Write to an output PDF document
+output = open("hql_all.pdf", "wb")
+merger.write(output)</code></pre>
+
+<ol style="margin-left:30px;"><li>requests、beautifulsoup 是爬虫两大神器，reuqests 用于网络请求，beautifusoup 用于操作 html 数据。有了这两把梭子，干起活来利索。scrapy 这样的爬虫框架我们就不用了，这样的小程序派上它有点杀鸡用牛刀的意思。此外，既然是把 html 文件转为 pdf，那么也要有相应的库支持， wkhtmltopdf 就是一个非常的工具，它可以用适用于多平台的 html 到 pdf 的转换，pdfkit 是 wkhtmltopdf 的Python封装包。首先安装好下面的依赖包
+	<pre>
+<code class="language-html hljs">pip install requests
+pip install beautifulsoup4
+pip install pdfkit</code></pre>
+
+	<h3 style="margin-left:0px;"> </h3>
+	</li>
+	<li>
+	<h3 style="margin-left:0px;">安装 wkhtmltopdf</h3>
+
+	<p>Windows平台直接在 <a href="http://wkhtmltopdf.org/downloads.html" rel="nofollow">http://wkhtmltopdf.org/downloads.html</a> 下载稳定版的 wkhtmltopdf 进行安装，安装完成之后把该程序的执行路径加入到系统环境 $PATH 变量中，否则 pdfkit 找不到 wkhtmltopdf 就出现错误 “No wkhtmltopdf executable found”。Ubuntu 和 CentOS 可以直接用命令行进行安装</p>
+
+	<pre>
+<code class="language-html hljs">$ sudo apt-get install wkhtmltopdf  # ubuntu
+$ sudo yum intsall wkhtmltopdf      # centos</code></pre>
+
+	<p> </p>
+	</li>
+</ol><h1 style="margin-left:0px;">三、数据准备</h1>
+
+<h3 style="margin-left:0px;">1.获取每篇文章的url</h3>
+
+<pre class="has">
+<code class="language-python">def get_url_list():
+    """
+    获取所有URL目录列表
+    :return:
+    """
+    response = requests.get("http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000")
+    soup = BeautifulSoup(response.content, "html.parser")
+    
+    #menu_tag = soup.find_all(class_="uk-nav uk-nav-side")[1]
+    menu_tag = soup.find_all(class_="x-wiki-index-item")[1]
+    urls = []
+    for li in menu_tag.find_all("li"):
+        url = "http://www.liaoxuefeng.com" + li.a.get('href')
+        urls.append(url)
+    return urls</code></pre>
+
+<p> </p>
+
+<h3 style="margin-left:0px;">2.通过文章url用模板保存每篇文章的HTML文件</h3>
+
+<p style="text-indent:30px;">html模板：</p>
+
+<p style="text-indent:30px;"> </p>
+
+<pre class="has">
+<code class="language-python">html_template = """
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+{content}
+&lt;/body&gt;
+&lt;/html&gt;
+
+"""</code></pre>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p style="text-indent:30px;">进行保存：</p>
+
+<p style="text-indent:30px;"> </p>
+
+<pre class="has">
+<code class="language-python">def parse_url_to_html(url, name):
+    """
+    解析URL，返回HTML内容
+    :param url:解析的url
+    :param name: 保存的html文件名
+    :return: html
+    """
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, 'html.parser')
+        # 正文
+        body = soup.find_all(class_="x-wiki-content")[0]
+        # 标题
+        title = soup.find('h4').get_text()
+
+        # 标题加入到正文的最前面，居中显示
+        center_tag = soup.new_tag("center")
+        title_tag = soup.new_tag('h1')
+        title_tag.string = title
+        center_tag.insert(1, title_tag)
+        body.insert(1, center_tag)
+        html = str(body)
+        # body中的img标签的src相对路径的改成绝对路径
+        pattern = "(&lt;img .*?src=\")(.*?)(\")"
+
+        def func(m):
+            if not m.group(3).startswith("http"):
+                rtn = m.group(1) + "http://www.liaoxuefeng.com" + m.group(2) + m.group(3)
+                return rtn
+            else:
+                return m.group(1)+m.group(2)+m.group(3)
+        html = re.compile(pattern).sub(func, html)
+        html = html_template.format(content=html)
+        html = html.encode("utf-8")
+        with open(name, 'wb') as f:
+            f.write(html)
+        return name
+
+    except Exception as e:
+
+        logging.error("解析错误", exc_info=True)</code></pre>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<h3 style="margin-left:0px;">3.把html转换成pdf</h3>
+
+<pre class="has">
+<code class="language-python">def save_pdf(htmls, file_name):
+    """
+    把所有html文件保存到pdf文件
+    :param htmls:  html文件列表
+    :param file_name: pdf文件名
+    :return:
+    """
+    options = {
+        'page-size': 'Letter',
+        'margin-top': '0.75in',
+        'margin-right': '0.75in',
+        'margin-bottom': '0.75in',
+        'margin-left': '0.75in',
+        'encoding': "UTF-8",
+        'custom-header': [
+            ('Accept-Encoding', 'gzip')
+        ],
+        'cookie': [
+            ('cookie-name1', 'cookie-value1'),
+            ('cookie-name2', 'cookie-value2'),
+        ],
+        'outline-depth': 10,
+    }
+    pdfkit.from_file(htmls, file_name, options=options)</code></pre>
+
+<p> </p>
+
+<h3 style="margin-left:0px;">4.把转换好的单个PDF合并为一个PDF</h3>
+
+<pre class="has">
+<code class="language-python">    merger = PdfFileMerger()
+    for pdf in pdfs:
+       merger.append(open(pdf,'rb'))
+       print u"合并完成第"+str(i)+'个pdf'+pdf</code></pre>
+
+<p> </p>
+
+<p> </p>
+
+<p>完整源码：</p>
+
+<pre class="has">
+<code class="language-python"># coding=utf-8
+import os
+import re
+import time
+import logging
+import pdfkit
+import requests
+from bs4 import BeautifulSoup
+from PyPDF2 import PdfFileMerger
+
+html_template = """
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+{content}
+&lt;/body&gt;
+&lt;/html&gt;
+
+"""
+
+
+def parse_url_to_html(url, name):
+    """
+    解析URL，返回HTML内容
+    :param url:解析的url
+    :param name: 保存的html文件名
+    :return: html
+    """
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, 'html.parser')
+        # 正文
+        body = soup.find_all(class_="x-wiki-content")[0]
+        # 标题
+        title = soup.find('h4').get_text()
+
+        # 标题加入到正文的最前面，居中显示
+        center_tag = soup.new_tag("center")
+        title_tag = soup.new_tag('h1')
+        title_tag.string = title
+        center_tag.insert(1, title_tag)
+        body.insert(1, center_tag)
+        html = str(body)
+        # body中的img标签的src相对路径的改成绝对路径
+        pattern = "(&lt;img .*?src=\")(.*?)(\")"
+
+        def func(m):
+            if not m.group(3).startswith("http"):
+                rtn = m.group(1) + "http://www.liaoxuefeng.com" + m.group(2) + m.group(3)
+                return rtn
+            else:
+                return m.group(1)+m.group(2)+m.group(3)
+        html = re.compile(pattern).sub(func, html)
+        html = html_template.format(content=html)
+        html = html.encode("utf-8")
+        with open(name, 'wb') as f:
+            f.write(html)
+        return name
+
+    except Exception as e:
+
+        logging.error("解析错误", exc_info=True)
+
+
+def get_url_list():
+    """
+    获取所有URL目录列表
+    :return:
+    """
+    response = requests.get("http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000")
+    soup = BeautifulSoup(response.content, "html.parser")
+    
+    #menu_tag = soup.find_all(class_="uk-nav uk-nav-side")[1]
+    menu_tag = soup.find_all(class_="x-wiki-index-item")[1]
+    urls = []
+    for li in menu_tag.find_all("li"):
+        url = "http://www.liaoxuefeng.com" + li.a.get('href')
+        urls.append(url)
+    return urls
+
+
+def save_pdf(htmls, file_name):
+    """
+    把所有html文件保存到pdf文件
+    :param htmls:  html文件列表
+    :param file_name: pdf文件名
+    :return:
+    """
+    options = {
+        'page-size': 'Letter',
+        'margin-top': '0.75in',
+        'margin-right': '0.75in',
+        'margin-bottom': '0.75in',
+        'margin-left': '0.75in',
+        'encoding': "UTF-8",
+        'custom-header': [
+            ('Accept-Encoding', 'gzip')
+        ],
+        'cookie': [
+            ('cookie-name1', 'cookie-value1'),
+            ('cookie-name2', 'cookie-value2'),
+        ],
+        'outline-depth': 10,
+    }
+    pdfkit.from_file(htmls, file_name, options=options)
+
+
+def main():
+    start = time.time()
+    file_name = u"liaoxuefeng_Python3_tutorial"
+    urls = get_url_list()
+    for index, url in enumerate(urls):
+      parse_url_to_html(url, str(index) + ".html")
+    htmls =[]
+    pdfs =[]
+    for i in range(0,124):
+        htmls.append(str(i)+'.html')
+        pdfs.append(file_name+str(i)+'.pdf')
+
+        save_pdf(str(i)+'.html', file_name+str(i)+'.pdf')
+
+        print u"转换完成第"+str(i)+'个html'
+
+    merger = PdfFileMerger()
+    for pdf in pdfs:
+       merger.append(open(pdf,'rb'))
+       print u"合并完成第"+str(i)+'个pdf'+pdf
+
+    output = open(u"廖雪峰Python_all.pdf", "wb")
+    merger.write(output)
+
+    print u"输出PDF成功！"
+
+    for html in htmls:
+        os.remove(html)
+        print u"删除临时文件"+html
+
+    for pdf in pdfs:
+        os.remove(pdf)
+        print u"删除临时文件"+pdf
+
+    total_time = time.time() - start
+    print(u"总共耗时：%f 秒" % total_time)
+
+
+if __name__ == '__main__':
+    main()</code></pre>
+
+<p> </p>
+
+<p> </p>            </div>
+                </div>
+	</article>
+</div>
+  <div class="hide-article-box hide-article-pos text-center">
+    <div class="border"></div>
+        <a class="btn article-footer-btn" id="btn-readmore" data-track-view='{"mod":"popu_376","con":",https://blog.csdn.net/hubaoquanu/article/details/66973149,"}' data-track-click='{"mod":"popu_376","con":",https://blog.csdn.net/hubaoquanu/article/details/66973149,"}'>阅读更多</a>
+        <a class="btn article-footer-btn article-footer-bookmark-btn" >
+      <svg class="icon no-active hover-hide" aria-hidden="true">
+        <use xlink:href="#csdnc-bookmark"></use>
+      </svg>
+      <span>收藏</span>
+    </a>
+    <div class="btn article-footer-btn  bds_weixin article-footer-share-btn" data-cmd="weixin" title="分享">
+      <svg class="icon no-active hover-hide" aria-hidden="true">
+        <use xlink:href="#csdnc-share"></use>
+      </svg>
+      <span>分享</span>
+      <div class="bdsharebuttonbox">
+        <a href="#"class="bds_weixin clear-share-style-article-footer" data-cmd="weixin" title="分享"></a>
+      </div>
+    </div>
+    
+  </div>
+  <script>
+  (function(){
+    function collection(){
+      if (currentUserName) {
+        if (!$(this).hasClass("liked")) {
+          $.ajax({
+            url: 'https://my.csdn.net/my/favorite/do_add/2',
+            dataType: 'json',
+            type: 'get',
+            xhrFields: {
+              withCredentials: true
+            },
+            crossDomain: true,
+            data: {
+              title: articleTit,
+              url: curentUrl,
+              share: 1,
+              map_name: ''
+            },
+            success: function(data) {
+              if (data.succ == 1) {
+                $('.btn-bookmark').addClass("liked");
+                $('.article-footer-bookmark-btn').addClass("liked").children('span').text('已收藏');
+                
+                alert('收藏成功,可以在个人中心查看我的收藏');
+              } else {
+                if (data.msg === "您已经收藏过") {
+                  $('.btn-bookmark').addClass("liked");
+                  $('.article-footer-bookmark-btn').addClass("liked").children('span').text('已收藏');
+                }
+                alert(data.msg);
+              }
+            }
+          });
+        } else {
+          alert('您已经收藏过');
+        }
+      } else {
+        window.csdn.loginBox.show();
+      }
+    }
+    window.csdn = window.csdn ? window.csdn : {};
+    window.csdn.articleCollection = collection;
+    function setArticleH(btnReadmore,posi){
+      var winH = $(window).height();
+      var articleBox = $("div.article_content");
+      var artH = articleBox.height();
+      if(artH > winH*posi){
+        articleBox.css({
+          'height':winH*posi+'px',
+          'overflow':'hidden'
+        })
+        btnReadmore.click(function(){
+          articleBox.removeAttr("style");
+          $(this).parent().remove()
+        })
+      }else{
+        btnReadmore.parent().remove()
+      }
+    }
+    var btnReadmore = $("#btn-readmore");
+    $('.article-footer-bookmark-btn').click(window.csdn.articleCollection)
+    if(btnReadmore.length>0){
+      if(currentUserName){
+        setArticleH(btnReadmore,3);
+      }else{
+        setArticleH(btnReadmore,1.2);
+      }
+    }else{
+      $('.hide-article-box').addClass('hide-article-style');
+    }
+  })()
+</script>
+<script>
+		$(".MathJax").remove();
+		if($('div.markdown_views pre.prettyprint code.hljs').length > 0 ){
+				$('div.markdown_views')[0].className = 'markdown_views';
+		}
+</script>
+        <div class="t0 clearfix">
+														<div class="content">
+															<a href="https://blog.csdn.net/xc_zhou/article/details/80952168" target="_blank" title="<em>Python</em>将<em>html</em>转化为<em>pdf</em>" data-track-view='{"mod":"popu_642","con": ",https://blog.csdn.net/xc_zhou/article/details/80952168,"}' data-track-click='{"mod":"popu_642","con": ",https://blog.csdn.net/xc_zhou/article/details/80952168,"}'>
+															<h4 class="text-truncate oneline"><em>Python</em>将<em>html</em>转化为<em>pdf</em></h4>
+															<div class="info-box d-flex align-content-center">
+																<p class="date-and-readNum">
+																	<span class="date hover-show">07-09</span>
+																	<span class="read-num hover-hide"><svg class="icon csdnc-yuedushu" aria-hidden="true"><use xlink:href="#csdnc-m-passwords-visible"></use></svg>787</span>
+																</p>
+																</div>
+															</a>
+																<p class="content">
+																	<a href="https://blog.csdn.net/xc_zhou/article/details/80952168" target="_blank" title="<em>Python</em>将<em>html</em>转化为<em>pdf</em>" data-track-click='{"mod":"popu_642","con": ",https://blog.csdn.net/xc_zhou/article/details/80952168,"}'>
+																		<span class="desc oneline">前言
+
+前面我们对博客园的文章进行了爬取，结果比较令人满意，可以一下子下载某个博主的所有文章了。但是，我们获取的只有文章中的文本内容，并且是没有排版的，看起来也比较费劲。。。
+
+咋么办的？一个比较好的...</span>
+																	</a>
+											            <span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/xc_zhou">来自：	<span class="blog_title"> xc_zhou</span></a></span>
+											          </p>
+														</div>
+													</div>        <a id="commentBox"></a>
+<div class="comment-box">
+	
+	<div class="comment-edit-box d-flex">
+		<a id="commentsedit"></a>
+		<div class="user-img">
+			<a href="javascript:void(0);" target="_blank">
+				<img class="show_loginbox" src="//g.csdnimg.cn/static/user-img/anonymous-User-img.png">
+			</a>
+		</div>
+		<form id="commentform">
+			<input type="hidden" id="comment_replyId">
+			<textarea class="comment-content" name="comment_content" id="comment_content" placeholder="想对作者说点什么"></textarea>
+			<div class="opt-box"> <!-- d-flex -->
+				<div id="ubbtools" class="add_code">
+					<a href="#insertcode" code="code" target="_self"><i class="icon iconfont icon-daima"></i></a>
+				</div>
+				<input type="hidden" id="comment_replyId" name="comment_replyId">
+				<input type="hidden" id="comment_userId" name="comment_userId" value="">
+				<input type="hidden" id="commentId" name="commentId" value="">
+				<div style="display: none;" class="csdn-tracking-statistics tracking-click" data-mod="popu_384"><a href="#" target="_blank" class="comment_area_btn">发表评论</a></div>
+				<div class="dropdown" id="myDrap">
+					<a class="dropdown-face d-flex align-items-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<div class="txt-selected text-truncate">添加代码片</div>
+					<svg class="icon d-block" aria-hidden="true">
+						<use xlink:href="#csdnc-triangledown"></use>
+					</svg>
+					</a>
+					<ul class="dropdown-menu" id="commentCode" aria-labelledby="drop4">
+						<li><a data-code="html">HTML/XML</a></li>
+						<li><a data-code="objc">objective-c</a></li>
+						<li><a data-code="ruby">Ruby</a></li>
+						<li><a data-code="php">PHP</a></li>
+						<li><a data-code="csharp">C</a></li>
+						<li><a data-code="cpp">C++</a></li>
+						<li><a data-code="javascript">JavaScript</a></li>
+						<li><a data-code="python">Python</a></li>
+						<li><a data-code="java">Java</a></li>
+						<li><a data-code="css">CSS</a></li>
+						<li><a data-code="sql">SQL</a></li>
+						<li><a data-code="plain">其它</a></li>
+					</ul>
+				</div>  
+				<div class="right-box">
+					<span id="tip_comment" class="tip">还能输入<em>1000</em>个字符</span>
+					<input type="submit" class="btn btn-sm btn-red btn-comment" value="发表评论">
+				</div>
+			</div>
+		</form>
+	</div>
+
+		<div class="comment-list-container">
+		<a id="comments"></a>
+		<div class="comment-list-box">
+		</div>
+		<div id="commentPage" class="pagination-box d-none"></div>
+		<div class="opt-box text-center">
+			<button class="btn btn-sm btn-link-blue" id="btnMoreComment"></button>
+		</div>
+	</div>
+</div>
+        <div class="recommend-box">
+            		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq_26562641/article/details/72356410,BlogCommendFromBaidu_0"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_26562641/article/details/72356410,BlogCommendFromBaidu_0"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_26562641/article/details/72356410" target="_blank" title="python3 如何转换html到pdf">
+				<h4 class="text-truncate oneline">
+						<em>python</em>3 如何转换<em>html</em>到<em>pdf</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/2/8/A/3_qq_26562641.jpg" alt="qq_26562641" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">qq_26562641</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-17</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							2135</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_26562641/article/details/72356410" target="_blank" title="python3 如何转换html到pdf">
+							<span class="desc oneline">问题：python3 如何转换html到pdf
+描述:
+
+我的电脑是windows764位，python3.4
+我想用python 转换html到pdf.
+我尝试了html2pdf,貌似它只...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/qq_26562641">来自：	<span class="blog_title"> 小飞侠的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/huyuyang6688/article/details/79710704,BlogCommendFromBaidu_2"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/huyuyang6688/article/details/79710704,BlogCommendFromBaidu_2"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/huyuyang6688/article/details/79710704" target="_blank" title="html页面导出为pdf（jsPDF、iText、wkhtmltopdf）">
+				<h4 class="text-truncate oneline">
+						<em>html</em>页面导出为<em>pdf</em>（js<em>PDF</em>、iText、wk<em>html</em>to<em>pdf</em>）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/C/E/F/3_huyuyang6688.jpg" alt="huyuyang6688" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">huyuyang6688</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">03-29</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							3万</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/huyuyang6688/article/details/79710704" target="_blank" title="html页面导出为pdf（jsPDF、iText、wkhtmltopdf）">
+							<span class="desc oneline">
+html页面导出pdf，本来是一件很简单的事情，在浏览器直接打印(Mac快捷键为⌘+p；Windows快捷键为ctrl+p)，就可以把页面另存为pdf文件，但对于要经常把页面导出为pdf的用户来说并...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/huyuyang6688">来自：	<span class="blog_title"> 点滴汇聚，智在积累。——Danny</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/manjianchao/article/details/71122815,BlogCommendFromBaidu_3"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/manjianchao/article/details/71122815,BlogCommendFromBaidu_3"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/manjianchao/article/details/71122815" target="_blank" title="Python 爬取网页内容，转成PDF">
+				<h4 class="text-truncate oneline">
+						<em>Python</em> 爬取<em>网页</em>内容，转成<em>PDF</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/A/5/2/3_manjianchao.jpg" alt="manjianchao" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">manjianchao</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-03</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							3732</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/manjianchao/article/details/71122815" target="_blank" title="Python 爬取网页内容，转成PDF">
+							<span class="desc oneline">将廖雪峰的学习教程转换成PDF文件，代码只适合该网站，如果需要其他网站的教程，可靠需要进行稍微的修改。# coding=utf-8  
+import os  
+import re  
+import t...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/manjianchao">来自：	<span class="blog_title"> 一步一个脚印</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_59" data-pid="59" data-track-view='{"mod":"kp_popu_59-78","con":",,"}' data-track-click='{"mod":"kp_popu_59-78","con":",,"}'><script type="text/javascript" src="//rabc1.iteye.com/production/res/rxjg.js?pkcgstj=jm"></script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/xys430381_1/article/details/80519787,BlogCommendFromBaidu_4"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/xys430381_1/article/details/80519787,BlogCommendFromBaidu_4"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/xys430381_1/article/details/80519787" target="_blank" title="使用 Python 将 HTML 转成 PDF">
+				<h4 class="text-truncate oneline">
+						使用 <em>Python</em> 将 <em>HTML</em> 转成 <em>PDF</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/1/8/D/3_xys430381_1.jpg" alt="xys430381_1" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">xys430381_1</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-31</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							625</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/xys430381_1/article/details/80519787" target="_blank" title="使用 Python 将 HTML 转成 PDF">
+							<span class="desc oneline">背景很多人应该经常遇到在网上看到好的学习教程和资料但却没有电子档的，心里顿时痒痒，下述指导一下大家，如何将网站上的各类教程转换成 PDF 电子书。关键核心主要使用的是wkhtmltopdf的Pytho...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/xys430381_1">来自：	<span class="blog_title"> xys430381_1的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/u012561176/article/details/83655247,BlogCommendFromBaidu_5"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u012561176/article/details/83655247,BlogCommendFromBaidu_5"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u012561176/article/details/83655247" target="_blank" title="Python使用pdfkit、wkhtmltopdf将html转换为pdf错误记录文档">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>使用<em>pdf</em>kit、wk<em>html</em>to<em>pdf</em>将<em>html</em>转换为<em>pdf</em>错误记录文档				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/E/F/1/3_u012561176.jpg" alt="u012561176" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">u012561176</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">11-05</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							322</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u012561176/article/details/83655247" target="_blank" title="Python使用pdfkit、wkhtmltopdf将html转换为pdf错误记录文档">
+							<span class="desc oneline">1、首先，必须安装一下pdfkit这个模块库，使用命令：pip install pdfkit，安装完成后即可，只需在代码写入一行代码，导入即可：
+
+
+import pdffkit
+
+2、接着，我这边是...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/u012561176">来自：	<span class="blog_title"> 茕夜</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/Px01Ih8/article/details/80971244,BlogCommendFromBaidu_6"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Px01Ih8/article/details/80971244,BlogCommendFromBaidu_6"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Px01Ih8/article/details/80971244" target="_blank" title="使用Python将HTML转成PDF">
+				<h4 class="text-truncate oneline">
+						使用<em>Python</em>将<em>HTML</em>转成<em>PDF</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/7/E/D/3_px01ih8.jpg" alt="Px01Ih8" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">Px01Ih8</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">07-06</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							437</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Px01Ih8/article/details/80971244" target="_blank" title="使用Python将HTML转成PDF">
+							<span class="desc oneline">
+  
+    
+                    
+
+                    
+
+                    
+                    
+     ...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/Px01Ih8">来自：	<span class="blog_title"> sfsfsfsdfsdffdsFsd</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident" data-track-view='{"mod":"popu_387","con":",https://bbs.csdn.net/topics/392291562,BlogCommendFromBaidu_7"}' data-track-click='{"mod":"popu_387","con":",https://bbs.csdn.net/topics/392291562,BlogCommendFromBaidu_7"}'>
+		<a href="https://bbs.csdn.net/topics/392291562" target="_blank">
+			<h4 class="text-truncate oneline">
+					wk<em>html</em>to<em>pdf</em>将<em>网页</em>导出为<em>pdf</em>时出现问题			</h4>
+			<div class="info-box d-flex align-content-center">
+				<p>
+								</p>
+				<p>
+					<span class="date">11-27</span>
+				</p>
+			</div>
+			<p class="content oneline">
+					大家好，我本来想把实验楼上的教程文档批量导出为pdf，这样我可以打印成纸质版方便查看，因为文档实在太多所以我选择了wkhtmltopdf这个工具来批量导出pdf，但是在使用过程中我遇到了一些问题。 比			</p>
+		</a>
+
+	</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/shenwanjiang111/article/details/67634794,BlogCommendFromBaidu_8"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/shenwanjiang111/article/details/67634794,BlogCommendFromBaidu_8"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/shenwanjiang111/article/details/67634794" target="_blank" title="Python抓取网页并保存为PDF">
+				<h4 class="text-truncate oneline">
+						<em>Python</em><em>抓取</em><em>网页</em>并<em>保存</em>为<em>PDF</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/E/4/3/3_shenwanjiang111.jpg" alt="shenwanjiang111" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">shenwanjiang111</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">03-31</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							9172</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/shenwanjiang111/article/details/67634794" target="_blank" title="Python抓取网页并保存为PDF">
+							<span class="desc oneline">抓取HTML文档，转化成PDF文档</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/shenwanjiang111">来自：	<span class="blog_title"> shenwanjiang111的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_60" data-pid="60" data-track-view='{"mod":"kp_popu_60-43","con":",,"}' data-track-click='{"mod":"kp_popu_60-43","con":",,"}'><div id="three_ad8" class="mediav_ad" ></div>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script>
+                                               NEWS_FEED({
+                w: 900,
+                h : 84,
+                showid : 'Afihld',
+                placeholderId: "three_ad8",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 10,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident" data-track-view='{"mod":"popu_387","con":",https://bbs.csdn.net/topics/270062648,BlogCommendFromBaidu_9"}' data-track-click='{"mod":"popu_387","con":",https://bbs.csdn.net/topics/270062648,BlogCommendFromBaidu_9"}'>
+		<a href="https://bbs.csdn.net/topics/270062648" target="_blank">
+			<h4 class="text-truncate oneline">
+					怎样将<em>网页</em>把<em>网页</em>上的内容抓下来<em>保存</em>到<em>pdf</em>文档里			</h4>
+			<div class="info-box d-flex align-content-center">
+				<p>
+								</p>
+				<p>
+					<span class="date">10-09</span>
+				</p>
+			</div>
+			<p class="content oneline">
+					怎样用c#.net写一个小程序，把网页（网页肯能很长）抓下来并保存pdf文档中（可以分为几页显示）,希望大虾们帮忙啊？ 希望有详细的代码，小弟不胜感激啊			</p>
+		</a>
+
+	</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/john_bian/article/details/71025372,BlogCommendFromBaidu_10"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/john_bian/article/details/71025372,BlogCommendFromBaidu_10"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/john_bian/article/details/71025372" target="_blank" title="用Python下载一个网页保存为本地的 HTML文件">
+				<h4 class="text-truncate oneline">
+						用<em>Python</em>下载一个<em>网页</em><em>保存</em>为本地的 <em>HTML</em>文件				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/3/E/F/3_john_bian.jpg" alt="john_bian" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">john_bian</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">04-30</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1.6万</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/john_bian/article/details/71025372" target="_blank" title="用Python下载一个网页保存为本地的 HTML文件">
+							<span class="desc oneline">我们可以用Python来将一个网页保存为本地的HTML文件，这需要用到urllib库。
+比如我们要下载山东大学新闻网的一个页面，该网页如下：
+
+
+实现代码如下
+
+import urllib.reque...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/john_bian">来自：	<span class="blog_title"> 知耻后勇，韦编三绝</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	          <div class="recommend-item-box blog-expert-recommend-box">
+				<div class="d-flex">
+					<div class="blog-expert-recommend">
+						<div class="blog-expert">
+							<div class="blog-expert-flexbox"></div>
+						</div>
+					</div>
+				</div>
+      </div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/wudj810818/article/details/77000785,BlogCommendFromBaidu_11"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/wudj810818/article/details/77000785,BlogCommendFromBaidu_11"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/wudj810818/article/details/77000785" target="_blank" title="Python -- 使用WKhtmlTopdf 将Html转为PDF">
+				<h4 class="text-truncate oneline">
+						<em>Python</em> -- 使用WK<em>html</em>To<em>pdf</em> 将<em>Html</em>转为<em>PDF</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/0/4/E/3_wudj810818.jpg" alt="wudj810818" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">wudj810818</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">08-09</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1479</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/wudj810818/article/details/77000785" target="_blank" title="Python -- 使用WKhtmlTopdf 将Html转为PDF">
+							<span class="desc oneline">html-&amp;amp;amp;amp;amp;gt;pdf</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/wudj810818">来自：	<span class="blog_title"> 5后's Blog</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/Pop_Rain/article/details/72295176,BlogCommendFromBaidu_12"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Pop_Rain/article/details/72295176,BlogCommendFromBaidu_12"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Pop_Rain/article/details/72295176" target="_blank" title="python3使用requests包抓取并保存网页源码">
+				<h4 class="text-truncate oneline">
+						<em>python</em>3使用requests包<em>抓取</em>并<em>保存</em><em>网页</em>源码				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/2/9/E/3_pop_rain.jpg" alt="Pop_Rain" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">Pop_Rain</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-16</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							5666</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Pop_Rain/article/details/72295176" target="_blank" title="python3使用requests包抓取并保存网页源码">
+							<span class="desc oneline">转载自：http://blog.csdn.net/w93223010/article/details/18968081
+
+
+
+
+近期的工作学习中使用到了Python，分享一些初学者的心得与君...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/Pop_Rain">来自：	<span class="blog_title"> Pop_Rain的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/zhaohansk/article/details/51711441,BlogCommendFromBaidu_13"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/zhaohansk/article/details/51711441,BlogCommendFromBaidu_13"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/zhaohansk/article/details/51711441" target="_blank" title="用python从pdf中提取信息，转为txt或者html">
+				<h4 class="text-truncate oneline">
+						用<em>python</em>从<em>pdf</em>中提取信息，转为txt或者<em>html</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/2/B/4/3_zhaohansk.jpg" alt="zhaohansk" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">zhaohansk</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-19</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							6544</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/zhaohansk/article/details/51711441" target="_blank" title="用python从pdf中提取信息，转为txt或者html">
+							<span class="desc oneline">主要用到了pdfminer这个库
+
+原文地址：
+http://www.bkjia.com/Pythonjc/1073800.html
+
+
+
+示例代码
+# -*- coding: utf...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/zhaohansk">来自：	<span class="blog_title"> 杂</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_61" data-pid="61" data-track-view='{"mod":"kp_popu_61-809","con":",,"}' data-track-click='{"mod":"kp_popu_61-809","con":",,"}'><script
+    async="async"
+    charset="utf-8"
+    src="https://shared.ydstatic.com/js/yatdk/3.0.1/stream.js"
+    data-id="6cb24153a03289ff3597c7aab4b69fe9"
+    data-div-Style="width:100%;"
+data-tit-Style="margin-bottom: 6px; font-size: 18px; line-height: 24px; color: #3d3d3d;display: inline-block;font-weight:bold;"
+data-des-Style="font-size: 13px; line-height: 22px; white-space: normal; color: #999;"
+data-img-Style="float:left;margin-right:15px;width:90px;height:60px;">
+</script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq_39407518/article/details/80663328,BlogCommendFromBaidu_14"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_39407518/article/details/80663328,BlogCommendFromBaidu_14"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_39407518/article/details/80663328" target="_blank" title="Python处理pdf文件及图片">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>处理<em>pdf</em>文件及图片				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/5/9/E/3_qq_39407518.jpg" alt="qq_39407518" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">qq_39407518</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-12</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1669</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_39407518/article/details/80663328" target="_blank" title="Python处理pdf文件及图片">
+							<span class="desc oneline">一、Python处理pdf文件1.1、Python读出pdf文件#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Time    : 2018/06/0...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/qq_39407518">来自：	<span class="blog_title"> hewj_python的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/rebellion51/article/details/47086019,searchFromBaidu_15"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/rebellion51/article/details/47086019,searchFromBaidu_15"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/rebellion51/article/details/47086019" target="_blank" title="用Python进行自然语言处理-1. Language Processing and Python">
+				<h4 class="text-truncate oneline">
+						用<em>Python</em>进行自然语言处理-1. Language Processing and <em>Python</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/E/0/6/3_rebellion51.jpg" alt="rebellion51" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">rebellion51</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">07-27</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							696</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/rebellion51/article/details/47086019" target="_blank" title="用Python进行自然语言处理-1. Language Processing and Python">
+							<span class="desc oneline">《用Python进行自然语言处理》是一本结合了自然语言处理和Python知识的入门书籍，现在书籍正在出第二版，预计2016年完成。第二版是与Python 3配套的，很多地方都要修改。附上书籍原地址链接...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/rebellion51">来自：	<span class="blog_title"> rebellion51的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq_40304090/article/details/79460022,searchFromBaidu_16"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_40304090/article/details/79460022,searchFromBaidu_16"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_40304090/article/details/79460022" target="_blank" title="Python科学计算、数据挖掘基本库思维导图">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>科学计算、数据挖掘基本库思维导图				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/4/3/4/3_qq_40304090.jpg" alt="qq_40304090" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">qq_40304090</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">03-06</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							115</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_40304090/article/details/79460022" target="_blank" title="Python科学计算、数据挖掘基本库思维导图">
+							<span class="desc oneline">      Python广受推崇与应用的原因之一是其具有众多功能强大的库。Python自带的标准库可以满足大多数基本功能需求，比如，文本处理、数值与数学运算、文件与目录管理、操作系统、代码调试等。  ...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/qq_40304090">来自：	<span class="blog_title"> qq_40304090的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/u013269505/article/details/78803194,searchFromBaidu_17"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u013269505/article/details/78803194,searchFromBaidu_17"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u013269505/article/details/78803194" target="_blank" title="python科学计算——数据可视化(Matplotlib)">
+				<h4 class="text-truncate oneline">
+						<em>python</em>科学计算——数据可视化(Matplotlib)				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/8/3/8/3_u013269505.jpg" alt="u013269505" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">u013269505</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">12-16</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							3243</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u013269505/article/details/78803194" target="_blank" title="python科学计算——数据可视化(Matplotlib)">
+							<span class="desc oneline">写在前面Matplotlib提供了大量实现数据可视化功能的模块，采用面向对象进行封装，在编写大型应用时通过面向对象方式将更加有效，这里只是对matplotlib的一些简单功能进行总结，需要更高级别的应...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/u013269505">来自：	<span class="blog_title"> 南极企鹅</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/yu132563/article/details/40874339,searchFromBaidu_18"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/yu132563/article/details/40874339,searchFromBaidu_18"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/yu132563/article/details/40874339" target="_blank" title="科学计算：Python VS. MATLAB (1)----给我一个理由先">
+				<h4 class="text-truncate oneline">
+						科学计算：<em>Python</em> VS. MATLAB (1)----给我一个理由先				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/4/4/B/3_yu132563.jpg" alt="yu132563" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">yu132563</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">11-07</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							4278</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/yu132563/article/details/40874339" target="_blank" title="科学计算：Python VS. MATLAB (1)----给我一个理由先">
+							<span class="desc oneline">科学计算：Python VS. MATLAB (1)----给我一个理由先
+
+
+
+
+        MATLAB 是一种用于算法开发、数据可视化、数据分析以及数值计算的高级技术计算语言和交互...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/yu132563">来自：	<span class="blog_title"> yu132563的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_62" data-pid="62" data-track-view='{"mod":"kp_popu_62-556","con":",,"}' data-track-click='{"mod":"kp_popu_62-556","con":",,"}'><div id="three_ad18" class="mediav_ad" ></div>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script>
+                                               NEWS_FEED({
+                w: 852,
+                h : 60,
+                showid : 'Afihld',
+                placeholderId: "three_ad18",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 0,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/starzhou/article/details/65629933,searchFromBaidu_19"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/starzhou/article/details/65629933,searchFromBaidu_19"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/starzhou/article/details/65629933" target="_blank" title="Python做文本挖掘的情感极性分析">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>做文本挖掘的情感极性分析				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/4/E/7/3_starzhou.jpg" alt="starzhou" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">starzhou</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">03-24</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							6985</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/starzhou/article/details/65629933" target="_blank" title="Python做文本挖掘的情感极性分析">
+							<span class="desc oneline">Python做文本挖掘的情感极性分析
+
+数据挖掘入门与实战2017-03-23
+ 21:25:41line阅读(27)评论(0)
+
+
+声明：本文由入驻搜狐公众平台的作者撰写，除搜狐官方账号...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/starzhou">来自：	<span class="blog_title"> starzhou的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq_34178990/article/details/80705289,BlogCommendFromGuangxin_20"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_34178990/article/details/80705289,BlogCommendFromGuangxin_20"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_34178990/article/details/80705289" target="_blank" title="leetcode算法初级篇">
+				<h4 class="text-truncate oneline">
+						leetcode算法初级篇				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/9/9/6/3_qq_34178990.jpg" alt="qq_34178990" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">qq_34178990</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-15</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							310</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_34178990/article/details/80705289" target="_blank" title="leetcode算法初级篇">
+							<span class="desc oneline">开篇
+
+本文是关于我刷leetcode时的文章。 我将代码放在了github上， 有兴趣可以看看传送们。 其中的代码全部都是用javaScript写的。 较多的题都是使用了多种解法。比如： 使用自己的...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/qq_34178990">来自：	<span class="blog_title"> 小木Blog</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/sinat_38944746/article/details/79126124,BlogCommendFromGuangxin_21"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/sinat_38944746/article/details/79126124,BlogCommendFromGuangxin_21"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/sinat_38944746/article/details/79126124" target="_blank" title="Python爬虫下载PDF文件">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>爬虫下载<em>PDF</em>文件				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/0/7/F/3_sinat_38944746.jpg" alt="sinat_38944746" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">sinat_38944746</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">01-22</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							2260</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/sinat_38944746/article/details/79126124" target="_blank" title="Python爬虫下载PDF文件">
+							<span class="desc oneline">requests库
+
+
+
+def get_file_content(date,files):
+    time = date[0:4] + date[5:7]
+    file_name = file...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/sinat_38944746">来自：	<span class="blog_title"> sinat_38944746的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/u012705410/article/details/47708031,BlogCommendFromGuangxin_22"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u012705410/article/details/47708031,BlogCommendFromGuangxin_22"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u012705410/article/details/47708031" target="_blank" title="用Python 爬虫批量下载PDF文档">
+				<h4 class="text-truncate oneline">
+						用<em>Python</em> 爬虫批量下载<em>PDF</em>文档				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/B/8/D/3_u012705410.jpg" alt="u012705410" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">u012705410</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">08-16</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							3万</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u012705410/article/details/47708031" target="_blank" title="用Python 爬虫批量下载PDF文档">
+							<span class="desc oneline">之前稍微看了用Python爬虫爬取贴吧图片的文章，发现用Python爬虫确实方便。一个非常有用的东西便是自动下载网上的PDF文档。下面就来举两个例子，程序主要参考自这篇文章：http://ddswhu...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/u012705410">来自：	<span class="blog_title"> lxy孙悟空的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/zyc121561/article/details/77877912,BlogCommendFromGuangxin_23"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/zyc121561/article/details/77877912,BlogCommendFromGuangxin_23"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/zyc121561/article/details/77877912" target="_blank" title="Python提取PDF内容（文本、图像、线条等）">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>提取<em>PDF</em>内容（文本、图像、线条等）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/C/0/C/3_zyc121561.jpg" alt="zyc121561" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">zyc121561</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">09-07</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1.7万</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/zyc121561/article/details/77877912" target="_blank" title="Python提取PDF内容（文本、图像、线条等）">
+							<span class="desc oneline">使用Python抽取PDF文件内容，包括文本、图像、线条等对象摘要：这篇文章主要介绍如何使用Python【3.6版本】中的PDFminer3k 模块来抽取PDF内容，包括文本、图像、曲线等。1.安装P...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/zyc121561">来自：	<span class="blog_title"> yooongchun的CSDN博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_63" data-pid="63" data-track-view='{"mod":"kp_popu_63-809","con":",,"}' data-track-click='{"mod":"kp_popu_63-809","con":",,"}'><script
+    async="async"
+    charset="utf-8"
+    src="https://shared.ydstatic.com/js/yatdk/3.0.1/stream.js"
+    data-id="6cb24153a03289ff3597c7aab4b69fe9"
+    data-div-Style="width:100%;"
+data-tit-Style="margin-bottom: 6px; font-size: 18px; line-height: 24px; color: #3d3d3d;display: inline-block;font-weight:bold;"
+data-des-Style="font-size: 13px; line-height: 22px; white-space: normal; color: #999;"
+data-img-Style="float:left;margin-right:15px;width:90px;height:60px;">
+</script></div></div>
+	    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix" data-track-view='{"mod":"popu_387","con":",https://download.csdn.net/download/wangxingxing321/10816906,BlogCommendFromQuerySearch_24"}' data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/wangxingxing321/10816906,BlogCommendFromQuerySearch_24"}'>
+			<a href="https://download.csdn.net/download/wangxingxing321/10816906" target="_blank">
+				<div class="content">
+					<div class="">
+						<span class="type">下载</span>
+						<h4 class="text-truncate oneline clearfix">
+							web<em>网页</em><em>保存</em>为<em>PDF</em>文件						</h4>
+						<span class="data float-right">11-29</span>
+					</div>
+					<div class="desc oneline">
+							保存为PDF文件					</div>
+				</div>
+			</a>
+		</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/z848958541/article/details/76833863,BlogCommendFromQuerySearch_25"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/z848958541/article/details/76833863,BlogCommendFromQuerySearch_25"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/z848958541/article/details/76833863" target="_blank" title="使用phantomjs.exe将网页链接保存成pdf、png等文件">
+				<h4 class="text-truncate oneline">
+						使用phantomjs.exe将<em>网页</em>链接<em>保存</em>成<em>pdf</em>、png等文件				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/6/8/7/3_z848958541.jpg" alt="z848958541" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">z848958541</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">08-07</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1136</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/z848958541/article/details/76833863" target="_blank" title="使用phantomjs.exe将网页链接保存成pdf、png等文件">
+							<span class="desc oneline">如何把一个链接保存成为pdf，或者png等图片，在利用phantomjs的时候操作起来十分简单，首先将phantomjs.exe下载下来，phantomjs是一个没有界面的浏览器，更多信息http:/...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/z848958541">来自：	<span class="blog_title"> z848958541的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/weixin_37861326/article/details/81200221,BlogCommendFromQuerySearch_26"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/weixin_37861326/article/details/81200221,BlogCommendFromQuerySearch_26"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/weixin_37861326/article/details/81200221" target="_blank" title="利用python抓取页面并将页面文件生成txt文件导出">
+				<h4 class="text-truncate oneline">
+						利用<em>python</em><em>抓取</em>页面并将页面文件生成txt文件导出				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/4/1/7/3_weixin_37861326.jpg" alt="weixin_37861326" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">weixin_37861326</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">07-25</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							928</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/weixin_37861326/article/details/81200221" target="_blank" title="利用python抓取页面并将页面文件生成txt文件导出">
+							<span class="desc oneline">分析需求：
+
+1）利用python抓取网页页面
+2）将抓取到的网页 生成txt文件导出到电脑桌面
+
+准备工作：
+
+电脑构建python环境
+安装python编辑环境IDE(本文所述，利用pyCharm...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/weixin_37861326">来自：	<span class="blog_title"> weixin_37861326的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qhw5279/article/details/52801224,BlogCommendFromQuerySearch_27"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qhw5279/article/details/52801224,BlogCommendFromQuerySearch_27"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qhw5279/article/details/52801224" target="_blank" title="Python MOOC简单获取网页内容并以html格式保存在本地">
+				<h4 class="text-truncate oneline">
+						<em>Python</em> MOOC简单获取<em>网页</em>内容<em>并以</em><em>html</em>格式<em>保存</em>在本地				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/8/9/D/3_qhw5279.jpg" alt="qhw5279" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">qhw5279</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">10-12</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							355</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qhw5279/article/details/52801224" target="_blank" title="Python MOOC简单获取网页内容并以html格式保存在本地">
+							<span class="desc oneline">抓取百度贴吧（注意你所评价的程序是用Python 2还是Python 3书写的，分别使用print语句和print()函数）“http://tieba.baidu.com/p/1000000000”至...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/qhw5279">来自：	<span class="blog_title"> qhw5279的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq_41841569/article/details/80313931,BlogCommendFromQuerySearch_28"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_41841569/article/details/80313931,BlogCommendFromQuerySearch_28"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_41841569/article/details/80313931" target="_blank" title="利用Python把网页内容转换为pdf格式文件，批量下载到本地 ！">
+				<h4 class="text-truncate oneline">
+						利用<em>Python</em>把<em>网页</em>内容转换为<em>pdf</em>格式文件，批量下载到本地 ！				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/3/4/0/3_qq_41841569.jpg" alt="qq_41841569" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">qq_41841569</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-14</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							745</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_41841569/article/details/80313931" target="_blank" title="利用Python把网页内容转换为pdf格式文件，批量下载到本地 ！">
+							<span class="desc oneline">初衷： 使用Google浏览器的打印命令时，保存下来的pdf文件中包含网页中的所有内容（左右边框和广告等），想仅把当前网页中的主体内容转成pdf格式的文件保存下来。操作说明：填写URL及提取条件（浏览...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/qq_41841569">来自：	<span class="blog_title"> Python新世界</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_64" data-pid="64" data-track-view='{"mod":"kp_popu_64-809","con":",,"}' data-track-click='{"mod":"kp_popu_64-809","con":",,"}'><script
+    async="async"
+    charset="utf-8"
+    src="https://shared.ydstatic.com/js/yatdk/3.0.1/stream.js"
+    data-id="6cb24153a03289ff3597c7aab4b69fe9"
+    data-div-Style="width:100%;"
+data-tit-Style="margin-bottom: 6px; font-size: 18px; line-height: 24px; color: #3d3d3d;display: inline-block;font-weight:bold;"
+data-des-Style="font-size: 13px; line-height: 22px; white-space: normal; color: #999;"
+data-img-Style="float:left;margin-right:15px;width:90px;height:60px;">
+</script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/gorquanwu/article/details/81739589,BlogCommendFromBaidu_29"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/gorquanwu/article/details/81739589,BlogCommendFromBaidu_29"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/gorquanwu/article/details/81739589" target="_blank" title="浅谈利用python保存整个网站页面">
+				<h4 class="text-truncate oneline">
+						浅谈利用<em>python</em><em>保存</em>整个网站页面				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/3/B/3/3_gorquanwu.jpg" alt="gorquanwu" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">gorquanwu</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">08-16</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							939</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/gorquanwu/article/details/81739589" target="_blank" title="浅谈利用python保存整个网站页面">
+							<span class="desc oneline">空闲的时候随便找了一个网站练习一下爬虫，总结一下自己写爬虫遇到的知识点
+
+
+实现的功能
+抓取全站URL
+
+获取CSS，JS， img等文件连接
+
+获取文件名字
+
+保存文件到本地
+
+用到的模块
+urll...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/gorquanwu">来自：	<span class="blog_title"> gorquan的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/u014804795/article/details/52227518,BlogCommendFromBaidu_30"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u014804795/article/details/52227518,BlogCommendFromBaidu_30"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u014804795/article/details/52227518" target="_blank" title="python3 保存一个网页为html文件">
+				<h4 class="text-truncate oneline">
+						<em>python</em>3 <em>保存</em>一个<em>网页</em>为<em>html</em>文件				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/5/1/8/3_u014804795.jpg" alt="u014804795" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">u014804795</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">08-17</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1.1万</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u014804795/article/details/52227518" target="_blank" title="python3 保存一个网页为html文件">
+							<span class="desc oneline">我使用的python版本为3.5.2.
+最近租房子，恨透了中介，想绕过中介去租。结果发现豆瓣同城里有好多二房东，感觉人都还不错。但是豆瓣这里没有信息检索的功能，只能人工地看房子的地址，非常地不方便。...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/u014804795">来自：	<span class="blog_title"> u014804795的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix" data-track-view='{"mod":"popu_387","con":",https://download.csdn.net/download/zhoudapeng01/10669586,BlogCommendFromBaidu_31"}' data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/zhoudapeng01/10669586,BlogCommendFromBaidu_31"}'>
+			<a href="https://download.csdn.net/download/zhoudapeng01/10669586" target="_blank">
+				<div class="content">
+					<div class="">
+						<span class="type">下载</span>
+						<h4 class="text-truncate oneline clearfix">
+							<em>python</em> 爬取<em>网页</em>内容并<em>保存</em>为<em>pdf</em>格式						</h4>
+						<span class="data float-right">09-16</span>
+					</div>
+					<div class="desc oneline">
+							利用Python爬取网页中的图片内容，并将其转换为pdf格式的文件。					</div>
+				</div>
+			</a>
+		</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/Zhang_Jackson/article/details/79230843,BlogCommendFromBaidu_32"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Zhang_Jackson/article/details/79230843,BlogCommendFromBaidu_32"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Zhang_Jackson/article/details/79230843" target="_blank" title="如何把Python爬取的网页保存为.txt文件">
+				<h4 class="text-truncate oneline">
+						如何把<em>Python</em>爬取的<em>网页</em><em>保存</em>为.txt文件				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/3/6/D/3_zhang_jackson.jpg" alt="Zhang_Jackson" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">Zhang_Jackson</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">02-01</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							2556</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Zhang_Jackson/article/details/79230843" target="_blank" title="如何把Python爬取的网页保存为.txt文件">
+							<span class="desc oneline">注意问题：涉及到中文时一定要在前面加 #encoding: utf-8
+获取网页要知道返回的类型，可以先用type（）方法去验证返回的数据类型
+# encoding: utf-8
+
+import ...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/Zhang_Jackson">来自：	<span class="blog_title"> Zhang_Jackson的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix" data-track-view='{"mod":"popu_387","con":",https://download.csdn.net/download/vieli2010/10700847,BlogCommendFromBaidu_33"}' data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/vieli2010/10700847,BlogCommendFromBaidu_33"}'>
+			<a href="https://download.csdn.net/download/vieli2010/10700847" target="_blank">
+				<div class="content">
+					<div class="">
+						<span class="type">下载</span>
+						<h4 class="text-truncate oneline clearfix">
+							<em>网页</em>小说<em>抓取</em>器、可以<em>抓取</em><em>网页</em>上面的小说然后变成txt或chm格式的软件						</h4>
+						<span class="data float-right">10-03</span>
+					</div>
+					<div class="desc oneline">
+							这个小说软件是我寻找了很久才找到的，因为我看到大部分的软件都是要任务和积分去看更新的。现在找到了这个软件我基本上就都看免费小说了，比较免费的东西是无价的，不喜欢的盆友勿喷！					</div>
+				</div>
+			</a>
+		</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_65" data-pid="65" data-track-view='{"mod":"kp_popu_65-84","con":",,"}' data-track-click='{"mod":"kp_popu_65-84","con":",,"}'><div id="three_ad33" class="mediav_ad" ></div>
+<script>
+                                               NEWS_FEED({
+                w: 852,
+                h : 60,
+                showid : 'GNKXx7',
+                placeholderId: "three_ad33",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 0,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/sinat_20280061/article/details/51674534,BlogCommendFromBaidu_34"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/sinat_20280061/article/details/51674534,BlogCommendFromBaidu_34"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/sinat_20280061/article/details/51674534" target="_blank" title="python学习—保存网页到本地 html及pdf">
+				<h4 class="text-truncate oneline">
+						<em>python</em>学习—<em>保存</em><em>网页</em>到本地 <em>html</em>及<em>pdf</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/A/6/8/3_sinat_20280061.jpg" alt="sinat_20280061" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">sinat_20280061</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-14</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							999</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/sinat_20280061/article/details/51674534" target="_blank" title="python学习—保存网页到本地 html及pdf">
+							<span class="desc oneline">python学习—保存网页到本地 html及pdf</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/sinat_20280061">来自：	<span class="blog_title"> jingyihiter 的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/reallocing1/article/details/51694967,BlogCommendFromBaidu_35"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/reallocing1/article/details/51694967,BlogCommendFromBaidu_35"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/reallocing1/article/details/51694967" target="_blank" title="使用python生成本地html文件">
+				<h4 class="text-truncate oneline">
+						使用<em>python</em>生成本地<em>html</em>文件				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/B/6/C/3_reallocing1.jpg" alt="reallocing1" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">reallocing1</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-16</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							3万</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/reallocing1/article/details/51694967" target="_blank" title="使用python生成本地html文件">
+							<span class="desc oneline">一.静态HTML生成方法#coding:utf-8
+_author_ = &quot;LiaoPan&quot;
+_time_  = &quot;2016.6.16&quot;f = open(&quot;demo_1.html&quot;,'w')
+mess...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/reallocing1">来自：	<span class="blog_title"> 教育数据挖掘小小子的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/yirexiao/article/details/79092355,BlogCommendFromBaidu_36"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/yirexiao/article/details/79092355,BlogCommendFromBaidu_36"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/yirexiao/article/details/79092355" target="_blank" title="python网页全部内容的获取">
+				<h4 class="text-truncate oneline">
+						<em>python</em><em>网页</em>全部内容的获取				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/F/5/6/3_yirexiao.jpg" alt="yirexiao" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">yirexiao</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">01-18</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							6669</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/yirexiao/article/details/79092355" target="_blank" title="python网页全部内容的获取">
+							<span class="desc oneline">1、升级pip的版本2、安装requests包3、前两步才可以引用requests包例子import requests
+res = requests.get('http://news.sina.com...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/yirexiao">来自：	<span class="blog_title"> yirexiao的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/feifeiwendao/article/details/51008181,BlogCommendFromBaidu_37"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/feifeiwendao/article/details/51008181,BlogCommendFromBaidu_37"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/feifeiwendao/article/details/51008181" target="_blank" title="Python 实现简单的爬虫功能并保存到本地">
+				<h4 class="text-truncate oneline">
+						<em>Python</em> 实现简单的爬虫功能并<em>保存</em>到本地				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/C/F/4/3_feifeiwendao.jpg" alt="feifeiwendao" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">feifeiwendao</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">03-29</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1.2万</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/feifeiwendao/article/details/51008181" target="_blank" title="Python 实现简单的爬虫功能并保存到本地">
+							<span class="desc oneline">昨天下班后忽然兴起想写一个爬虫抓抓网页上的东西。花了一个钟简单学习了python的基础语法，然后参照网上的例子自己写了个爬虫。
+
+#coding=utf-8
+import urllib.reque...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/feifeiwendao">来自：	<span class="blog_title"> feifeiwendao的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/wushan1992/article/details/80657805,BlogCommendFromBaidu_38"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/wushan1992/article/details/80657805,BlogCommendFromBaidu_38"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/wushan1992/article/details/80657805" target="_blank" title="python的pdf文件处理和图片处理">
+				<h4 class="text-truncate oneline">
+						<em>python</em>的<em>pdf</em>文件处理和图片处理				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/0/9/C/3_wushan1992.jpg" alt="wushan1992" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">wushan1992</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-11</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1107</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/wushan1992/article/details/80657805" target="_blank" title="python的pdf文件处理和图片处理">
+							<span class="desc oneline">爬取网站的内容，并且写入pdf文件
+
+
+首先根据文件的内容，获得html的url。
+
+
+import re
+import requests
+
+
+reg = re.compile(r&amp;quot;&amp;amp...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/wushan1992">来自：	<span class="blog_title"> Study</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_66" data-pid="66" data-track-view='{"mod":"kp_popu_66-808","con":",,"}' data-track-click='{"mod":"kp_popu_66-808","con":",,"}'><script
+    async="async"
+    charset="utf-8"
+    src="https://shared.ydstatic.com/js/yatdk/3.0.1/stream.js"
+    data-id="8935aa488dd58452b9e5ee3b44f1212f"
+    data-div-Style="width:100%;"
+data-tit-Style="margin-bottom: 6px; font-size: 18px; line-height: 24px; color: #3d3d3d;display: inline-block;font-weight:bold;"
+data-des-Style="font-size: 13px; line-height: 22px; white-space: normal; color: #999;"
+data-img-Style="float:left;margin-right:15px;width:90px;height:60px;">
+</script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/lanyang123456/article/details/55006595,searchFromBaidu_39"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/lanyang123456/article/details/55006595,searchFromBaidu_39"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/lanyang123456/article/details/55006595" target="_blank" title="网页中右键功能的实现--- contextMenu的使用">
+				<h4 class="text-truncate oneline">
+						<em>网页</em>中右键功能的实现--- contextMenu的使用				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/7/2/9/3_lanyang123456.jpg" alt="lanyang123456" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">lanyang123456</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">02-12</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1688</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/lanyang123456/article/details/55006595" target="_blank" title="网页中右键功能的实现--- contextMenu的使用">
+							<span class="desc oneline">本文介绍一种网页中实现右键功能的方案–contextMenu。1.下载下载地址 
+https://github.com/swisnl/jQuery-contextMenu下载得到压缩文件jQuery-...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/lanyang123456">来自：	<span class="blog_title"> 翔云</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/oMingZi12345678/article/details/51292613,searchFromBaidu_40"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/oMingZi12345678/article/details/51292613,searchFromBaidu_40"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/oMingZi12345678/article/details/51292613" target="_blank" title="Python 网页爬虫 &amp; 文本处理 &amp; 科学计算 &amp; 机器学习 &amp; 数据挖掘兵器谱">
+				<h4 class="text-truncate oneline">
+						<em>Python</em> <em>网页</em>爬虫 &amp; 文本处理 &amp; 科学计算 &amp; 机器学习 &amp; 数据挖掘兵器谱				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/2/F/3/3_omingzi12345678.jpg" alt="oMingZi12345678" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">oMingZi12345678</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-02</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							496</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/oMingZi12345678/article/details/51292613" target="_blank" title="Python 网页爬虫 &amp; 文本处理 &amp; 科学计算 &amp; 机器学习 &amp; 数据挖掘兵器谱">
+							<span class="desc oneline">http://www.52nlp.cn/python-%E7%BD%91%E9%A1%B5%E7%88%AC%E8%99%AB-%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/oMingZi12345678">来自：	<span class="blog_title"> Mingz技术博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/baby97/article/details/48372313,searchFromBaidu_41"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/baby97/article/details/48372313,searchFromBaidu_41"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/baby97/article/details/48372313" target="_blank" title="去掉/favicon.ico的请求">
+				<h4 class="text-truncate oneline">
+						去掉/favicon.ico的请求				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/D/F/A/3_baby97.jpg" alt="baby97" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">baby97</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">09-11</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							9735</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/baby97/article/details/48372313" target="_blank" title="去掉/favicon.ico的请求">
+							<span class="desc oneline">var http=require(&quot;http&quot;);
+ var server=http.createServer();
+ server.on(&quot;request&quot;,function(req,res){...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/baby97">来自：	<span class="blog_title"> 银狐的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/u011315300/article/details/80431096,BlogCommendFromQuerySearch_42"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u011315300/article/details/80431096,BlogCommendFromQuerySearch_42"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u011315300/article/details/80431096" target="_blank" title="Python爬虫  BeautifulSoup抓取网页数据 并保存到数据库MySQL">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>爬虫  BeautifulSoup<em>抓取</em><em>网页</em>数据 并<em>保存</em>到数据库MySQL				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/9/8/B/3_u011315300.jpg" alt="u011315300" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">u011315300</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-24</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1251</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u011315300/article/details/80431096" target="_blank" title="Python爬虫  BeautifulSoup抓取网页数据 并保存到数据库MySQL">
+							<span class="desc oneline">最近刚学习Python，做了个简单的爬虫，作为一个简单的demo希望帮助和我一样的初学者 代码使用python2.7做的爬虫  抓取51job上面的职位名，公司名，薪资，发布时间等等 直接上代码，代码...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/u011315300">来自：	<span class="blog_title"> aasdsjk的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/xman4code/article/details/80989601,BlogCommendFromQuerySearch_43"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/xman4code/article/details/80989601,BlogCommendFromQuerySearch_43"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/xman4code/article/details/80989601" target="_blank" title="python爬虫（3）将抓取的网页存入文件">
+				<h4 class="text-truncate oneline">
+						<em>python</em>爬虫（3）将<em>抓取</em>的<em>网页</em>存入文件				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/6/C/B/3_xman4code.jpg" alt="xman4code" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">xman4code</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">07-10</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1260</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/xman4code/article/details/80989601" target="_blank" title="python爬虫（3）将抓取的网页存入文件">
+							<span class="desc oneline">在抓取完数据后尝试将数据存到文件里。首先看了一下python简单的存取数据的例子： 
+首先新建一个saveString.py的文件，通过查找文件在D:/learn/python/untitled/ ...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/xman4code">来自：	<span class="blog_title"> xman4code的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_67" data-pid="67" data-track-view='{"mod":"kp_popu_67-808","con":",,"}' data-track-click='{"mod":"kp_popu_67-808","con":",,"}'><script
+    async="async"
+    charset="utf-8"
+    src="https://shared.ydstatic.com/js/yatdk/3.0.1/stream.js"
+    data-id="8935aa488dd58452b9e5ee3b44f1212f"
+    data-div-Style="width:100%;"
+data-tit-Style="margin-bottom: 6px; font-size: 18px; line-height: 24px; color: #3d3d3d;display: inline-block;font-weight:bold;"
+data-des-Style="font-size: 13px; line-height: 22px; white-space: normal; color: #999;"
+data-img-Style="float:left;margin-right:15px;width:90px;height:60px;">
+</script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/zjccoder/article/details/39736875,BlogCommendFromQuerySearch_44"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/zjccoder/article/details/39736875,BlogCommendFromQuerySearch_44"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/zjccoder/article/details/39736875" target="_blank" title="python抓取网页内容">
+				<h4 class="text-truncate oneline">
+						<em>python</em><em>抓取</em><em>网页</em>内容				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/E/1/2/3_zjccoder.jpg" alt="zjccoder" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">zjccoder</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">10-02</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							2643</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/zjccoder/article/details/39736875" target="_blank" title="python抓取网页内容">
+							<span class="desc oneline">最近想在网上抓取数据做研究，刚好会一点python,就让我们来看一种比较简单的实现方法。
+比如我要抓取奥巴马每周的演讲内容http://www.putclub.com/html/radio/VOA/p...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/zjccoder">来自：	<span class="blog_title"> 张竞成的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/JosephPai/article/details/78897562,BlogCommendFromQuerySearch_45"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/JosephPai/article/details/78897562,BlogCommendFromQuerySearch_45"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/JosephPai/article/details/78897562" target="_blank" title="Python爬虫：抓取Python教程保存为PDF电子书">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>爬虫：<em>抓取</em><em>Python</em>教程<em>保存</em>为<em>PDF</em>电子书				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/D/3/F/3_josephpai.jpg" alt="JosephPai" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">JosephPai</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">12-25</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1028</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/JosephPai/article/details/78897562" target="_blank" title="Python爬虫：抓取Python教程保存为PDF电子书">
+							<span class="desc oneline">Github传送门：https://github.com/JosephPai/PythonCrawler-Html2Pdf 
+欢迎点赞~环境python3.6准备工具爬虫依旧采用requests+Be...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/JosephPai">来自：	<span class="blog_title"> JosephPai的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/ZHUJIANWEILI4/article/details/83386547,BlogCommendFromQuerySearch_46"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/ZHUJIANWEILI4/article/details/83386547,BlogCommendFromQuerySearch_46"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/ZHUJIANWEILI4/article/details/83386547" target="_blank" title="递归抓取html页面且按目录结构保存页面的python爬虫">
+				<h4 class="text-truncate oneline">
+						递归<em>抓取</em><em>html</em>页面且按目录结构<em>保存</em>页面的<em>python</em>爬虫				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/9/7/3/3_zhujianweili4.jpg" alt="ZHUJIANWEILI4" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">ZHUJIANWEILI4</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">10-25</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							97</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/ZHUJIANWEILI4/article/details/83386547" target="_blank" title="递归抓取html页面且按目录结构保存页面的python爬虫">
+							<span class="desc oneline">使用了python里的requests 和lxml库，这两个库可以通过pip install requests; pip install lxml来安装。
+
+lxml官网为：https://lxml....</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/ZHUJIANWEILI4">来自：	<span class="blog_title"> ZHUJIANWEILI4的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/suzyu12345/article/details/50759482,BlogCommendFromBaidu_47"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/suzyu12345/article/details/50759482,BlogCommendFromBaidu_47"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/suzyu12345/article/details/50759482" target="_blank" title="python将HTML转PDF">
+				<h4 class="text-truncate oneline">
+						<em>python</em>将<em>HTML</em>转<em>PDF</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/D/2/2/3_suzyu12345.jpg" alt="suzyu12345" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">suzyu12345</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">02-28</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							6567</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/suzyu12345/article/details/50759482" target="_blank" title="python将HTML转PDF">
+							<span class="desc oneline">使用python讲网页转PDF。 
+想学习python某个模块，但是官网并不提供PDF版本，只有在线的网页说明文档，于是想将这些网页都下载下来然后转成pdf保存。这里主要用到pdfkit包，前提是电脑...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/suzyu12345">来自：	<span class="blog_title"> 振裕</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/u014453898/article/details/73459938,BlogCommendFromBaidu_48"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u014453898/article/details/73459938,BlogCommendFromBaidu_48"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u014453898/article/details/73459938" target="_blank" title="Python3爬虫（二）保存抓取网页的html">
+				<h4 class="text-truncate oneline">
+						<em>Python</em>3爬虫（二）<em>保存</em><em>抓取</em><em>网页</em>的<em>html</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/A/D/7/3_u014453898.jpg" alt="u014453898" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">u014453898</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-19</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1474</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u014453898/article/details/73459938" target="_blank" title="Python3爬虫（二）保存抓取网页的html">
+							<span class="desc oneline">1.查看网页的头部信息以确定网页的编码方式：
+import urllib.request
+
+res = urllib.request.urlopen('http://www.163.com')
+pri...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/u014453898">来自：	<span class="blog_title"> ZJE</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_68" data-pid="68" data-track-view='{"mod":"kp_popu_68-654","con":",,"}' data-track-click='{"mod":"kp_popu_68-654","con":",,"}'><div id="three_ad48" class="mediav_ad" ></div>
+<script>
+                                               NEWS_FEED({
+                w: 900,
+                h : 84,
+                showid : 'Afihld',
+                placeholderId: "three_ad48",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 16,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Microsoft Yahei',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 10,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/a1968640005/article/details/74938790,BlogCommendFromBaidu_49"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/a1968640005/article/details/74938790,BlogCommendFromBaidu_49"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/a1968640005/article/details/74938790" target="_blank" title="动态生成的html页面转pdf并且打印预览">
+				<h4 class="text-truncate oneline">
+						动态生成的<em>html</em>页面转<em>pdf</em>并且打印预览				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="https://avatar.csdn.net/F/E/E/3_a1968640005.jpg" alt="a1968640005" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">a1968640005</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">07-11</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1.1万</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/a1968640005/article/details/74938790" target="_blank" title="动态生成的html页面转pdf并且打印预览">
+							<span class="desc oneline">文章说明
+程序的功能：
+       通过js动态生成html页面并将该页面传送到后台转成pdf，再通过前台将pdf打印预览
+先大约讲述一下具体实现过程
+1、在js页面将你自己需要拼装好html页面通...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/a1968640005">来自：	<span class="blog_title"> a1968640005的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+			<div class="recommend-item-box type_hot_word">
+						<div class="content clearfix">
+				<div class="word float-left">
+													<span>
+						<a href="https://edu.csdn.net/courses/o280_s355_k " target="_blank">
+						Python					</a></span>
+																	<span>
+						<a href="https://edu.csdn.net/course/play/6449/128332 " target="_blank">
+						IPFS个人博客搭建简易网页创建					</a></span>
+																	<span>
+						<a href="https://edu.csdn.net/combos/o280_s355_l0_t " target="_blank">
+						Python课程					</a></span>
+																	<span>
+						<a href="https://edu.csdn.net/combos/o280_s355_l0_t " target="_blank">
+						Python学习					</a></span>
+																	<span>
+						<a href="https://edu.csdn.net/course/play/8562/176226 " target="_blank">
+						python聚类算法					</a></span>
+												</div>
+			</div>
+									<div class="content clearfix">
+				<div class="float-left">
+									<span>
+						<a href="https://www.csdn.net/gather_2b/Mtjagg1sNjEtYmxvZwO0O0OO0O0O.html" target="_blank">
+						c# 网页弹出保存</a>
+					</span>
+									<span>
+						<a href="https://www.csdn.net/gather_2c/Ntjakg5sNy1ibG9n.html" target="_blank">
+						c# html导出pdf</a>
+					</span>
+									<span>
+						<a href="https://www.csdn.net/gather_2c/NtzaIgzsNS1ibG9n.html" target="_blank">
+						c#抓取https请求</a>
+					</span>
+									<span>
+						<a href="https://www.csdn.net/gather_2e/MtTaUgwsNTExLWJsb2cO0O0O.html" target="_blank">
+						c# 抓取动态网页 爬虫</a>
+					</span>
+									<span>
+						<a href="https://www.csdn.net/gather_29/MtzaIgwsNS1ibG9n.html" target="_blank">
+						c# 抓取数据</a>
+					</span>
+									<span>
+						<a href="https://www.csdn.net/gather_4a/MtTakgxsOS1lZHUO0O0O.html" target="_blank">
+						python网页。菜鸟教程</a>
+					</span>
+									<span>
+						<a href="https://www.csdn.net/gather_4a/OtDaQgwsLWVkdQO0O0OO0O0O.html" target="_blank">
+						python菜鸟教程网页</a>
+					</span>
+								</div>
+			</div>
+					</div>
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/xmt1139057136/article/details/32957663,BlogCommendHotData_0"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/xmt1139057136/article/details/32957663,BlogCommendHotData_0"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/xmt1139057136/article/details/32957663" target="_blank" title="jqm视频播放器,html5视频播放器,html5音乐播放器,html5播放器,video开发demo,html5视频播放示例,html5手机视频播放器">
+				<h4 class="text-truncate oneline">
+						jqm视频播放器,html5视频播放器,html5音乐播放器,html5播放器,video开发demo,html5视频播放示例,html5手机视频播放器				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="xmt1139057136" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">xmt1139057136</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-21</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							43055</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/xmt1139057136/article/details/32957663" target="_blank" title="jqm视频播放器,html5视频播放器,html5音乐播放器,html5播放器,video开发demo,html5视频播放示例,html5手机视频播放器">
+							<span class="desc oneline">最近在论坛中看到了很多实用html5开发视频播放,音乐播放的功能，大部分都在寻找答案。因此我就在这里做一个demo，供大家相互学习。html5开发越来越流行了，而对于视频这一块也是必不可少的一部分。如...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/xmt1139057136">来自：	<span class="blog_title"> xmt1139057136的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/Yan_Chou/article/details/53406095,BlogCommendHotData_1"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Yan_Chou/article/details/53406095,BlogCommendHotData_1"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Yan_Chou/article/details/53406095" target="_blank" title="frp配置本地服务端口到服务器80端口">
+				<h4 class="text-truncate oneline">
+						frp配置本地服务端口到服务器80端口				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="Yan_Chou" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">Yan_Chou</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">11-30</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							9373</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Yan_Chou/article/details/53406095" target="_blank" title="frp配置本地服务端口到服务器80端口">
+							<span class="desc oneline">搭建环境：
+ubuntu 16.04 LTS （本地服务计算机） ubuntu 14.04 LTS(阿里云服务器)
+apache tomcat 7
+java 7 
+frp 0.8.1 linux
+搭建...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/Yan_Chou">来自：	<span class="blog_title"> Anteoy的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/weixin_40787712/article/details/79186740,BlogCommendHotData_2"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/weixin_40787712/article/details/79186740,BlogCommendHotData_2"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/weixin_40787712/article/details/79186740" target="_blank" title="人脸识别（一）——从零说起">
+				<h4 class="text-truncate oneline">
+						人脸识别（一）——从零说起				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="weixin_40787712" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">weixin_40787712</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">01-28</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							517</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/weixin_40787712/article/details/79186740" target="_blank" title="人脸识别（一）——从零说起">
+							<span class="desc oneline">           人脸识别的英文名称是 Face Recognition，前段时间查找资料学的时候发现，不少人将人脸识别和人脸检测（Face Detection）混为一谈，很大程度上增加了查询学习...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/weixin_40787712">来自：	<span class="blog_title"> 小詹学python的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/maoyuanming0806/article/details/78067446,BlogCommendHotData_3"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/maoyuanming0806/article/details/78067446,BlogCommendHotData_3"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/maoyuanming0806/article/details/78067446" target="_blank" title="搭建图片服务器《二》-linux安装nginx">
+				<h4 class="text-truncate oneline">
+						搭建图片服务器《二》-linux安装nginx				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="maoyuanming0806" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">maoyuanming0806</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">09-22</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							6691</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/maoyuanming0806/article/details/78067446" target="_blank" title="搭建图片服务器《二》-linux安装nginx">
+							<span class="desc oneline">nginx是个好东西，Nginx (engine x) 是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。Nginx是由伊戈尔·赛索耶夫为俄罗斯访问量第二的Rambl...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/maoyuanming0806">来自：	<span class="blog_title"> maoyuanming0806的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/hayixia606/article/details/79237220,BlogCommendHotData_4"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/hayixia606/article/details/79237220,BlogCommendHotData_4"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/hayixia606/article/details/79237220" target="_blank" title="微信支付V3微信公众号支付PHP教程(thinkPHP5公众号支付)/JSSDK的使用">
+				<h4 class="text-truncate oneline">
+						微信支付V3微信公众号支付PHP教程(thinkPHP5公众号支付)/JSSDK的使用				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="hayixia606" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">hayixia606</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">02-02</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							15009</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/hayixia606/article/details/79237220" target="_blank" title="微信支付V3微信公众号支付PHP教程(thinkPHP5公众号支付)/JSSDK的使用">
+							<span class="desc oneline">扫二维码关注，获取更多技术分享
+
+
+  本文承接之前发布的博客《 微信支付V3微信公众号支付PHP教程/thinkPHP5公众号支付》必须阅读上篇文章后才可以阅读这篇文章。由于最近一段时间工作比较忙，...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/hayixia606">来自：	<span class="blog_title"> Marswill</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq_36892341/article/details/73918672,BlogCommendHotData_5"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_36892341/article/details/73918672,BlogCommendHotData_5"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_36892341/article/details/73918672" target="_blank" title="linux上安装Docker(非常简单的安装方法)">
+				<h4 class="text-truncate oneline">
+						linux上安装Docker(非常简单的安装方法)				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="qq_36892341" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">qq_36892341</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-29</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							93190</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_36892341/article/details/73918672" target="_blank" title="linux上安装Docker(非常简单的安装方法)">
+							<span class="desc oneline">最近比较有空，大四出来实习几个月了，作为实习狗的我，被叫去研究Docker了，汗汗！
+
+Docker的三大核心概念：镜像、容器、仓库
+镜像：类似虚拟机的镜像、用俗话说就是安装文件。
+容器：类似一个轻量...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/qq_36892341">来自：	<span class="blog_title"> 我走小路的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/xll_bit/article/details/54347666,BlogCommendHotData_6"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/xll_bit/article/details/54347666,BlogCommendHotData_6"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/xll_bit/article/details/54347666" target="_blank" title="caffe-Windows：训练自己的数据">
+				<h4 class="text-truncate oneline">
+						caffe-Windows：训练自己的数据				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="xll_bit" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">xll_bit</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">01-11</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							390</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/xll_bit/article/details/54347666" target="_blank" title="caffe-Windows：训练自己的数据">
+							<span class="desc oneline">以下流程是根据博客http://blog.csdn.net/zb1165048017/article/details/52447567；并根据自己的实际经验而成，亲测可用。
+以下路径多是绝对路径，需要...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/xll_bit">来自：	<span class="blog_title"> xll_bit的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/jdgdf566/article/details/17229795,BlogCommendHotData_7"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/jdgdf566/article/details/17229795,BlogCommendHotData_7"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/jdgdf566/article/details/17229795" target="_blank" title="提示CSDN通知的小软件 v3.2.1">
+				<h4 class="text-truncate oneline">
+						提示CSDN通知的小软件 v3.2.1				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="jdgdf566" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">jdgdf566</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">12-09</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							2436</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/jdgdf566/article/details/17229795" target="_blank" title="提示CSDN通知的小软件 v3.2.1">
+							<span class="desc oneline">显示CSDN通知。本身没有非法功能，不得用于非法用途。</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/jdgdf566">来自：	<span class="blog_title"> jdgdf566的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/wyx100/article/details/73080969,BlogCommendHotData_8"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/wyx100/article/details/73080969,BlogCommendHotData_8"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/wyx100/article/details/73080969" target="_blank" title="人脸检测和识别 源代码 下载-opencv3+python3.6完整实战项目源代码 识别视频《欢乐颂》中人物">
+				<h4 class="text-truncate oneline">
+						人脸检测和识别 源代码 下载-opencv3+python3.6完整实战项目源代码 识别视频《欢乐颂》中人物				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="wyx100" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">wyx100</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">06-12</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							8707</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/wyx100/article/details/73080969" target="_blank" title="人脸检测和识别 源代码 下载-opencv3+python3.6完整实战项目源代码 识别视频《欢乐颂》中人物">
+							<span class="desc oneline">人脸检测和识别- opencv3+python3完整实战项目源代码 识别视频《欢乐颂》中人物
+python
+opecv3人脸检测和识别
+项目源代码
+识别视频《欢乐颂》中人物...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/wyx100">来自：	<span class="blog_title"> wyx100的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/SuperFPE/article/details/5788636,BlogCommendHotData_9"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/SuperFPE/article/details/5788636,BlogCommendHotData_9"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/SuperFPE/article/details/5788636" target="_blank" title="Qt的Signal和Slot机制(二)">
+				<h4 class="text-truncate oneline">
+						Qt的Signal和Slot机制(二)				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="SuperFPE" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">SuperFPE</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">08-04</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							8680</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/SuperFPE/article/details/5788636" target="_blank" title="Qt的Signal和Slot机制(二)">
+							<span class="desc oneline">第二节 Signal和Slot的粘合剂
+
+
+如果要连接一个Signal和Slot我们会用connect函数，下面我们就看一下connect是如何把Signal和Slot粘合在一起的。
+
+以下是conn...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/SuperFPE">来自：	<span class="blog_title"> SuperFPE的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/lk_blog/article/details/8007777,BlogCommendHotData_10"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/lk_blog/article/details/8007777,BlogCommendHotData_10"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/lk_blog/article/details/8007777" target="_blank" title="配置简单功能强大的excel工具类搞定excel导入导出工具类(一)">
+				<h4 class="text-truncate oneline">
+						配置简单功能强大的excel工具类搞定excel导入导出工具类(一)				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="lk_blog" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">lk_blog</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">09-22</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							24031</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/lk_blog/article/details/8007777" target="_blank" title="配置简单功能强大的excel工具类搞定excel导入导出工具类(一)">
+							<span class="desc oneline">对于J2EE项目导入导出Excel是最普通和实用功能,本工具类使用步骤简单,功能强大,只需要对实体类进行简单的注解就能实现导入导出功能,导入导出操作的都是实体对象.
+请看一下这个类都有哪些功能:
+  ...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/lk_blog">来自：	<span class="blog_title"> 李坤 大米时代 第五期</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/yangwei282367751/article/details/52426911,BlogCommendHotData_11"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/yangwei282367751/article/details/52426911,BlogCommendHotData_11"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/yangwei282367751/article/details/52426911" target="_blank" title="关于计算时间复杂度和空间复杂度">
+				<h4 class="text-truncate oneline">
+						关于计算时间复杂度和空间复杂度				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="yangwei282367751" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">yangwei282367751</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">09-04</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							36346</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/yangwei282367751/article/details/52426911" target="_blank" title="关于计算时间复杂度和空间复杂度">
+							<span class="desc oneline">相信学习编程的同学，或多或少都接触到算法的时间复杂度和空间复杂度了，那我来讲讲怎么计算。
+       常用的算法的时间复杂度和空间复杂度 一，求解算法的时间复杂度，其具体步骤是：
+
+　　⑴ 找出算法...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/yangwei282367751">来自：	<span class="blog_title"> 杨威的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/VBcom/article/details/7245186,BlogCommendHotData_12"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/VBcom/article/details/7245186,BlogCommendHotData_12"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/VBcom/article/details/7245186" target="_blank" title="DirectX修复工具增强版">
+				<h4 class="text-truncate oneline">
+						DirectX修复工具增强版				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="VBcom" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">VBcom</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">02-09</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							1746524</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/VBcom/article/details/7245186" target="_blank" title="DirectX修复工具增强版">
+							<span class="desc oneline">最后更新：2018-12-20
+
+DirectX修复工具最新版：DirectX Repair V3.8 增强版  NEW!
+
+版本号：V3.8.0.11638
+
+大小: 107MB/7z格式压缩，18...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/VBcom">来自：	<span class="blog_title"> VBcom的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq574857122/article/details/16361033,BlogCommendHotData_13"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq574857122/article/details/16361033,BlogCommendHotData_13"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq574857122/article/details/16361033" target="_blank" title="强连通分量及缩点tarjan算法解析">
+				<h4 class="text-truncate oneline">
+						强连通分量及缩点tarjan算法解析				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="qq574857122" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">qq574857122</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">11-16</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							34096</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq574857122/article/details/16361033" target="_blank" title="强连通分量及缩点tarjan算法解析">
+							<span class="desc oneline">强连通分量：
+简言之 就是找环（每条边只走一次，两两可达）
+孤立的一个点也是一个连通分量 
+ 
+使用tarjan算法 在嵌套的多个环中优先得到最大环( 最小环就是每个孤立点）
+ 
+定义：
+int Ti...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/qq574857122">来自：	<span class="blog_title"> 九野的博客</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/updog/article/details/6625975,BlogCommendHotData_14"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/updog/article/details/6625975,BlogCommendHotData_14"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/updog/article/details/6625975" target="_blank" title="实现header file (.h)相应的source file (.cc/.cpp)文件时的注意事项">
+				<h4 class="text-truncate oneline">
+						实现header file (.h)相应的source file (.cc/.cpp)文件时的注意事项				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="updog" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">updog</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">07-22</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							258</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/updog/article/details/6625975" target="_blank" title="实现header file (.h)相应的source file (.cc/.cpp)文件时的注意事项">
+							<span class="desc oneline">本帖慢慢扩充……1. 假设是实现namespace Abc中的一个class，不要因为是在.cc中就肆无忌惮的在global scope或者namespace Abc{}中定义辅助变量和函数，或者ty...</span>
+						</a>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/silentpebble/article/details/41279285,BlogCommendHotData_15"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/silentpebble/article/details/41279285,BlogCommendHotData_15"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/silentpebble/article/details/41279285" target="_blank" title="centos 查看命令源码">
+				<h4 class="text-truncate oneline">
+						centos 查看命令源码				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="silentpebble" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">silentpebble</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">11-19</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							5695</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/silentpebble/article/details/41279285" target="_blank" title="centos 查看命令源码">
+							<span class="desc oneline"># yum install yum-utils
+
+
+设置源:
+[base-src]
+name=CentOS-5.4 - Base src -
+baseurl=http://vault.ce...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/silentpebble">来自：	<span class="blog_title"> linux/unix</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/u011046042/article/details/47067037,BlogCommendHotData_16"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u011046042/article/details/47067037,BlogCommendHotData_16"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u011046042/article/details/47067037" target="_blank" title="基于Linux的智能家居的设计(5)">
+				<h4 class="text-truncate oneline">
+						基于Linux的智能家居的设计(5)				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="u011046042" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">u011046042</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">07-26</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							8556</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u011046042/article/details/47067037" target="_blank" title="基于Linux的智能家居的设计(5)">
+							<span class="desc oneline">4  软件设计
+ 
+软件设计部分主要包括uboot移植、内核编译、系统移植、设备驱动编程、应用程序编程（QT编程、mysql数据库编程、控制系统编程）、各个模块的功能函数（部分是在windows下面的...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/u011046042">来自：	<span class="blog_title"> 求是07的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/MyArrow/article/details/51332421,BlogCommendHotData_17"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/MyArrow/article/details/51332421,BlogCommendHotData_17"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/MyArrow/article/details/51332421" target="_blank" title="方向导数与梯度">
+				<h4 class="text-truncate oneline">
+						方向导数与梯度				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="MyArrow" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">MyArrow</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-06</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							33603</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/MyArrow/article/details/51332421" target="_blank" title="方向导数与梯度">
+							<span class="desc oneline">1. 基本概念
+    方向导数：是一个数；反映的是f(x,y)在P0点沿方向v的变化率。
+    偏导数：是多个数（每元有一个）；是指多元函数沿坐标轴方向的方向导数，因此二元函数就有两个偏导数。
+ ...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/MyArrow">来自：	<span class="blog_title"> MyArrow的专栏</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/Snoopy_Yuan/article/details/71703019,BlogCommendHotData_18"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Snoopy_Yuan/article/details/71703019,BlogCommendHotData_18"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Snoopy_Yuan/article/details/71703019" target="_blank" title="周志华《机器学习》课后习题解答系列（六）：Ch5.10 - 卷积神经网络实验">
+				<h4 class="text-truncate oneline">
+						周志华《机器学习》课后习题解答系列（六）：Ch5.10 - 卷积神经网络实验				</h4>
+				<div class="info-box d-flex align-content-center">
+					<!-- <p class="avatar">
+							<img src="" alt="Snoopy_Yuan" class="avatar-pic">
+							<span class="namebox">
+								<span class="name">Snoopy_Yuan</span>
+								<span class="triangle"></span>
+							</span>
+					</p> -->
+					<p class="date-and-readNum">
+						<span class="date hover-show">05-12</span>
+						<span class="read-num hover-hide">
+							<svg class="icon csdnc-yuedushu" aria-hidden="true">
+								<use xlink:href="#csdnc-m-passwords-visible"></use>
+							</svg>
+							2943</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Snoopy_Yuan/article/details/71703019" target="_blank" title="周志华《机器学习》课后习题解答系列（六）：Ch5.10 - 卷积神经网络实验">
+							<span class="desc oneline">本文基于python-theano实现了一个CNN模型，并用以解决MNIST手写字符识别实验（多分类）。...</span>
+						</a>
+                        						<span class="blog_title_box oneline"><a target="_blank" href="https://blog.csdn.net/Snoopy_Yuan">来自：	<span class="blog_title"> Snoopy_Yuan技术部落格</span></a></span>
+                        					</p>
+			</div>
+					</div>
+	
+    
+	    
+    
+
+            <div class="recommend-loading-box">
+                <img src='https://csdnimg.cn/release/phoenix/images/feedLoading.gif'>
+            </div>
+            <div class="recommend-end-box">
+                <p class="text-center">没有更多推荐了，<a href="https://blog.csdn.net/" class="c-blue c-blue-hover c-blue-focus">返回首页</a></p>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+		    <div id="asideProfile" class="aside-box">
+    <!-- <h3 class="aside-title">个人资料</h3> -->
+    <div class="profile-intro d-flex">
+        <div class="avatar-box d-flex justify-content-center flex-column">
+            <a href="https://blog.csdn.net/hubaoquanu">
+                <img src="https://avatar.csdn.net/8/4/8/3_hubaoquanu.jpg" class="avatar_pic">
+            </a>
+                    </div>
+        <div class="user-info d-flex justify-content-center flex-column">
+            <p class="name csdn-tracking-statistics tracking-click" data-mod="popu_379">
+                <a href="https://blog.csdn.net/hubaoquanu" target="_blank" class="" id="uid">Limerence</a>
+            </p>
+                    </div>
+                <div class="opt-box d-flex justify-content-center flex-column">
+            <span  class="csdn-tracking-statistics tracking-click" data-mod="popu_379">
+                <a class="btn btn-sm btn-red-hollow attention" id="btnAttent">关注</a>
+            </span>
+        </div>
+            </div>
+    <div class="data-info d-flex item-tiling">
+                <dl class="text-center" title="53">
+                        <dt><a href="https://blog.csdn.net/hubaoquanu?t=1">原创</a></dt>
+            <dd><a href="https://blog.csdn.net/hubaoquanu?t=1"><span class="count">53</span></a></dd>
+                    </dl>
+        <dl class="text-center" id="fanBox" title="27">
+            <dt>粉丝</dt>
+            <dd><span class="count" id="fan">27</span></dd>
+        </dl>
+        <dl class="text-center" title="34">
+            <dt>喜欢</dt>
+            <dd><span class="count">34</span></dd>
+        </dl>
+        <dl class="text-center" title="22">
+            <dt>评论</dt>
+            <dd><span class="count">22</span></dd>
+        </dl>
+    </div>
+    <div class="grade-box clearfix">
+        <dl>
+            <dt>等级：</dt>
+            <dd>
+                <a href="https://blog.csdn.net/home/help.html#level" title="5级,点击查看等级说明" target="_blank">
+                    <svg class="icon icon-level" aria-hidden="true">
+                        <use xlink:href="#csdnc-bloglevel-5"></use>
+                    </svg>
+                </a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>访问：</dt>
+            <dd title="255798">
+                25万+            </dd>
+        </dl>
+        <dl>
+            <dt>积分：</dt>
+            <dd title="3181">
+                3181            </dd>
+        </dl>
+        <dl title="16640">
+            <dt>排名：</dt>
+            <dd>1万+</dd>
+        </dl>
+    </div>
+        <div class="badge-box d-flex">
+        <span>勋章：</span>
+                        <div class="icon-badge" title="持之以恒">
+            <div class="mouse-box">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#csdnc-m-lasting"></use>
+                </svg>
+                <div class="icon-arrow"></div>
+            </div>
+            <div class="grade-detail-box">
+                <div class="pos-box">
+                    <div class="left-box d-flex justify-content-center align-items-center flex-column">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#csdnc-m-lasting"></use>
+                        </svg>
+                        <p>持之以恒</p>
+                    </div>
+                    <div class="right-box d-flex justify-content-center align-items-center">
+                        授予每个自然月内发布4篇或4篇以上原创或翻译IT博文的用户。不积跬步无以至千里，不积小流无以成江海，程序人生的精彩需要坚持不懈地积累！
+                    </div>
+                </div>
+            </div>
+        </div>
+                                                <script>
+            (function ($) {
+                setTimeout(function(){
+                    $('div.icon-badge.show-moment').removeClass('show-moment');
+                }, 5000);
+            })(window.jQuery)
+        </script>
+    </div>
+    </div>
+		    <div class="csdn-tracking-statistics mb8 box-shadow" data-pid="blog" data-mod="popu_4" style="height:250px;">
+    <div class="aside-content text-center" id="cpro_u2734133">
+      <div id="kp_box_56" data-pid="56" data-track-view='{"mod":"kp_popu_56-76","con":",,"}' data-track-click='{"mod":"kp_popu_56-76","con":",,"}'><script type="text/javascript">
+    (function() {
+        var s = "_" + Math.random().toString(36).slice(2);
+        document.write('<div style="" id="' + s + '"></div>');
+        (window.slotbydup = window.slotbydup || []).push({
+            id: "u3032528",
+            container:  s
+        });
+    })();
+</script>
+<!-- 多条广告如下脚本只需引入一次 -->
+<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js" async="async" defer="defer" ></script></div>    </div>
+</div>
+		    <div id="asideNewArticle" class="aside-box">
+    <h3 class="aside-title">最新文章</h3>
+    <div class="aside-content">
+        <ul class="inf_list clearfix csdn-tracking-statistics tracking-click" data-mod="popu_382">
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/hubaoquanu/article/details/79529519" target="_blank">QQ群文件无法显示，空白，加载不出来</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/hubaoquanu/article/details/79490473" target="_blank">Android studio启动Genymotion出错的解决办法</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/hubaoquanu/article/details/79084193" target="_blank">网易云音乐web/网页版无法播放问题</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/hubaoquanu/article/details/78939717" target="_blank">hbase shell 启动不了的问题</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/hubaoquanu/article/details/73149307" target="_blank">编译原理LL(1)文法实验报告</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+		    		    <div id="asideCategory" class="aside-box flexible-box">
+    <h3 class="aside-title">个人分类</h3>
+    <div class="aside-content">
+        <ul>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/5881641">
+                    <span class="title oneline">JAVA学习笔记</span>
+                    <span class="count float-right">9篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/5950983">
+                    <span class="title oneline">算法</span>
+                    <span class="count float-right">12篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6006311">
+                    <span class="title oneline">历届蓝桥杯试题</span>
+                    <span class="count float-right">3篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6006335">
+                    <span class="title oneline">蓝桥杯练习系统【入门训练】</span>
+                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6006893">
+                    <span class="title oneline">蓝桥杯练习系统【基础练习】</span>
+                    <span class="count float-right">2篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6263423">
+                    <span class="title oneline">C++/C</span>
+                    <span class="count float-right">19篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6269937">
+                    <span class="title oneline">Android学习</span>
+                    <span class="count float-right">8篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6336618">
+                    <span class="title oneline">PTA测验</span>
+                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6641328">
+                    <span class="title oneline">Python</span>
+                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6641329">
+                    <span class="title oneline">Python</span>
+                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6815666">
+                    <span class="title oneline">编译原理</span>
+                    <span class="count float-right">2篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6833855">
+                    <span class="title oneline">Linux</span>
+                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/6868931">
+                    <span class="title oneline">Windows</span>
+                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/7406580">
+                    <span class="title oneline">其他问题</span>
+                    <span class="count float-right">2篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/hubaoquanu/article/category/7493004">
+                    <span class="title oneline">Android</span>
+                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                    </ul>
+    </div>
+        <p class="text-center">
+        <a class="btn btn-link-blue flexible-btn" data-fbox="aside-archive">展开</a>
+    </p>
+    </div>
+		    <div id="asideArchive" class="aside-box flexible-box">
+    <h3 class="aside-title">归档</h3>
+    <div class="aside-content">
+        <ul class="archive-list">
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2018/03">
+                    2018年3月                    <span class="count float-right">2篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2018/01">
+                    2018年1月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2017/12">
+                    2017年12月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2017/06">
+                    2017年6月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2017/05">
+                    2017年5月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2017/04">
+                    2017年4月                    <span class="count float-right">7篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2017/03">
+                    2017年3月                    <span class="count float-right">5篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2016/12">
+                    2016年12月                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2016/09">
+                    2016年9月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2016/07">
+                    2016年7月                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2016/06">
+                    2016年6月                    <span class="count float-right">27篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2015/12">
+                    2015年12月                    <span class="count float-right">7篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/hubaoquanu/article/month/2015/10">
+                    2015年10月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                    </ul>
+    </div>
+        <p class="text-center">
+        <a class="btn btn-link-blue flexible-btn" data-fbox="aside-archive">展开</a>
+    </p>
+    </div>
+		    <div id="asideHotArticle" class="aside-box">
+	<h3 class="aside-title">热门文章</h3>
+	<div class="aside-content">
+		<ul class="hotArticle-list csdn-tracking-statistics tracking-click" data-mod="popu_521">
+							<li>
+					<a href="https://blog.csdn.net/hubaoquanu/article/details/53576219">用C语言字典实现词典功能 C语言字典词典</a>
+					<p class="read">阅读量：<span>13811</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/hubaoquanu/article/details/51606675">C/C++  重载+运算符重载加号 实现矩阵相加</a>
+					<p class="read">阅读量：<span>11538</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/hubaoquanu/article/details/79529519">QQ群文件无法显示，空白，加载不出来</a>
+					<p class="read">阅读量：<span>9981</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/hubaoquanu/article/details/79084193">网易云音乐web/网页版无法播放问题</a>
+					<p class="read">阅读量：<span>8764</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/hubaoquanu/article/details/65934728">如何压缩减小少APK安卓安装包大小</a>
+					<p class="read">阅读量：<span>7596</span></p>
+				</li>
+					</ul>
+	</div>
+</div>
+		    <div id="asideNewComments" class="aside-box">
+    <h3 class="aside-title">最新评论</h3>
+    <div class="aside-content">
+        <ul class="newcomment-list">
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/hubaoquanu/article/details/53576219#comments">用C语言字典实现词典功能 C语言字...</a>
+                <p class="comment">
+                    <a href="https://my.csdn.net/qq_44492587" class="user-name" target="_blank">qq_44492587</a>：作为一个真正搞这个课设的菜鸟表示佩服                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/hubaoquanu/article/details/53576219#comments">用C语言字典实现词典功能 C语言字...</a>
+                <p class="comment">
+                    <a href="https://my.csdn.net/hubaoquanu" class="user-name" target="_blank">hubaoquanu</a>：[reply]weixin_43428921[/reply]
+什么语言？                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/hubaoquanu/article/details/53576219#comments">用C语言字典实现词典功能 C语言字...</a>
+                <p class="comment">
+                    <a href="https://my.csdn.net/weixin_43428921" class="user-name" target="_blank">weixin_43428921</a>：博主 你好，如果 我想把一定量的成语写入txt文件，然后再实现 随机输出 一个成语的两个字该怎么实...                </p>
+            </li>
+                    </ul>
+    </div>
+</div>
+		<div id="asideFooter">
+			
+		<div class="aside-box">
+			<div id="kp_box_57" data-pid="57" data-track-view='{"mod":"kp_popu_57-77","con":",,"}' data-track-click='{"mod":"kp_popu_57-77","con":",,"}'><script type="text/javascript">
+    (function() {
+        var s = "_" + Math.random().toString(36).slice(2);
+        document.write('<div style="" id="' + s + '"></div>');
+        (window.slotbydup = window.slotbydup || []).push({
+            id: "u3163270",
+            container:  s
+        });
+    })();
+</script>
+<!-- 多条广告如下脚本只需引入一次 -->
+<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js" async="async" defer="defer" ></script></div>		</div>
+				<div class="aside-box">
+			<div class="persion_article">
+			</div>
+		</div>
+	</div>
+</aside>
+<script src="https://csdnimg.cn/pubfooter/js/publib_footer-1.0.3.js" data-isfootertrack="false" type="text/javascript"></script>
+<script>
+	$("a.flexible-btn").click(function(){
+		$(this).parents('div.aside-box').removeClass('flexible-box');
+		$(this).remove();
+	})
+</script>
+</div>
+<div class="mask-dark"></div>
+<div class="super-private private-box">
+  <div class="private-title">
+    <h5 class="title">
+      私密
+    </h5>
+    <div class="private-close">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#csdnc-times"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="private-content">
+    <span class="select-name">私密原因:</span>
+    <div class="select">
+      <div class="input-mod">
+        <span class="select-active" data-index="">请选择设置私密原因</span>
+        <div class="select-button">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#csdnc-triangledown"></use>
+          </svg>
+        </div>
+      </div>
+      <ul class="select-option">
+        <li data-index="1">广告</li>
+        <li data-index="2">抄袭</li>
+        <li data-index="3">版权</li>
+        <li data-index="4">政治</li>
+        <li data-index="5">色情</li>
+        <li data-index="6">无意义</li>
+        <li data-index="7" data-isInput='true'>其他</li>
+      </ul>
+    </div>
+    <div class="other">
+      <span class="other-name">其他原因:</span>
+      <div class="textarea-box">
+        <textarea class="private-input reason"name="name" rows="8" cols="80" placeholder="请填写其他设置私密原因，不超过120个汉字"></textarea>
+        <div class="number">120</div>
+      </div>
+    </div>
+  </div>
+  <div class="private-footer">
+    <div class="private-close">
+      取消
+    </div>
+    <div class="private-send private-form no-active">
+      确定
+    </div>
+  </div>
+</div>
+<!--  -->
+<div class="private-error super-private">
+  <div class="private-title">
+    <h5 class="title">
+      出错啦
+    </h5>
+    <div class="private-close">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#csdnc-times"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="private-content">
+    系统繁忙，请稍后再试
+  </div>
+  <div class="private-footer">
+    <div class="private-close">
+      取消
+    </div>
+    <div class="private-send close-active">
+      确定
+    </div>
+  </div>
+</div><div class="pulllog-box" style="display: block;">
+	<div class="pulllog clearfix">
+		<span class="text float-left">
+            <div id="dmp_ad_69"><div id="kp_box_69" data-pid="69" data-track-view='{"mod":"kp_popu_69-796","con":",,"}' data-track-click='{"mod":"kp_popu_69-796","con":",,"}'><div style="float:left;margin-right:5px;border:1px solid #f13d3d;padding:2px 5px 0px 5px;">
+<a href="https://edu.csdn.net/topic/ai30?utm_source=ditong" target="_blank" style="color:#f13d3d;font-weight:bold;text-decoration:none;font-size:15px;">2019人工智能发展趋势</a>
+</div>
+
+<div style="float:left;margin-right:5px;border:1px solid #00BFFF;padding:2px 5px 0px 5px;background:#FFF0F5;">
+<a href="https://edu.csdn.net/topic/python115?utm_source=ditong" target="_blank" style="color:#00BFFF;font-weight:bold;text-decoration:none;font-size:15px;">Python学习指南</a>
+</div>
+
+<div style="float:left;margin-right:5px;border:1px solid #f13d3d;padding:2px 5px 0px 5px;">
+<a href="https://t.csdnimg.cn/mWQl" target="_blank" style="color:#f13d3d;font-weight:bold;text-decoration:none;font-size:15px;">数据库沙龙</a>
+</div>
+
+<div style="float:left;margin-right:5px;border:1px solid #00BFFF;padding:2px 5px 0px 5px;background:#FFF0F5;">
+<a href="https://gitbook.cn/gitchat/columns?tag=榜单&utm_source=wzl190104" target="_blank" style="color:#00BFFF;font-weight:bold;text-decoration:none;font-size:15px;">2018 年度课程榜单</a>
+</div>
+
+
+<div style="float:left;">
+<script type="text/javascript" src="//rabc1.iteye.com/common/js/ndr3h.js?b=wosyvccl"></script>
+<!-- 长文字链
+<script type="text/javascript" src="//rabc1.iteye.com/common/5klj5.js?kfxbghx=bx"></script>
+-->
+</div></div></div>            		</span>
+		<div class="pulllog-btn float-right clearfix">
+            <div class="float-left csdn-tracking-statistics tracking-click" data-mod="popu_557">
+                <a class="pulllog-login">登录</a>
+            </div>
+            <div class="pulllog-sigin float-left csdn-tracking-statistics tracking-click" data-mod="popu_558">
+                <a href="https://passport.csdn.net/account/mobileregister" target="_blank">注册</a>
+            </div>
+            <button class="btn-close">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#csdnc-times"></use>
+                </svg>
+            </button>
+		</div>
+	</div>
+</div>
+<div id="loginWrap" style="display:none"></div>
+<div class="tool-box">
+	<ul class="meau-list">
+		<li class="btn-like-box ">
+			<button class=" low-height hover-box btn-like " title="点赞">
+				<svg class="icon active hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-thumbsup-ok"></use>
+				</svg>
+				<svg class="icon no-active hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-thumbsup"></use>
+				</svg>
+				<span class="hover-show text-box text">
+					<span class="no-active">点赞</span>
+					<span class="active">取消点赞</span>
+				</span>
+				<p>0</p>
+			</button>
+		</li>
+		<li class="">
+						<a class="btn-comments long-height hover-box" title="写评论" href="#commentBox">
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-comments"></use>
+				</svg>
+				<span class="hover-show text">评论</span>
+				<p class="">
+						4				</p>
+			</a>
+		</li>
+		<li class="toc-container-box" id="liTocBox">
+			<button class="btn-toc low-height hover-box" title="目录">
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-contents"></use>
+				</svg>
+				<span class="hover-show text">目录</span>
+			</button>
+			<div class="toc-container">
+				<div class="pos-box">
+					<div class="icon-arrow"></div>
+					<div class="scroll-box">
+						<div class="toc-box"></div>
+					</div>
+				</div>
+				<div class="opt-box">
+					<button class="btn-opt prev nomore" title="向上">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#csdnc-chevronup"></use>
+						</svg>
+					</button>
+					<button class="btn-opt next">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#csdnc-chevrondown"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</li>
+		<li>
+			<button class="btn-bookmark low-height hover-box" title="收藏">
+				<svg class="icon active hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-bookmark-ok"></use>
+				</svg>
+				<svg class="icon no-active hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-bookmark"></use>
+				</svg>
+					<span class="hover-show text">收藏</span>
+				<!-- <span class="hover-show text-box text">
+					<span class="no-active">收藏</span>
+					<span class="active">取消收藏</span>
+				</span> -->
+			</button>
+		</li>
+		<li class="bdsharebuttonbox">
+			<button class="btn-comments low-height hover-box" >
+				<a href="#" class="bds_weixin clear-share-style" data-cmd="weixin" title="手机看"></a>
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-usephone"></use>
+				</svg>
+				<span class="hover-show text text3">
+					手机看
+				</span>
+			</button>
+		</li>
+							<li class="widescreen-hide">
+				<a class="btn-comments low-height hover-box" href="https://blog.csdn.net/hubaoquanu/article/details/65934728" title="如何压缩减小少APK安卓安装包大小">
+					<svg class="icon hover-hide" aria-hidden="true">
+						<use xlink:href="#csdnc-chevronleft"></use>
+					</svg>
+					<span class="hover-show text text3">上一篇</span>
+				</a>
+			</li>
+								<li class="widescreen-hide">
+			<a class="btn-comments hover-box low-height" href="https://blog.csdn.net/hubaoquanu/article/details/68490596" title="LCS最长公共子序列的另一种解决方法">
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-chevronright"></use>
+				</svg>
+				<span class="hover-show text text3">下一篇</span>
+			</a>
+		</li>
+				<li class="bdsharebuttonbox _360_interactive"style="margin-top: 8px;"><div id="kp_box_73" data-pid="73" data-track-view='{"mod":"kp_popu_73-97","con":",,"}' data-track-click='{"mod":"kp_popu_73-97","con":",,"}'><script type="text/javascript" src="//cjhd.mediav.com/js/interactive_plugin.js"></script> 
+			<style>
+				#_360_interactive > *{
+					 margin-left: -8px;
+				}
+			</style>
+			<div id="_360_interactive" > 
+				<script> INTERACTIVE_PLUGIN.render({ showid : 'N0ufqn', w: 60, h: 60, type: 'click', placeholderId: '_360_interactive' }); </script> 
+			</div>
+			<img src="//img-ads.csdn.net/2016/201608021757063065.png" style="margin: 0 auto;display: block;" alt=""></div></li>		<!-- 宽屏更多按钮 -->
+		<li class="widescreen-more">
+			<a class="btn-comments chat-ask-button low-height hover-box" title="快问" href="#chatqa">
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-more"></use>
+				</svg>
+				<span class="hover-show text">更多</span>
+				
+			</a>
+			<ul class="widescreen-more-box">
+													<li class="widescreen-more">
+						<a class="btn-comments low-height hover-box" href="https://blog.csdn.net/hubaoquanu/article/details/65934728" title="如何压缩减小少APK安卓安装包大小">
+							<svg class="icon hover-hide" aria-hidden="true">
+								<use xlink:href="#csdnc-chevronleft"></use>
+							</svg>
+							<span class="hover-show text text3">上一篇</span>
+						</a>
+					</li>
+																<li class="widescreen-more">
+					<a class="btn-comments hover-box low-height" href="https://blog.csdn.net/hubaoquanu/article/details/68490596" title="LCS最长公共子序列的另一种解决方法">
+						<svg class="icon hover-hide" aria-hidden="true">
+							<use xlink:href="#csdnc-chevronright"></use>
+						</svg>
+						<span class="hover-show text text3">下一篇</span>
+					</a>
+				</li>
+							</ul>
+		</li>
+	</ul>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'https://csdnimg.cn/static/api/js/share.js?v=89860594'];</script>
+<script>
+    var recommendCount = 68;
+    recommendCount = recommendCount > 1 ? (recommendCount + (recommendCount>6 ? 2 : 1)) : recommendCount;
+    var articleTit = articleTitles;
+    var ChannelId = 16;
+    var articleId = "66973149";
+    var commentscount = 4;
+    var islock = false;
+    var curentUrl = "https://blog.csdn.net/hubaoquanu/article/details/66973149";
+    var myUrl = "https://my.csdn.net/";
+    //1禁止评论，2正常
+    var commentAuth = 2;
+    //百度搜索
+    var baiduKey = "Python抓取HTML网页并以PDF保存 - 欢迎访问胡宝全的博客";
+    var needInsertBaidu = false;
+    // 代码段样式
+    var codeStyle = '';
+		var highlight = ["python","\u6293\u53d6","html","\u7f51\u9875","\u5e76\u4ee5","pdf","\u4fdd\u5b58"];//高亮数组
+		// 相关推荐博主数据
+    var RecommendBlogExpertList = [{"user_name":"zpj779878443","nick_name":"coder-pig","avatar":"https:\/\/avatar.csdn.net\/C\/2\/C\/3_zpj779878443.jpg","is_expert":true,"article_count":307,"rank":"160"},{"user_name":"z848958541","nick_name":"\u6211\u7684free","avatar":"https:\/\/avatar.csdn.net\/6\/8\/7\/3_z848958541.jpg","is_expert":false,"article_count":3,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"weixin_37861326","nick_name":"MrCris","avatar":"https:\/\/avatar.csdn.net\/4\/1\/7\/3_weixin_37861326.jpg","is_expert":false,"article_count":115,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"qhw5279","nick_name":"qhw5279","avatar":"https:\/\/avatar.csdn.net\/8\/9\/D\/3_qhw5279.jpg","is_expert":false,"article_count":11,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"qq_41841569","nick_name":"Python\u65b0\u4e16\u754c","avatar":"https:\/\/avatar.csdn.net\/3\/4\/0\/3_qq_41841569.jpg","is_expert":false,"article_count":1098,"rank":"1000+"},{"user_name":"u011315300","nick_name":"aasdsjk","avatar":"https:\/\/avatar.csdn.net\/9\/8\/B\/3_u011315300.jpg","is_expert":false,"article_count":20,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"xman4code","nick_name":"xman4code","avatar":"https:\/\/avatar.csdn.net\/6\/C\/B\/3_xman4code.jpg","is_expert":false,"article_count":13,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"zjccoder","nick_name":"process-z","avatar":"https:\/\/avatar.csdn.net\/E\/1\/2\/3_zjccoder.jpg","is_expert":false,"article_count":52,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"JosephPai","nick_name":"\u6c38\u65e0\u4e61","avatar":"https:\/\/avatar.csdn.net\/D\/3\/F\/3_josephpai.jpg","is_expert":false,"article_count":22,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"ZHUJIANWEILI4","nick_name":"pandaPwn","avatar":"https:\/\/avatar.csdn.net\/9\/7\/3\/3_zhujianweili4.jpg","is_expert":false,"article_count":27,"rank":"\u5343\u91cc\u4e4b\u5916"}];
+
+		var articleType = 1;
+		var CopyrightContent = '本文为博主原创文章，转载请注明出处http://blog.csdn.net/hubaoquanu/';
+</script>
+<script src="https://csdnimg.cn/public/sandalstrap/1.4/js/sandalstrap.min.js"></script>
+<script src="https://csdnimg.cn/release/phoenix/vendor/pagination/paging.js"></script>
+<script src='https://csdnimg.cn/public/common/gotop/js/goTop-v1.0.min.js?v201811201455'></script>
+<script>
+    GoTop({
+        right: 8,
+        hasReport: true,
+        reportFun: function() {
+            showReport(false,articleTit);
+        }
+    })
+</script>
+
+  <!-- 博客之星入口 -->
+<div class="blog_star_enter">
+  <a href="https://bss.csdn.net/m/topic/blog_star2018/index?utm_source=bloghudong" target="_blank">
+    <img src="https://csdnimg.cn/release/phoenix/static_blog/images/blog_star2018.jpg" alt="">
+  </a><p class="blog_star_enter_close">关闭</p>
+</div>
+<script type="text/javascript">
+  $(function(){
+    $(document).on('click','.blog_star_enter_close',function(){
+      $('.blog_star_enter').hide();
+    })
+  })
+</script>
+
+</body>
+
+<!-- 右侧第四栏 -->
+<div class="fourth_column">
+	<div class="title-box">
+		<b class="title">猿学习</b>
+		<span class="fourth_column_close">    
+			<svg class="icon" aria-hidden="true">
+				<use xlink:href="#csdnc-times"></use>
+			</svg>
+		</span>
+		
+	</div>
+	<ul class="">
+		<li><div id="kp_box_456" data-pid="456" data-track-view='{"mod":"kp_popu_456-721","con":",,"}' data-track-click='{"mod":"kp_popu_456-721","con":",,"}'><a href="https://gitchat.csdn.net/column/5a7d1a13a7f22b3dffca7e49?utm_source=csdn100" target="_blank"><div class="blogkp3"><img src="http://img-ads.csdn.net/2018/201811091452349556.png"width="100" height="100"><h6>Python 爬虫和数据分析实战</h6><span style="position:absolute;right:0;bottom:0;background:url(https://img-ads.csdn.net/2016/201608021757063065.png) no-repeat;width:33px;height:18px;display:block;z-index: 9999;"></span></div></a></div></li>		<li><div id="kp_box_457" data-pid="457" data-track-view='{"mod":"kp_popu_457-681","con":",,"}' data-track-click='{"mod":"kp_popu_457-681","con":",,"}'><img src="http://img-ads.csdn.net/2019/201901081453403307.jpg"width="100" height="100"></div></li>		<li><div id="kp_box_458" data-pid="458" data-track-view='{"mod":"kp_popu_458-640","con":",,"}' data-track-click='{"mod":"kp_popu_458-640","con":",,"}'><a href="https://gitchat.csdn.net/column/5a7d1a13a7f22b3dffca7e49?utm_source=csdn100" target="_blank"><div class="blogkp3"><img src="http://img-ads.csdn.net/2018/201811091452349556.png"width="100" height="100"><h6>Python 爬虫和数据分析实战</h6><span style="position:absolute;right:0;bottom:0;background:url(https://img-ads.csdn.net/2016/201608021757063065.png) no-repeat;width:33px;height:18px;display:block;z-index: 9999;"></span></div></a></div></li>		<li><div id="kp_box_459" data-pid="459" data-track-view='{"mod":"kp_popu_459-686","con":",,"}' data-track-click='{"mod":"kp_popu_459-686","con":",,"}'><img src="http://img-ads.csdn.net/2018/201811231428464985.jpg"width="100" height="100"></div></li>	</ul>
+</div>
+<script type="text/javascript">
+	$('.fourth_column_close').click(function(){
+		$('.fourth_column').remove();
+	})
+</script>
+<!-- 右侧第四栏end -->
+<!-- 高亮未与 markdown兼容  -->
+	<link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.3.5/ckeditor/plugins/chart/chart.css" />
+	<script type="text/javascript" src="https://csdnimg.cn/release/blog_editor_html/release1.3.5/ckeditor/plugins/chart/lib/chart.min.js"></script>
+	<script type="text/javascript" src="https://csdnimg.cn/release/blog_editor_html/release1.3.5/ckeditor/plugins/chart/widget2chart.js"></script>
+	<link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.3.5/ckeditor/plugins/codesnippet/lib/highlight/styles/atom-one-light.css">
+	<script type="text/javascript" src="https://csdnimg.cn/release/phoenix/production/pc_wap_common-98040b5dc6.js" /></script>
+
+	<script type="text/javascript">
+	$(function(){
+		var allEscRegex = /&(lt|gt|amp|quot|nbsp|shy|#\d{1,5});/g,
+		    namedEntities = {
+					lt: '<',
+					gt: '>',
+					amp: '&',
+					quot: '"',
+					nbsp: '\u00a0',
+					shy: '\u00ad'
+				}
+		var allEscDecode = function( match, code ) {
+				return namedEntities[ code ];
+		};
+		htmlDecodeAttr = function( text ) {
+				return text.replace( allEscRegex, allEscDecode );
+		}
+	  hljs.initHighlighting();
+	  hljs.initCopyButtonOnLoad();
+	  hljs.initLineNumbersOnLoad();
+		if($('pre .language-plain').length>0){
+			$('pre .language-plain').each(function(i,e){
+				var highlightRe = hljs.highlightAuto(htmlDecodeAttr(e.innerHTML))
+				e.innerHTML = highlightRe.value;
+				e.className = 'language-'+highlightRe.language;
+			});
+		}
+	})
+	</script>
+
+<script src="https://g.csdnimg.cn/login-box/1.0.4/??login-box.js,login-auto.js?t=20190103145159"></script>
+<script src="https://csdnimg.cn/release/phoenix/template/js/common-2dfea49d18.min.js"></script>
+<script src="https://csdnimg.cn/release/phoenix/template/js/detail-c285c8035f.min.js"></script>
+	<script src="https://csdnimg.cn/release/phoenix/themes/skin3-template/skin3-template-fc7383b956.min.js"></script>
+
+
+<!-- <script type="text/javascript" src="//g.csdnimg.cn/check-adb/1.0.2/check-adb.js"></script> -->
+
+<script type="text/javascript" src="https://csdnimg.cn/release/blog_mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            "HTML-CSS": {
+                    linebreaks: { automatic: true, width: "94%container" },
+                    imageFont: null
+            },
+            tex2jax: {
+                preview: "none"
+            },
+            mml2jax: {
+                preview: 'none'
+            }
+    });
+</script>
+<script type="text/javascript">
+    window.baidu_blueword ={
+        di:'24004469_oem_dg',
+        id:['content_views'],// 需要飘蓝区域：id要求以数组或，分隔的字符串形式传入
+        blueclass:['baidu_pl'],// 需要飘蓝区域：class要求以数组或，分隔的字符串形式传入, 传入值会覆盖默认值
+        user:'',
+        isMobile:false,
+        title: document.title,
+        page_url: location.href,
+        ignore:'baidu-blue-word-no',// 需要忽略掉的区域1
+        frequency:1,// 词频1
+        maxword:5// 最大接受飘词个数
+    }
+</script>
+<script src="https://gh.bdstatic.com/static/gh/js/sdk/bword.min.js"></script>
+</html>
